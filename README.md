@@ -20,6 +20,17 @@ npm run preview
 
 Serve `dist/` at the root of an HTTPS website (or localhost). Directly opening `index.html` as a file is unsupported. The production service worker stores local assets for offline use after its first successful installation; live observations and external map tiles still require connectivity. External tiles are not bulk downloaded or stored by the app.
 
+## GitHub Pages
+
+The site is published at https://metaphorz.github.io/eganscreek/. The workflow in `.github/workflows/pages.yml` tests, builds, and deploys each push to `main` using GitHub Actions as the Pages source.
+
+The workflow sets `VITE_BASE_PATH=/eganscreek/`. Public photographs, archived tide data, and the service worker respect that directory. Local development defaults to `/`. To preview the Pages build locally:
+
+```sh
+VITE_BASE_PATH=/eganscreek/ npm run build
+VITE_BASE_PATH=/eganscreek/ npm run preview
+```
+
 ## What is measured, mapped, or conceptual
 
 - **Map:** 35 USGS National Hydrography Dataset flowline features named Egans Creek, downloaded October 3, 2026. The highlight follows mapped channel geometry, including paths through open water. It is not a surveyed wetland boundary, property line, or current water extent. The separate habitat schematic explains the north–south relationship.

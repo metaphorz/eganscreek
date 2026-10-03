@@ -20,3 +20,7 @@ Final desktop map and mobile reptile screenshots were visually inspected. Wildli
 ## Scope
 
 Mobile coverage uses Chrome viewport and touch emulation; Safari, Firefox, and physical mobile devices were not tested. External map tiles and current NOAA measurements require a network connection. Geographic and wildlife snapshots have the dates and limits recorded in the application and provenance notes; tests do not establish local creek water depths or a complete wildlife inventory.
+
+## GitHub Pages deployment verification
+
+The `/eganscreek/` production build passed all 12 unit tests and 30 desktop/mobile application checks. Both offline browser checks passed after correcting cache matching for static assets served with a Vary header. The optional live NOAA checks were not repeated for this path-only change. Browser navigation now resolves relative to the configured test base URL, allowing the same suite to check root and project-directory hosting.

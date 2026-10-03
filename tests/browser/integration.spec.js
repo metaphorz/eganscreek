@@ -1,7 +1,7 @@
 import {test,expect} from '@playwright/test';
 test('real NOAA observation loads through the browser',async({page},testInfo)=>{
  test.skip(!process.env.ATLAS_LIVE,'Optional external-service check');
- await page.goto('/#page=tides');
+ await page.goto('./#page=tides');
  await expect(page.locator('#current-level')).toHaveText(/^-?\d+\.\d{2} ft$/,{timeout:20000});
  await expect(page.locator('#current-stamp')).toContainText('Measured');
  await expect(page.locator('#data-badge')).toHaveText('NOAA station data',{timeout:25000});
@@ -10,7 +10,7 @@ test('real NOAA observation loads through the browser',async({page},testInfo)=>{
 });
 test('production service worker retains geometry and photos offline',async({page,context})=>{
  test.skip(!process.env.ATLAS_OFFLINE,'Requires production preview');
- await page.goto('/');
+ await page.goto('./');
  await page.evaluate(()=>navigator.serviceWorker.ready);
  await expect.poll(()=>page.evaluate(()=>!!navigator.serviceWorker.controller)).toBe(true);
  await context.setOffline(true);await page.reload();

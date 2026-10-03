@@ -1,3 +1,4 @@
+import {publicURL} from '../paths.js';
 import {heading,evidence,$,toast} from '../ui.js';
 import {state} from '../state.js';
 import {birds} from '../data/birds.js';
@@ -53,7 +54,7 @@ export function mount(root){
  $('#section-toggle',root).onclick=()=>{const panel=$('#section',root);panel.hidden=!panel.hidden;$('#section-toggle',root).setAttribute('aria-expanded',String(!panel.hidden));};
  async function load(){
   const token=++request;pause();$('#load-tides',root).disabled=true;pred=null;observed=null;draw();$('#data-badge',root).textContent='Loading NOAA';$('#series-status',root).textContent='Loading NOAA station 8720030…';
-  try{const date=$('#tide-date',root).value;if(!date)throw Error('Choose a date.');const p=mode==='sample'?await fetch('/data/noaa-2026-10-01.json').then(r=>{if(!r.ok)throw Error('Saved sample unavailable.');return r.json();}):await fetchTides(date);if(disposed||token!==request)return;let o=null;
+  try{const date=$('#tide-date',root).value;if(!date)throw Error('Choose a date.');const p=mode==='sample'?await fetch(publicURL('data/noaa-2026-10-01.json')).then(r=>{if(!r.ok)throw Error('Saved sample unavailable.');return r.json();}):await fetchTides(date);if(disposed||token!==request)return;let o=null;
    let extra='';if(mode==='observations'){try{o=await fetchTides(date,'water_level');}catch{extra=' Observations unavailable; showing predictions only.';}}
    if(disposed||token!==request)return;pred=p;observed=o;slider.max=(pred.points.at(-1).t-pred.points[0].t)/3600000;state.hour=initialHour===null?clamp(((followingNow&&latest?latest.t:Date.now())-pred.points[0].t)/3600000,0,Number(slider.max)):Math.min(initialHour,Number(slider.max));initialHour=null;
    $('#series-status',root).textContent=`${mode==='sample'?'Saved reference day · downloaded':pred.cached?'Cached':'Fetched'} ${new Date(pred.fetchedAt).toLocaleString()}. Green: predictions${observed?`; rust: ${observed.cached?'cached ':''}observations (may be preliminary)`:''}. Selected UTC day; times displayed in Eastern time.${extra}`;
