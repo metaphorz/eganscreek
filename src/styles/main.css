@@ -17,3 +17,6 @@
 @media(max-width:600px){.animal-submenu{gap:7px}.animal-submenu button{font-size:11px;padding:9px 13px}.animal-viewbar{align-items:start;flex-direction:column;gap:15px}.animal-intro h2{font-size:27px}.sighting-controls{gap:12px}.sighting-controls label{flex:1 1 140px}.sighting-controls select{max-width:100%}#wildlife-map{height:470px}.wildlife-map-links{grid-template-columns:1fr;gap:25px}.sighting-list article{align-items:start;flex-direction:column}.anole-note{padding:20px}}
 
 .history-stories{display:grid;gap:12px;margin-top:25px}.history-stories a{display:block;padding:20px;border:1px solid var(--line);background:#eaedde;text-decoration:none}.history-stories a:hover{background:#dfe6d5}.history-stories span{display:block;font-size:9px;letter-spacing:1.5px;margin-bottom:10px}.history-stories strong{display:block;font:23px/1.3 var(--serif);margin-bottom:10px}.history-stories small{font-size:11px;text-decoration:underline;text-underline-offset:3px}
+
+.brand-name{display:block;font-size:22px;line-height:1.1}
+@media(max-width:600px){.brand-name{font-size:18px}}
