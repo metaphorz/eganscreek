@@ -1,0 +1,577 @@
+{
+  "retrieved": "2026-10-03T21:16:22.138Z",
+  "source": "https://api.inaturalist.org/v1/observations/species_counts?swlat=30.639&swlng=-81.447&nelat=30.669&nelng=-81.432&taxon_id=1&without_taxon_id=3&quality_grade=research&captive=false&per_page=100&order_by=observed_on&order=desc&d2=2026-10-03",
+  "bounds": [
+    [
+      30.639,
+      -81.447
+    ],
+    [
+      30.669,
+      -81.432
+    ]
+  ],
+  "species": [
+    {
+      "id": "26159",
+      "name": "American Alligator",
+      "scientific": "Alligator mississippiensis",
+      "group": "reptiles",
+      "count": 123,
+      "source": "https://www.inaturalist.org/taxa/26159",
+      "photos": [
+        {
+          "src": "/assets/animals/26159-commons-1.jpg",
+          "author": "User:Postdlf",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "source": "https://commons.wikimedia.org/wiki/File:American_Alligator.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/0/03/American_Alligator.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "An American Alligator (One of two) in captivity at the Columbus Zoo, Powell, Ohio."
+        },
+        {
+          "src": "/assets/animals/26159-commons-2.jpg",
+          "author": "Bobyellow",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Alligator_mississippiensis_(American_alligator)_6.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Alligator_mississippiensis_%28American_alligator%29_6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Alligator mississippiensis at Bear Island Campground in the Big Cypress National Preserve"
+        }
+      ]
+    },
+    {
+      "id": "116461",
+      "name": "Brown Anole",
+      "scientific": "Anolis sagrei",
+      "group": "reptiles",
+      "count": 67,
+      "source": "https://www.inaturalist.org/taxa/116461",
+      "photos": [
+        {
+          "src": "/assets/animals/116461-commons-1.jpg",
+          "author": "Nosferattus",
+          "license": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "source": "https://commons.wikimedia.org/wiki/File:Brown_Anole_(Anolis_sagrei).jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Brown_Anole_%28Anolis_sagrei%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Brown Anole (Anolis sagrei) in Florida displaying dewlap"
+        },
+        {
+          "src": "/assets/animals/116461-commons-2.jpg",
+          "author": "Robin White",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Anolis_sagrei_neckflap.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Anolis_sagrei_neckflap.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Anolis sagrei has a large neckflap ranging from pale yellow to deep red"
+        }
+      ]
+    },
+    {
+      "id": "36514",
+      "name": "Green Anole",
+      "scientific": "Anolis carolinensis",
+      "group": "reptiles",
+      "count": 45,
+      "source": "https://www.inaturalist.org/taxa/36514",
+      "photos": [
+        {
+          "src": "/assets/animals/36514-commons-1.jpg",
+          "author": "Paul Hirst (Phirst)",
+          "license": "CC BY-SA 2.5",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+          "source": "https://commons.wikimedia.org/wiki/File:Anole_Lizard_Hilo_Hawaii_edit.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Anole_Lizard_Hilo_Hawaii_edit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Green Anole Lizard (Anolis carolinensis) on railing in Hilo, Hawaii."
+        },
+        {
+          "src": "/assets/animals/36514-commons-2.jpg",
+          "author": "Robert Michniewicz (edited by Ark)",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Anolis_carolinensis_(male%26female)_by_Robert_Michniewicz.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Anolis_carolinensis_%28male%26female%29_by_Robert_Michniewicz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Anolis carolinensis"
+        }
+      ]
+    },
+    {
+      "id": "39782",
+      "name": "Pond Slider",
+      "scientific": "Trachemys scripta",
+      "group": "reptiles",
+      "count": 65,
+      "source": "https://www.inaturalist.org/taxa/39782",
+      "photos": [
+        {
+          "src": "/assets/animals/39782-commons-1.jpg",
+          "author": "Happyswissman",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Red-eared_Slider_Thailand.JPG",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Red-eared_Slider_Thailand.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "This Red-eared Slider heats up in the morning sun at 8:30. The location is 20 west of Bangkok at Putthamonthon park."
+        },
+        {
+          "src": "/assets/animals/39782-commons-2.jpg",
+          "author": "Rhododendrites",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Pond_sliders_in_Prospect_Park_(03861).jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Pond_sliders_in_Prospect_Park_%2803861%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Pond sliders (Trachemys scripta) on driftwood in the Prospect Park Lake. Pond sliders are an invasive species in the ponds of New York. They are popular as pets, and many people released theirs in New York City parks. Eventually, they overtook most o"
+        }
+      ]
+    },
+    {
+      "id": "29317",
+      "name": "Banded Watersnake",
+      "scientific": "Nerodia fasciata",
+      "group": "reptiles",
+      "count": 17,
+      "source": "https://www.inaturalist.org/taxa/29317",
+      "photos": [
+        {
+          "src": "/assets/animals/29317-commons-1.jpg",
+          "author": "Sandhillcrane",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Banded_water_snake.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Banded_water_snake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Banded water snake as in Florida in the Wakodahatchee Wetlands."
+        },
+        {
+          "src": "/assets/animals/29317-commons-2.png",
+          "author": "John Willson · Savannah River Ecology Laboratory / CDC PHIL",
+          "license": "Public domain",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+          "source": "https://commons.wikimedia.org/wiki/File:Nerodia_fasciata_CDC.png",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/0/04/Nerodia_fasciata_CDC.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Banded Watersnake: close view of its head and patterned scales."
+        }
+      ]
+    },
+    {
+      "id": "39824",
+      "name": "Florida Red-bellied Cooter",
+      "scientific": "Pseudemys nelsoni",
+      "group": "reptiles",
+      "count": 4,
+      "source": "https://www.inaturalist.org/taxa/39824",
+      "photos": [
+        {
+          "src": "/assets/animals/39824-commons-1.jpg",
+          "author": "JamieS93",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Florida_Redbelly_Turtle.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Florida_Redbelly_Turtle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "A photo of a Florida Redbelly turtle at a pond in South Carolina, USA. The picture was taken mid-day, EST, on March 14, 2008."
+        },
+        {
+          "src": "/assets/animals/39824-commons-2.jpg",
+          "author": "159766 - dr. Tibor Duliskovich - http://www.duliskovich.com",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Florida_Redbelly_Turtle_(Pseudemys_nelsoni).jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/3/33/Florida_Redbelly_Turtle_%28Pseudemys_nelsoni%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Florida Redbelly Turtle (Pseudemys nelsoni) at Boy Scout Camp Echockotee. Freshwater spring covered by vegetation. Around noon. These turtles spend most of the day bathing in sun on a log or spring shore. An English article on Wikipedia on Redbelly T"
+        }
+      ]
+    },
+    {
+      "id": "43102",
+      "name": "Marsh Rabbit",
+      "scientific": "Sylvilagus palustris",
+      "group": "mammals",
+      "count": 60,
+      "source": "https://www.inaturalist.org/taxa/43102",
+      "photos": [
+        {
+          "src": "/assets/animals/43102-commons-1.jpg",
+          "author": "Peter Chen 2.0",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Sylvilagus_palustris_-_Peter_Chen_2.0_-_473222718.jpeg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/6/62/Sylvilagus_palustris_-_Peter_Chen_2.0_-_473222718.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Sylvilagus palustris, Sweetwater Wetlands Park, Gainesville, FL, USA, 2025-02-22 (iNaturalist)."
+        },
+        {
+          "src": "/assets/animals/43102-commons-2.jpg",
+          "author": "Chad Anderson/USFWS",
+          "license": "Public domain",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+          "source": "https://commons.wikimedia.org/wiki/File:Lower_Keys_marsh_rabbit.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Lower_Keys_marsh_rabbit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Lower Keys marsh rabbit (Sylvilagus palustris hefneri)"
+        }
+      ]
+    },
+    {
+      "id": "42223",
+      "name": "White-tailed Deer",
+      "scientific": "Odocoileus virginianus",
+      "group": "mammals",
+      "count": 13,
+      "source": "https://www.inaturalist.org/taxa/42223",
+      "photos": [
+        {
+          "src": "/assets/animals/42223-commons-1.jpg",
+          "author": "USDA photo by Scott Bauer",
+          "license": "Public domain",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+          "source": "https://commons.wikimedia.org/wiki/File:White-tailed_deer.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/b/b7/White-tailed_deer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "A white-tailed deer"
+        },
+        {
+          "src": "/assets/animals/42223-commons-2.jpg",
+          "author": "James St. John",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Odocoileus_virginianus_(white-tailed_deer)_8_(8270236202).jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Odocoileus_virginianus_%28white-tailed_deer%29_8_%288270236202%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Whitetail doe (Odocoileus virginianus) & fawn, Newark, OH. Most first fawns are singles. The second or third time a doe breeds she usually has twins. Does may bear triplets or even quadruplets."
+        }
+      ]
+    },
+    {
+      "id": "46017",
+      "name": "Eastern Gray Squirrel",
+      "scientific": "Sciurus carolinensis",
+      "group": "mammals",
+      "count": 12,
+      "source": "https://www.inaturalist.org/taxa/46017",
+      "photos": [
+        {
+          "src": "/assets/animals/46017-commons-1.jpg",
+          "author": "JeffreyGammon",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:EasternGraySquirrel_GAm.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/1/15/EasternGraySquirrel_GAm.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "A curious Eastern Gray Squirrel residing near a residential area in Orlando, Florida, US"
+        },
+        {
+          "src": "/assets/animals/46017-commons-2.jpg",
+          "author": "(c) ncb1221, some rights reserved (CC BY)",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Eastern_Gray_Squirrel,_Louisiana,_US_imported_from_iNaturalist_photo_411198365.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/0/08/Eastern_Gray_Squirrel%2C_Louisiana%2C_US_imported_from_iNaturalist_photo_411198365.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Photo of Eastern Gray Squirrel uploaded from iNaturalist."
+        }
+      ]
+    },
+    {
+      "id": "41663",
+      "name": "Common Raccoon",
+      "scientific": "Procyon lotor",
+      "group": "mammals",
+      "count": 5,
+      "source": "https://www.inaturalist.org/taxa/41663",
+      "photos": [
+        {
+          "src": "/assets/animals/41663-commons-1.jpg",
+          "author": "Rhododendrites",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Raccoon_in_Central_Park_(35264).jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Raccoon_in_Central_Park_%2835264%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Raccoon (Procyon lotor) in the Central Park Ramble"
+        },
+        {
+          "src": "/assets/animals/41663-commons-2.png",
+          "author": "Ringe.jpg: Magdben",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Albino_raccoon.png",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Albino_raccoon.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Ringe pris en photo a Virginia Key, FL"
+        }
+      ]
+    },
+    {
+      "id": "24382",
+      "name": "Cuban Tree Frog",
+      "scientific": "Osteopilus septentrionalis",
+      "group": "amphibians",
+      "count": 16,
+      "source": "https://www.inaturalist.org/taxa/24382",
+      "photos": [
+        {
+          "src": "/assets/animals/24382-commons-1.jpg",
+          "author": "Charles J. Sharp",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Cuban_tree_frog_(Osteopilus_septentrionalis)_5.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/6/61/Cuban_tree_frog_%28Osteopilus_septentrionalis%29_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Cuban tree frog (Osteopilus septentrionalis), Grand Cayman, Cayman Islands"
+        },
+        {
+          "src": "/assets/animals/24382-commons-2.jpg",
+          "author": "Charles J. Sharp",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Cuban_tree_frog_(Osteopilus_septentrionalis)_6.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/8/89/Cuban_tree_frog_%28Osteopilus_septentrionalis%29_6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Cuban tree frog (Osteopilus septentrionalis), Grand Cayman, Cayman Islands"
+        }
+      ]
+    },
+    {
+      "id": "64988",
+      "name": "Southern Toad",
+      "scientific": "Anaxyrus terrestris",
+      "group": "amphibians",
+      "count": 3,
+      "source": "https://www.inaturalist.org/taxa/64988",
+      "photos": [
+        {
+          "src": "/assets/animals/64988-commons-1.jpg",
+          "author": "Norman.benton",
+          "license": "Public domain",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+          "source": "https://commons.wikimedia.org/wiki/File:Bufo_terrestris_0.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Bufo_terrestris_0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Bufo_terrestris_0"
+        },
+        {
+          "src": "/assets/animals/64988-commons-2.jpg",
+          "author": "Aurelius787",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Southern_Toad_II.JPG",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/4/46/Southern_Toad_II.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Southern Toad from Covington GA USA."
+        }
+      ]
+    },
+    {
+      "id": "65979",
+      "name": "American Bullfrog",
+      "scientific": "Lithobates catesbeianus",
+      "group": "amphibians",
+      "count": 3,
+      "source": "https://www.inaturalist.org/taxa/65979",
+      "photos": [
+        {
+          "src": "/assets/animals/65979-commons-1.jpg",
+          "author": "Carl D. Howe",
+          "license": "CC BY-SA 2.5",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+          "source": "https://commons.wikimedia.org/wiki/File:North-American-bullfrog1.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/a/aa/North-American-bullfrog1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "North American bullfrog (Rana catesbeiana)"
+        },
+        {
+          "src": "/assets/animals/65979-commons-2.png",
+          "author": "Dave Huth from Allegany County, NY, USA",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:American_Bullfrog,_tadpole_stage_(Rana_catesbeiana)_(6220036343).png",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/1/18/American_Bullfrog%2C_tadpole_stage_%28Rana_catesbeiana%29_%286220036343%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Bullfrog (Rana catesbeiana) Small rear legs visible Allegeny County, NY USA"
+        }
+      ]
+    },
+    {
+      "id": "109885",
+      "name": "Sailfin Molly",
+      "scientific": "Poecilia latipinna",
+      "group": "fish",
+      "count": 5,
+      "source": "https://www.inaturalist.org/taxa/109885",
+      "photos": [
+        {
+          "src": "/assets/animals/109885-commons-1.jpg",
+          "author": "(c) Nick Tobler (Cowturtle), some rights reserved (CC BY)",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Poecilia_latipinna,_I-75_N,_Fort_Lauderdale,_FL,_US_imported_from_iNaturalist_photo_360070481_(cropped).jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Poecilia_latipinna%2C_I-75_N%2C_Fort_Lauderdale%2C_FL%2C_US_imported_from_iNaturalist_photo_360070481_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Photo of Sailfin Molly (undefined) uploaded from iNaturalist."
+        },
+        {
+          "src": "/assets/animals/109885-commons-2.jpg",
+          "author": "(c) smileyalyse, some rights reserved (CC BY)",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Poecilia_latipinna,_Cocoa,_FL,_US_imported_from_iNaturalist_photo_263808094.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/8/89/Poecilia_latipinna%2C_Cocoa%2C_FL%2C_US_imported_from_iNaturalist_photo_263808094.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Photo of Sailfin Molly (undefined) uploaded from iNaturalist."
+        }
+      ]
+    },
+    {
+      "id": "49150",
+      "name": "Gulf Fritillary",
+      "scientific": "Dione vanillae",
+      "group": "invertebrates",
+      "count": 76,
+      "source": "https://www.inaturalist.org/taxa/49150",
+      "photos": [
+        {
+          "src": "/assets/animals/49150-commons-1.jpg",
+          "author": "Korall",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Agraulis_vanillae_butterfly_from_above.JPG",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Agraulis_vanillae_butterfly_from_above.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Agraulis vanillae butterfly."
+        },
+        {
+          "src": "/assets/animals/49150-commons-2.jpg",
+          "author": "Rentzb0711",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Agraulis_vanillae_(gulf_fritillary)_caterpillar.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/a/af/Agraulis_vanillae_%28gulf_fritillary%29_caterpillar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Gulf fritillary (Agraulis vanillae) caterpillar on a passiflora vine in Honolulu, Hawaiʻi."
+        }
+      ]
+    },
+    {
+      "id": "49766",
+      "name": "Zebra Longwing",
+      "scientific": "Heliconius charithonia",
+      "group": "invertebrates",
+      "count": 24,
+      "source": "https://www.inaturalist.org/taxa/49766",
+      "photos": [
+        {
+          "src": "/assets/animals/49766-commons-1.jpg",
+          "author": "Nosferattus",
+          "license": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "source": "https://commons.wikimedia.org/wiki/File:Heliconius_charithonia_2021.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Heliconius_charithonia_2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Zebra longwing (Heliconius charithonia) butterfly in Hendry County, Florida"
+        },
+        {
+          "src": "/assets/animals/49766-commons-2.jpg",
+          "author": "Diego Delso",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Heliconius_charithonia,_Mariposario_de_Icod_de_los_Vinos,_Tenerife,_Espa%C3%B1a,_2012-12-13,_DD_04.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Heliconius_charithonia%2C_Mariposario_de_Icod_de_los_Vinos%2C_Tenerife%2C_Espa%C3%B1a%2C_2012-12-13%2C_DD_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Zebra Longwing (Heliconius charithonia), Butterfly zoo of Icod de los Vinos, Tenerife, Spain"
+        }
+      ]
+    },
+    {
+      "id": "61495",
+      "name": "Eastern Pondhawk",
+      "scientific": "Erythemis simplicicollis",
+      "group": "invertebrates",
+      "count": 13,
+      "source": "https://www.inaturalist.org/taxa/61495",
+      "photos": [
+        {
+          "src": "/assets/animals/61495-commons-1.jpg",
+          "author": "D. Gordon E. Robertson",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Eastern_Pondhawk,_male,_Florida.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Eastern_Pondhawk%2C_male%2C_Florida.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Eastern Pondhawk (Erythemis simplicicollis), male, Oscar Scherer Park, Venice, Florida"
+        },
+        {
+          "src": "/assets/animals/61495-commons-2.jpg",
+          "author": "D. Gordon E. Robertson",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Eastern_Pondhawk,_female.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Eastern_Pondhawk%2C_female.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Eastern Pondhawk (Erythemis simplicicollis), female, Ottawa, Ontario"
+        }
+      ]
+    },
+    {
+      "id": "67707",
+      "name": "Yellow Garden Spider",
+      "scientific": "Argiope aurantia",
+      "group": "invertebrates",
+      "count": 11,
+      "source": "https://www.inaturalist.org/taxa/67707",
+      "photos": [
+        {
+          "src": "/assets/animals/67707-commons-1.jpg",
+          "author": "Judy Gallagher",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Black_and_Yellow_Argiope_-_Argiope_aurantia_-_Merritt_Island_National_Wildlife_Refuge,_Florida.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Black_and_Yellow_Argiope_-_Argiope_aurantia_-_Merritt_Island_National_Wildlife_Refuge%2C_Florida.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Black and Yellow Argiope - Argiope aurantia - Merritt Island National Wildlife Refuge, Florida"
+        },
+        {
+          "src": "/assets/animals/67707-commons-2.jpg",
+          "author": "The Cosmonaut",
+          "license": "CC BY-SA 2.5 ca",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/ca/deed.en",
+          "source": "https://commons.wikimedia.org/wiki/File:Argiope_aurantia_-_ventral_view.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Argiope_aurantia_-_ventral_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Ventral view of a female yellow garden spider (Argiope aurantia) building a web."
+        }
+      ]
+    },
+    {
+      "id": "47585",
+      "name": "Eastern Oyster",
+      "scientific": "Crassostrea virginica",
+      "group": "invertebrates",
+      "count": 7,
+      "source": "https://www.inaturalist.org/taxa/47585",
+      "photos": [
+        {
+          "src": "/assets/animals/47585-commons-1.jpg",
+          "author": "Jud McCranie",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Oyster_bed,_Brunswick,_GA,_US.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Oyster_bed%2C_Brunswick%2C_GA%2C_US.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "A natural oyster bed in Brunswick, Georgia, US. It is in the Marshes of Glynn"
+        },
+        {
+          "src": "/assets/animals/47585-commons-2.jpg",
+          "author": "Jud McCranie",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Eastern_oyster,_side.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/3/34/Eastern_oyster%2C_side.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Eastern oyster, Crassostrea virginica, side"
+        }
+      ]
+    },
+    {
+      "id": "555974",
+      "name": "Red-jointed Fiddler Crab",
+      "scientific": "Minuca minax",
+      "group": "invertebrates",
+      "count": 6,
+      "source": "https://www.inaturalist.org/taxa/555974",
+      "photos": [
+        {
+          "src": "/assets/animals/555974-commons-1.jpg",
+          "author": "Mets501",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Uca_minax_in_CT.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Uca_minax_in_CT.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Minuca minax in Connecticut, United States"
+        },
+        {
+          "src": "/assets/animals/555974-1.jpg",
+          "author": "no rights reserved",
+          "license": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source": "https://www.inaturalist.org/photos/194912519",
+          "observation": "https://www.inaturalist.org/observations/115489700",
+          "original": "https://inaturalist-open-data.s3.amazonaws.com/photos/194912519/medium.jpeg",
+          "caption": "Red-jointed Fiddler Crab · species reference photo"
+        }
+      ]
+    }
+  ]
+}

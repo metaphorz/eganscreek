@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="theme-color" content="#263f35"><meta name="description" content="Explore Egans Creek, Amelia Island: an interactive atlas of geological time, tides, cordgrass, wading birds, and restoration.">
+ <title>Egans Creek: A Model</title>
+ <link rel="icon" type="image/svg+xml" href="/assets/icon.svg"><link rel="manifest" href="/manifest.webmanifest">
+</head>
+<body>
+ <a class="skip-link" href="#main">Skip to the landscape</a>
+ <header class="site-header">
+  <a href="#page=map" class="brand" aria-label="Egans Creek home"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M6 31 Q17 19 14 6 M16 34 Q28 18 25 5 M25 33 Q32 25 35 12 M5 33 Q22 27 35 33" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span>Egans Creek<small>A LIVING LANDSCAPE AND MODEL</small><span class="creator-credit">Creatively spawned by Paul Fishwick &amp; OpenAI Codex</span></span></a>
+  <nav class="main-nav" aria-label="Explore the atlas"><a href="#page=map" data-page="map">Map</a><a href="#page=tides" data-page="tides">Tides</a><a href="#page=formation" data-page="formation">Formation</a><a href="#page=marsh" data-page="marsh">The marsh</a><a href="#page=animals" data-page="animals">Animals</a><a href="#page=history" data-page="history">History</a></nav>
+  <button class="notebook-button" id="open-notebook">Field notebook <span id="note-count">0</span></button>
+ </header>
+ <main id="main" tabindex="-1"><noscript><article class="reading"><h1>Egans Creek: a living landscape</h1><p>An older island core, younger coastal deposits, and a sheltered wetland tell the story of this place. North of Jasmine Street, tides influence salt marsh; farther south, freshwater habitat is protected by water controls.</p><h2>The living marsh</h2><p>Smooth cordgrass holds soil, slows water, and supports a food web. Herons, egrets, ibises, spoonbills, and storks use these wetlands in different ways.</p><p>Enable JavaScript for the interactive atlas, or read the <a href="https://fbfl.us/104/Egans-Creek-Greenway">city’s Greenway guide</a>.</p></article></noscript></main>
+ <footer class="site-footer"><div><strong>A place worth understanding.</strong><span>Amelia Island, Florida · A personal field atlas</span></div><div class="footer-actions"><button id="open-photos">From the trail ↗</button><button id="open-sources">Sources & methods</button><button id="share">Share this view</button><button id="read-story">Read the story</button></div><p>Illustrations explain processes. They are not navigation charts or flood forecasts.</p></footer>
+ <dialog id="dialog" aria-labelledby="dialog-title"><div class="dialog-head"><h2 id="dialog-title"></h2><button id="close-dialog" aria-label="Close dialog">✕</button></div><div id="dialog-body"></div></dialog>
+ <div id="toast" role="status" hidden></div>
+ <script type="module" src="/src/main.js"></script>
+</body></html>

@@ -1,0 +1,473 @@
+{
+  "retrieved": "2026-10-03T21:25:07.584Z",
+  "sources": [
+    {
+      "url": "https://api.inaturalist.org/v1/observations?swlat=30.639&swlng=-81.447&nelat=30.669&nelng=-81.432&taxon_id=1&iconic_taxa=Aves&quality_grade=research&captive=false&per_page=50&order_by=observed_on&order=desc&license=cc0%2Ccc-by%2Ccc-by-sa&acc_below=100&geoprivacy=open&d2=2026-10-03",
+      "available": 11
+    },
+    {
+      "url": "https://api.inaturalist.org/v1/observations?swlat=30.639&swlng=-81.447&nelat=30.669&nelng=-81.432&taxon_id=1&iconic_taxa=Reptilia&quality_grade=research&captive=false&per_page=50&order_by=observed_on&order=desc&license=cc0%2Ccc-by%2Ccc-by-sa&acc_below=100&geoprivacy=open&d2=2026-10-03",
+      "available": 2
+    },
+    {
+      "url": "https://api.inaturalist.org/v1/observations?swlat=30.639&swlng=-81.447&nelat=30.669&nelng=-81.432&taxon_id=1&iconic_taxa=Mammalia&quality_grade=research&captive=false&per_page=50&order_by=observed_on&order=desc&license=cc0%2Ccc-by%2Ccc-by-sa&acc_below=100&geoprivacy=open&d2=2026-10-03",
+      "available": 3
+    },
+    {
+      "url": "https://api.inaturalist.org/v1/observations?swlat=30.639&swlng=-81.447&nelat=30.669&nelng=-81.432&taxon_id=1&iconic_taxa=Amphibia&quality_grade=research&captive=false&per_page=50&order_by=observed_on&order=desc&license=cc0%2Ccc-by%2Ccc-by-sa&acc_below=100&geoprivacy=open&d2=2026-10-03",
+      "available": 0
+    },
+    {
+      "url": "https://api.inaturalist.org/v1/observations?swlat=30.639&swlng=-81.447&nelat=30.669&nelng=-81.432&taxon_id=1&iconic_taxa=Actinopterygii&quality_grade=research&captive=false&per_page=50&order_by=observed_on&order=desc&license=cc0%2Ccc-by%2Ccc-by-sa&acc_below=100&geoprivacy=open&d2=2026-10-03",
+      "available": 0
+    },
+    {
+      "url": "https://api.inaturalist.org/v1/observations?swlat=30.639&swlng=-81.447&nelat=30.669&nelng=-81.432&taxon_id=1&iconic_taxa=Insecta%2CArachnida%2CMollusca%2CAnimalia&quality_grade=research&captive=false&per_page=50&order_by=observed_on&order=desc&license=cc0%2Ccc-by%2Ccc-by-sa&acc_below=100&geoprivacy=open&d2=2026-10-03",
+      "available": 10
+    }
+  ],
+  "observations": [
+    {
+      "id": 370188690,
+      "taxonId": "62529",
+      "name": "Roseate Spoonbill",
+      "scientific": "Platalea ajaja",
+      "group": "birds",
+      "date": "2026-06-09",
+      "coordinates": [
+        -81.4386650988,
+        30.6640275427
+      ],
+      "accuracy": 31,
+      "observer": "scottcarammell",
+      "license": "cc0",
+      "source": "https://www.inaturalist.org/observations/370188690",
+      "place": "Fernandina Beach, FL 32034, USA"
+    },
+    {
+      "id": 370188685,
+      "taxonId": "5020",
+      "name": "Green Heron",
+      "scientific": "Butorides virescens",
+      "group": "birds",
+      "date": "2026-06-09",
+      "coordinates": [
+        -81.4387616584,
+        30.6630216144
+      ],
+      "accuracy": 15,
+      "observer": "scottcarammell",
+      "license": "cc0",
+      "source": "https://www.inaturalist.org/observations/370188685",
+      "place": "Fernandina Beach, FL 32034, USA"
+    },
+    {
+      "id": 214500386,
+      "taxonId": "144455",
+      "name": "Great Egret",
+      "scientific": "Ardea alba",
+      "group": "birds",
+      "date": "2024-05-08",
+      "coordinates": [
+        -81.4409227521,
+        30.6472869925
+      ],
+      "accuracy": 61,
+      "observer": "mary176",
+      "license": "cc-by",
+      "source": "https://www.inaturalist.org/observations/214500386",
+      "place": "Fernandina Beach, FL 32034, USA"
+    },
+    {
+      "id": 214500388,
+      "taxonId": "145246",
+      "name": "Yellow-throated Warbler",
+      "scientific": "Setophaga dominica",
+      "group": "birds",
+      "date": "2024-05-08",
+      "coordinates": [
+        -81.4388459299,
+        30.6456870701
+      ],
+      "accuracy": 61,
+      "observer": "mary176",
+      "license": "cc-by",
+      "source": "https://www.inaturalist.org/observations/214500388",
+      "place": "Fernandina Beach, FL 32034, USA"
+    },
+    {
+      "id": 214500385,
+      "taxonId": "3751",
+      "name": "White Ibis",
+      "scientific": "Eudocimus albus",
+      "group": "birds",
+      "date": "2024-05-08",
+      "coordinates": [
+        -81.4402323263,
+        30.6437575454
+      ],
+      "accuracy": 61,
+      "observer": "mary176",
+      "license": "cc-by",
+      "source": "https://www.inaturalist.org/observations/214500385",
+      "place": "Fernandina Beach, FL 32034, USA"
+    },
+    {
+      "id": 196669334,
+      "taxonId": "3751",
+      "name": "White Ibis",
+      "scientific": "Eudocimus albus",
+      "group": "birds",
+      "date": "2024-01-14",
+      "coordinates": [
+        -81.44632,
+        30.65127
+      ],
+      "accuracy": 4,
+      "observer": "normherr",
+      "license": "cc0",
+      "source": "https://www.inaturalist.org/observations/196669334",
+      "place": "Amelia Island, Fernandina Beach, FL, US"
+    },
+    {
+      "id": 37105459,
+      "taxonId": "4940",
+      "name": "Snowy Egret",
+      "scientific": "Egretta thula",
+      "group": "birds",
+      "date": "2019-12-30",
+      "coordinates": [
+        -81.4419054127,
+        30.6589336662
+      ],
+      "accuracy": 65,
+      "observer": "amkramer",
+      "license": "cc-by",
+      "source": "https://www.inaturalist.org/observations/37105459",
+      "place": "Fernandina Beach, FL 32034, USA"
+    },
+    {
+      "id": 37105457,
+      "taxonId": "4956",
+      "name": "Great Blue Heron",
+      "scientific": "Ardea herodias",
+      "group": "birds",
+      "date": "2019-12-30",
+      "coordinates": [
+        -81.441795,
+        30.6586383333
+      ],
+      "accuracy": 49,
+      "observer": "amkramer",
+      "license": "cc-by",
+      "source": "https://www.inaturalist.org/observations/37105457",
+      "place": "Fernandina Beach, FL 32034, USA"
+    },
+    {
+      "id": 37105455,
+      "taxonId": "7109",
+      "name": "Hooded Merganser",
+      "scientific": "Lophodytes cucullatus",
+      "group": "birds",
+      "date": "2019-12-30",
+      "coordinates": [
+        -81.441950798,
+        30.658679873
+      ],
+      "accuracy": 31,
+      "observer": "amkramer",
+      "license": "cc-by",
+      "source": "https://www.inaturalist.org/observations/37105455",
+      "place": "Fernandina Beach, FL 32034, USA"
+    },
+    {
+      "id": 37105454,
+      "taxonId": "3751",
+      "name": "White Ibis",
+      "scientific": "Eudocimus albus",
+      "group": "birds",
+      "date": "2019-12-30",
+      "coordinates": [
+        -81.4387106895,
+        30.6557495697
+      ],
+      "accuracy": 27,
+      "observer": "amkramer",
+      "license": "cc-by",
+      "source": "https://www.inaturalist.org/observations/37105454",
+      "place": "Fernandina Beach, FL 32034, USA"
+    },
+    {
+      "id": 37105453,
+      "taxonId": "144455",
+      "name": "Great Egret",
+      "scientific": "Ardea alba",
+      "group": "birds",
+      "date": "2019-12-30",
+      "coordinates": [
+        -81.4385624957,
+        30.6557798856
+      ],
+      "accuracy": 61,
+      "observer": "amkramer",
+      "license": "cc-by",
+      "source": "https://www.inaturalist.org/observations/37105453",
+      "place": "Fernandina Beach, FL 32034, USA"
+    },
+    {
+      "id": 84246606,
+      "taxonId": "36514",
+      "name": "Green Anole",
+      "scientific": "Anolis carolinensis",
+      "group": "reptiles",
+      "date": "2021-06-23",
+      "coordinates": [
+        -81.4338923802,
+        30.6677872949
+      ],
+      "accuracy": 65,
+      "observer": "captainmantis37",
+      "license": "cc-by",
+      "source": "https://www.inaturalist.org/observations/84246606",
+      "place": "Amelia Island, Fernandina Beach, FL, US"
+    },
+    {
+      "id": 84245994,
+      "taxonId": "116461",
+      "name": "Brown Anole",
+      "scientific": "Anolis sagrei",
+      "group": "reptiles",
+      "date": "2021-06-23",
+      "coordinates": [
+        -81.4330432658,
+        30.6674562861
+      ],
+      "accuracy": 5,
+      "observer": "captainmantis37",
+      "license": "cc-by",
+      "source": "https://www.inaturalist.org/observations/84245994",
+      "place": "Amelia Island, Fernandina Beach, FL, US"
+    },
+    {
+      "id": 370188671,
+      "taxonId": "43102",
+      "name": "Marsh Rabbit",
+      "scientific": "Sylvilagus palustris",
+      "group": "mammals",
+      "date": "2026-06-09",
+      "coordinates": [
+        -81.4402542911,
+        30.6660740483
+      ],
+      "accuracy": 15,
+      "observer": "scottcarammell",
+      "license": "cc0",
+      "source": "https://www.inaturalist.org/observations/370188671",
+      "place": "Fernandina Beach, FL 32034, USA"
+    },
+    {
+      "id": 196675786,
+      "taxonId": "1647419",
+      "name": "Mexican Long-nosed Armadillo",
+      "scientific": "Dasypus mexicanus",
+      "group": "mammals",
+      "date": "2024-01-14",
+      "coordinates": [
+        -81.4423616667,
+        30.6561633333
+      ],
+      "accuracy": 4,
+      "observer": "normherr",
+      "license": "cc0",
+      "source": "https://www.inaturalist.org/observations/196675786",
+      "place": "Amelia Island, Fernandina Beach, FL, US"
+    },
+    {
+      "id": 84619183,
+      "taxonId": "43102",
+      "name": "Marsh Rabbit",
+      "scientific": "Sylvilagus palustris",
+      "group": "mammals",
+      "date": "2021-06-26",
+      "coordinates": [
+        -81.4368391138,
+        30.6669801962
+      ],
+      "accuracy": 33,
+      "observer": "captainmantis37",
+      "license": "cc-by",
+      "source": "https://www.inaturalist.org/observations/84619183",
+      "place": "Amelia Island, Fernandina Beach, FL, US"
+    },
+    {
+      "id": 388430561,
+      "taxonId": "208733",
+      "name": "Lettered Olive",
+      "scientific": "Oliva sayana",
+      "group": "invertebrates",
+      "date": "2026-08-05",
+      "coordinates": [
+        -81.4339735714,
+        30.6420853099
+      ],
+      "accuracy": 3,
+      "observer": "cnagele",
+      "license": "cc0",
+      "source": "https://www.inaturalist.org/observations/388430561",
+      "place": "FL, US"
+    },
+    {
+      "id": 214500389,
+      "taxonId": "49150",
+      "name": "Gulf Fritillary",
+      "scientific": "Dione vanillae",
+      "group": "invertebrates",
+      "date": "2024-05-08",
+      "coordinates": [
+        -81.4393407477,
+        30.6445548001
+      ],
+      "accuracy": 61,
+      "observer": "mary176",
+      "license": "cc-by",
+      "source": "https://www.inaturalist.org/observations/214500389",
+      "place": "Fernandina Beach, FL 32034, USA"
+    },
+    {
+      "id": 214500383,
+      "taxonId": "68911",
+      "name": "Needham's Skimmer",
+      "scientific": "Libellula needhami",
+      "group": "invertebrates",
+      "date": "2024-05-08",
+      "coordinates": [
+        -81.4401906098,
+        30.6461547423
+      ],
+      "accuracy": 61,
+      "observer": "mary176",
+      "license": "cc-by",
+      "source": "https://www.inaturalist.org/observations/214500383",
+      "place": "Fernandina Beach, FL 32034, USA"
+    },
+    {
+      "id": 214500384,
+      "taxonId": "68229",
+      "name": "Carolina Saddlebags",
+      "scientific": "Tramea carolina",
+      "group": "invertebrates",
+      "date": "2024-05-08",
+      "coordinates": [
+        -81.4400137847,
+        30.6451455509
+      ],
+      "accuracy": 61,
+      "observer": "mary176",
+      "license": "cc-by",
+      "source": "https://www.inaturalist.org/observations/214500384",
+      "place": "Fernandina Beach, FL 32034, USA"
+    },
+    {
+      "id": 214500380,
+      "taxonId": "61495",
+      "name": "Eastern Pondhawk",
+      "scientific": "Erythemis simplicicollis",
+      "group": "invertebrates",
+      "date": "2024-05-08",
+      "coordinates": [
+        -81.4414433667,
+        30.6448965495
+      ],
+      "accuracy": 31,
+      "observer": "mary176",
+      "license": "cc-by",
+      "source": "https://www.inaturalist.org/observations/214500380",
+      "place": "Fernandina Beach, FL 32034, USA"
+    },
+    {
+      "id": 214500381,
+      "taxonId": "61495",
+      "name": "Eastern Pondhawk",
+      "scientific": "Erythemis simplicicollis",
+      "group": "invertebrates",
+      "date": "2024-05-08",
+      "coordinates": [
+        -81.442168402,
+        30.6477696712
+      ],
+      "accuracy": 31,
+      "observer": "mary176",
+      "license": "cc-by",
+      "source": "https://www.inaturalist.org/observations/214500381",
+      "place": "Fernandina Beach, FL 32034, USA"
+    },
+    {
+      "id": 196671337,
+      "taxonId": "48302",
+      "name": "Atlantic Horseshoe Crab",
+      "scientific": "Limulus polyphemus",
+      "group": "invertebrates",
+      "date": "2024-01-14",
+      "coordinates": [
+        -81.4323987988,
+        30.6553320675
+      ],
+      "accuracy": 4,
+      "observer": "normherr",
+      "license": "cc0",
+      "source": "https://www.inaturalist.org/observations/196671337",
+      "place": "North Atlantic Ocean, FL, US"
+    },
+    {
+      "id": 196671108,
+      "taxonId": "196326",
+      "name": "Blood Ark",
+      "scientific": "Lunarca ovalis",
+      "group": "invertebrates",
+      "date": "2024-01-14",
+      "coordinates": [
+        -81.4323366667,
+        30.6554166667
+      ],
+      "accuracy": 4,
+      "observer": "normherr",
+      "license": "cc0",
+      "source": "https://www.inaturalist.org/observations/196671108",
+      "place": "North Atlantic Ocean, FL, US"
+    },
+    {
+      "id": 196671326,
+      "taxonId": "47585",
+      "name": "Eastern Oyster",
+      "scientific": "Crassostrea virginica",
+      "group": "invertebrates",
+      "date": "2024-01-14",
+      "coordinates": [
+        -81.4323283333,
+        30.65542
+      ],
+      "accuracy": 4,
+      "observer": "normherr",
+      "license": "cc0",
+      "source": "https://www.inaturalist.org/observations/196671326",
+      "place": "North Atlantic Ocean, FL, US"
+    },
+    {
+      "id": 84620093,
+      "taxonId": "55263",
+      "name": "Hunter's Little Paper Wasp",
+      "scientific": "Polistes dorsalis",
+      "group": "invertebrates",
+      "date": "2021-06-26",
+      "coordinates": [
+        -81.4368886862,
+        30.6669571789
+      ],
+      "accuracy": 45,
+      "observer": "captainmantis37",
+      "license": "cc-by",
+      "source": "https://www.inaturalist.org/observations/84620093",
+      "place": "Amelia Island, Fernandina Beach, FL, US"
+    }
+  ]
+}

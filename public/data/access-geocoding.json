@@ -1,0 +1,79 @@
+[
+  {
+    "q": "2301 Sadler Road, Fernandina Beach, Florida",
+    "url": "https://nominatim.openstreetmap.org/search?q=2301+Sadler+Road%2C+Fernandina+Beach%2C+Florida&format=jsonv2&limit=5",
+    "retrieved": "2026-10-03T21:12:41.697Z",
+    "data": [
+      {
+        "place_id": 302080828,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 403396466,
+        "lat": "30.6399783",
+        "lon": "-81.4415167",
+        "category": "tourism",
+        "type": "hotel",
+        "place_rank": 30,
+        "importance": 0.000053344777599710347,
+        "addresstype": "tourism",
+        "name": "Residence Inn Amelia Island",
+        "display_name": "Residence Inn Amelia Island, 2301, Sadler Road, Fernandina Beach, Nassau County, Florida, 32034, United States",
+        "boundingbox": [
+          "30.6395866",
+          "30.6403851",
+          "-81.4418012",
+          "-81.4412801"
+        ]
+      }
+    ]
+  },
+  {
+    "q": "Jasmine Street, Fernandina Beach, Florida",
+    "url": "https://nominatim.openstreetmap.org/search?q=Jasmine+Street%2C+Fernandina+Beach%2C+Florida&format=jsonv2&limit=5",
+    "retrieved": "2026-10-03T21:12:43.615Z",
+    "data": [
+      {
+        "place_id": 301363200,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 11129139,
+        "lat": "30.6561469",
+        "lon": "-81.4428389",
+        "category": "highway",
+        "type": "tertiary",
+        "place_rank": 26,
+        "importance": 0.053386678110933054,
+        "addresstype": "road",
+        "name": "Jasmine Street",
+        "display_name": "Jasmine Street, Fernandina Beach, Nassau County, Florida, 32034, United States",
+        "boundingbox": [
+          "30.6554494",
+          "30.6572261",
+          "-81.4523761",
+          "-81.4332937"
+        ]
+      },
+      {
+        "place_id": 301165281,
+        "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+        "osm_type": "way",
+        "osm_id": 85385084,
+        "lat": "30.6582174",
+        "lon": "-81.4611347",
+        "category": "highway",
+        "type": "residential",
+        "place_rank": 26,
+        "importance": 0.053386678110933054,
+        "addresstype": "road",
+        "name": "Jasmine Street",
+        "display_name": "Jasmine Street, Fernandina Beach, Nassau County, Florida, 32034, United States",
+        "boundingbox": [
+          "30.6581670",
+          "30.6582678",
+          "-81.4615500",
+          "-81.4607194"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,91 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "reviewed": "2026-10-03",
+    "purpose": "Interpretive context; not navigation",
+    "crs": "WGS84 longitude, latitude"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "atlantic",
+      "properties": {
+        "name": "Atlantic Recreation Center entrance",
+        "description": "Northern Greenway access behind the recreation center. The nearby salt marsh is the setting for this atlas\u2019s tide illustration.",
+        "source": "https://floridahikes.com/egans-creek-greenway/",
+        "contextSource": "https://fbfl.us/104/Egans-Creek-Greenway",
+        "accuracy": "Published trailhead coordinate; not field-verified",
+        "kind": "access",
+        "schematic": [
+          210,
+          125
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.436848,
+          30.66687
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "station",
+      "properties": {
+        "name": "NOAA Fernandina Beach station",
+        "description": "Station 8720030 is the atlas\u2019s nearby tidal reference. It is not a water-level gauge within the Greenway.",
+        "source": "https://www.tidesandcurrents.noaa.gov/stationhome.html?id=8720030",
+        "accuracy": "Station coordinates returned by NOAA water-level API, October 3, 2026",
+        "kind": "reference",
+        "schematic": [
+          70,
+          60
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.4658,
+          30.6714
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sadler",
+      "properties": {
+        "name": "Sadler Road \u00b7 Residence Inn reference",
+        "source": "https://www.openstreetmap.org/way/403396466",
+        "contextSource": "https://floridabirdingtrail.com/site/egans-creek-greenway/",
+        "accuracy": "Geocoded hotel location; Greenway access is behind it",
+        "kind": "access-reference"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.4415167,
+          30.6399783
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "jasmine",
+      "properties": {
+        "name": "Jasmine Street \u00b7 road reference",
+        "source": "https://www.openstreetmap.org/way/11129139",
+        "contextSource": "https://floridabirdingtrail.com/site/egans-creek-greenway/",
+        "accuracy": "Geocoded street reference near the creek, not a surveyed gate or trailhead",
+        "kind": "access-reference"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.4428389,
+          30.6561469
+        ]
+      }
+    }
+  ]
+}
