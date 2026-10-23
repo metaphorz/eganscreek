@@ -81,6 +81,27 @@
       "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
       "source": "https://commons.wikimedia.org/wiki/File:Egretta_thula1.jpg",
       "original": "https://upload.wikimedia.org/wikipedia/commons/8/81/Egretta_thula1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
+    {
+      "src": "/assets/field/egans-2026-10-23-1963.jpg",
+      "title": "Hunting in marsh grass, Egans Creek",
+      "author": "Paul Fishwick",
+      "field": true,
+      "date": "2026-10-23"
+    },
+    {
+      "src": "/assets/field/egans-2026-10-23-1974.jpg",
+      "title": "Yellow feet on the weir, Egans Creek",
+      "author": "Paul Fishwick",
+      "field": true,
+      "date": "2026-10-23"
+    },
+    {
+      "src": "/assets/field/egans-2026-10-23-1977.jpg",
+      "title": "Sharing the weir with a Great Blue Heron, Egans Creek",
+      "author": "Paul Fishwick",
+      "field": true,
+      "date": "2026-10-23"
     }
   ],
   "great-egret": [
@@ -293,6 +314,27 @@
       "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
       "source": "https://commons.wikimedia.org/wiki/File:Ardea_herodias_2_-_Hilton_Head.jpg",
       "original": "https://upload.wikimedia.org/wikipedia/commons/2/26/Ardea_herodias_2_-_Hilton_Head.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    },
+    {
+      "src": "/assets/field/egans-2026-10-23-1975.jpg",
+      "title": "Head and dark eye stripe, Egans Creek",
+      "author": "Paul Fishwick",
+      "field": true,
+      "date": "2026-10-23"
+    },
+    {
+      "src": "/assets/field/egans-2026-10-23-1976.jpg",
+      "title": "Standing on the weir with its reflection, Egans Creek",
+      "author": "Paul Fishwick",
+      "field": true,
+      "date": "2026-10-23"
+    },
+    {
+      "src": "/assets/field/egans-2026-10-23-1977.jpg",
+      "title": "With a Snowy Egret for scale, Egans Creek",
+      "author": "Paul Fishwick",
+      "field": true,
+      "date": "2026-10-23"
     }
   ],
   "green": [
@@ -461,6 +503,49 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "source": "https://commons.wikimedia.org/wiki/File:Black-crowned_night_heron_(Nycticorax_nycticorax_hoactli).jpg",
       "original": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Black-crowned_night_heron_%28Nycticorax_nycticorax_hoactli%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original"
+    }
+  ],
+  "anhinga": [
+    {
+      "author": "Daniel Schwen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Anhinga.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/0/03/Anhinga.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "src": "/assets/birds/anhinga-1.jpg",
+      "title": "Male Anhinga in Loxahatchee National Wildlife Refuge",
+      "description": "Male Anhinga in Loxahatchee National Wildlife Refuge"
+    },
+    {
+      "src": "/assets/field/egans-2026-10-23-1961.jpg",
+      "title": "Drying its spread wings on a snag, Egans Creek",
+      "author": "Paul Fishwick",
+      "field": true,
+      "date": "2026-10-23"
+    },
+    {
+      "src": "/assets/field/egans-2026-10-23-1959.jpg",
+      "title": "Wings and tail spread to dry, Egans Creek",
+      "author": "Paul Fishwick",
+      "field": true,
+      "date": "2026-10-23"
+    },
+    {
+      "src": "/assets/field/egans-2026-10-23-1958.jpg",
+      "title": "Perched in marsh grasses, Egans Creek",
+      "author": "Paul Fishwick",
+      "field": true,
+      "date": "2026-10-23"
+    },
+    {
+      "author": "Charles J. Sharp",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source": "https://commons.wikimedia.org/wiki/File:Anhinga_(Anhinga_anhinga)_female_head.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Anhinga_%28Anhinga_anhinga%29_female_head.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "src": "/assets/birds/anhinga-2.jpg",
+      "title": "Anhinga (Anhinga anhinga) female, Pantanal Brazil",
+      "description": "Anhinga (Anhinga anhinga) female, Pantanal Brazil"
     }
   ]
 }

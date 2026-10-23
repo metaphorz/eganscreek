@@ -37,6 +37,13 @@
           "source": "https://commons.wikimedia.org/wiki/File:Alligator_mississippiensis_(American_alligator)_6.jpg",
           "original": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Alligator_mississippiensis_%28American_alligator%29_6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
           "caption": "Alligator mississippiensis at Bear Island Campground in the Big Cypress National Preserve"
+        },
+        {
+          "src": "/assets/field/egans-2026-10-23-1978.jpg",
+          "author": "Paul Fishwick",
+          "field": true,
+          "date": "2026-10-23",
+          "caption": "Eyes and snout above the water, Egans Creek"
         }
       ]
     },
@@ -150,7 +157,8 @@
           "original": "https://upload.wikimedia.org/wikipedia/commons/0/04/Nerodia_fasciata_CDC.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
           "caption": "Banded Watersnake: close view of its head and patterned scales."
         }
-      ]
+      ],
+      "sign": "snakes"
     },
     {
       "id": "39824",
@@ -429,8 +437,30 @@
           "source": "https://commons.wikimedia.org/wiki/File:Agraulis_vanillae_(gulf_fritillary)_caterpillar.jpg",
           "original": "https://upload.wikimedia.org/wikipedia/commons/a/af/Agraulis_vanillae_%28gulf_fritillary%29_caterpillar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
           "caption": "Gulf fritillary (Agraulis vanillae) caterpillar on a passiflora vine in Honolulu, Hawaiʻi."
+        },
+        {
+          "src": "/assets/field/egans-2026-10-23-1966.jpg",
+          "author": "Paul Fishwick",
+          "field": true,
+          "date": "2026-10-23",
+          "caption": "Nectaring on a small yellow flower, Egans Creek"
+        },
+        {
+          "src": "/assets/field/egans-2026-10-23-1967.jpg",
+          "author": "Paul Fishwick",
+          "field": true,
+          "date": "2026-10-23",
+          "caption": "Wings open, showing the black-spotted orange upperside"
+        },
+        {
+          "src": "/assets/field/egans-2026-10-23-1971.jpg",
+          "author": "Paul Fishwick",
+          "field": true,
+          "date": "2026-10-23",
+          "caption": "In flight beside rounded white flower heads, Egans Creek"
         }
-      ]
+      ],
+      "sign": "butterflies"
     },
     {
       "id": "49766",
@@ -458,7 +488,8 @@
           "original": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Heliconius_charithonia%2C_Mariposario_de_Icod_de_los_Vinos%2C_Tenerife%2C_Espa%C3%B1a%2C_2012-12-13%2C_DD_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
           "caption": "Zebra Longwing (Heliconius charithonia), Butterfly zoo of Icod de los Vinos, Tenerife, Spain"
         }
-      ]
+      ],
+      "sign": "butterflies"
     },
     {
       "id": "61495",
@@ -563,13 +594,972 @@
         },
         {
           "src": "/assets/animals/555974-1.jpg",
-          "author": "no rights reserved",
+          "author": "Unspecified author; see source",
           "license": "CC0",
           "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
           "source": "https://www.inaturalist.org/photos/194912519",
           "observation": "https://www.inaturalist.org/observations/115489700",
           "original": "https://inaturalist-open-data.s3.amazonaws.com/photos/194912519/medium.jpeg",
           "caption": "Red-jointed Fiddler Crab · species reference photo"
+        }
+      ]
+    },
+    {
+      "id": "51536",
+      "name": "Great Southern White",
+      "scientific": "Ascia monuste",
+      "group": "invertebrates",
+      "count": 0,
+      "source": "https://www.inaturalist.org/taxa/51536",
+      "sign": "butterflies",
+      "photos": [
+        {
+          "src": "/assets/animals/51536-commons-1.jpg",
+          "author": "Anne Toal from US",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Great_southern_white_(Ascia_monuste)_female_dorsal.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Great_southern_white_%28Ascia_monuste%29_female_dorsal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Ascia monuste"
+        },
+        {
+          "src": "/assets/animals/51536-commons-2.jpg",
+          "author": "Antonio Machado from Brasília, Brasil",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Ascia_monuste.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Ascia_monuste.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Ascia monuste on Brassica olerácea"
+        }
+      ]
+    },
+    {
+      "id": "68232",
+      "name": "Palamedes Swallowtail",
+      "scientific": "Papilio palamedes",
+      "group": "invertebrates",
+      "count": 1,
+      "source": "https://www.inaturalist.org/taxa/68232",
+      "sign": "butterflies",
+      "photos": [
+        {
+          "author": "leppyone (Vincent P. Lucas)",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Papilio_palamedes.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/9/96/Papilio_palamedes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Palamedes Swallowtail (Papilio palamedes). Florida Panther N.W.R., Collier Co., Florida.",
+          "src": "/assets/animals/68232-commons-1.jpg"
+        },
+        {
+          "author": "xpda",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Papilio_palamedes_P1140749a.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/5/51/Papilio_palamedes_P1140749a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Papilio palamedes, palamedes swallowtail, ID Confidence: 97",
+          "src": "/assets/animals/68232-commons-2.jpg"
+        }
+      ]
+    },
+    {
+      "id": "48662",
+      "name": "Monarch",
+      "scientific": "Danaus plexippus",
+      "group": "invertebrates",
+      "count": 15,
+      "source": "https://www.inaturalist.org/taxa/48662",
+      "sign": "butterflies",
+      "photos": [
+        {
+          "src": "/assets/animals/48662-commons-1.jpg",
+          "author": "Mike's Birds from Riverside, CA, US",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Danaus_plexippus_on_flowers_(48483505276).jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/7/71/Danaus_plexippus_on_flowers_%2848483505276%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Butterfly"
+        },
+        {
+          "src": "/assets/animals/48662-commons-2.jpg",
+          "author": "Captain-tucker",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Danaus_plexippus_emerging_from_chrysalis_04.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/9/97/Danaus_plexippus_emerging_from_chrysalis_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "A Danaus plexippus en commonly know as a Monarch Butterfly emerging from its chrysalis."
+        }
+      ]
+    },
+    {
+      "id": "48505",
+      "name": "Common Buckeye",
+      "scientific": "Junonia coenia",
+      "group": "invertebrates",
+      "count": 4,
+      "source": "https://www.inaturalist.org/taxa/48505",
+      "sign": "butterflies",
+      "photos": [
+        {
+          "src": "/assets/animals/48505-commons-1.jpg",
+          "author": "Rhododendrites",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Common_buckeye_(35663).jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Common_buckeye_%2835663%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Common buckeye in Eagle Creek Park"
+        },
+        {
+          "src": "/assets/animals/48505-commons-2.jpg",
+          "author": "WanderingMogwai",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Common_Buckeye_(Junonia_coenia).jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/6/69/Common_Buckeye_%28Junonia_coenia%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Common Buckeye (Junonia coenia) wings closed on Ragweed flower"
+        },
+        {
+          "src": "/assets/animals/48505-commons-3.jpg",
+          "author": "WanderingMogwai",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Common_Buckeye_(Junonia_coenia)_anterior_view.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/5/54/Common_Buckeye_%28Junonia_coenia%29_anterior_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Common Buckeye (Junonia coenia) anterior view"
+        }
+      ]
+    },
+    {
+      "id": "67435",
+      "name": "Long-tailed Skipper",
+      "scientific": "Urbanus proteus",
+      "group": "invertebrates",
+      "count": 9,
+      "source": "https://www.inaturalist.org/taxa/67435",
+      "sign": "butterflies",
+      "photos": [
+        {
+          "src": "/assets/animals/67435-commons-1.jpg",
+          "author": "“Jon Zander (Digon3)\"",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "source": "https://commons.wikimedia.org/wiki/File:Long-tailed_Skipper_Butterfly_(Urbanus_proteus)_1.JPG",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Long-tailed_Skipper_Butterfly_%28Urbanus_proteus%29_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Photo of a Long-tailed Skipper Urbanus proteus. Found in northern Florida, USA."
+        },
+        {
+          "src": "/assets/animals/67435-commons-2.jpg",
+          "author": "Charles J. Sharp",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Long-tailed_skipper_(Urbanus_proteus_domingo)_underside.JPG",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/4/40/Long-tailed_skipper_%28Urbanus_proteus_domingo%29_underside.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Long-tailed skipper (Urbanus proteus domingo), Grand Cayman"
+        },
+        {
+          "src": "/assets/animals/67435-commons-3.jpg",
+          "author": "Charles J. Sharp",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Common_long-tailed_skipper_(Urbanus_proteus_domingo)_female.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Common_long-tailed_skipper_%28Urbanus_proteus_domingo%29_female.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Common long-tailed skipper butterfly (Urbanus proteus domingo) female in Jamaica"
+        }
+      ]
+    },
+    {
+      "id": "1650171",
+      "name": "Whirlabout Skipper",
+      "scientific": "Polites vibex",
+      "group": "invertebrates",
+      "count": 0,
+      "source": "https://www.inaturalist.org/taxa/1650171",
+      "sign": "butterflies",
+      "photos": [
+        {
+          "src": "/assets/animals/1650171-commons-1.jpg",
+          "author": "Charles J. Sharp",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Whirlabout_(Polites_vibex_praeceps)_male.JPG",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/3/39/Whirlabout_%28Polites_vibex_praeceps%29_male.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Whirlabout butterfly (Polites vibex praeceps) male, Little Tobago"
+        },
+        {
+          "src": "/assets/animals/1650171-commons-2.jpg",
+          "author": "PopularOutcast",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Polites-vibex-male.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/7/72/Polites-vibex-male.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Polites vibex, Whirlabout skipper, male taken 2016-08-02 in Alachua County, Florida, USA."
+        }
+      ]
+    },
+    {
+      "id": "58586",
+      "name": "Viceroy",
+      "scientific": "Limenitis archippus",
+      "group": "invertebrates",
+      "count": 2,
+      "source": "https://www.inaturalist.org/taxa/58586",
+      "sign": "butterflies",
+      "photos": [
+        {
+          "src": "/assets/animals/58586-commons-1.jpg",
+          "author": "Benny Mazur from Toledo, OH",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Limenitis_archippus_Cramer.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Limenitis_archippus_Cramer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Limenitis archippusThere were maybe a dozen of these fluttering around the grasses."
+        },
+        {
+          "src": "/assets/animals/58586-commons-2.jpg",
+          "author": "D. Gordon E. Robertson",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Viceroy_2.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Viceroy_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Viceroy (Limenitis archippus), Mer Bleue Conservation Area, Ottawa, Ontario"
+        }
+      ]
+    },
+    {
+      "id": "58530",
+      "name": "Little Yellow",
+      "scientific": "Pyrisitia lisa",
+      "group": "invertebrates",
+      "count": 0,
+      "source": "https://www.inaturalist.org/taxa/58530",
+      "sign": "butterflies",
+      "photos": [
+        {
+          "src": "/assets/animals/58530-commons-1.jpg",
+          "author": "Charles J. Sharp",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Little_yellow_(Pyrisitia_lisa_centralis)_male_underside_Belize.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/4/47/Little_yellow_%28Pyrisitia_lisa_centralis%29_male_underside_Belize.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Little yellow (Pyrisitia lisa centralis) male, Orange Walk, Belize"
+        },
+        {
+          "src": "/assets/animals/58530-commons-2.jpg",
+          "author": "Judy Gallagher",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Little_Yellow_-_Pyrisitia_lisa,_Caves_Branch_Jungle_Lodge,_Belmopan,_Belize.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Little_Yellow_-_Pyrisitia_lisa%2C_Caves_Branch_Jungle_Lodge%2C_Belmopan%2C_Belize.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Little Yellow - Pyrisitia lisa, female, Caves Branch Jungle Lodge, Belmopan, Belize"
+        }
+      ]
+    },
+    {
+      "id": "60551",
+      "name": "Eastern Tiger Swallowtail",
+      "scientific": "Papilio glaucus",
+      "group": "invertebrates",
+      "count": 1,
+      "source": "https://www.inaturalist.org/taxa/60551",
+      "sign": "butterflies",
+      "photos": [
+        {
+          "src": "/assets/animals/60551-commons-1.jpg",
+          "author": "HaarFager at English Wikipedia",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Pristine_Eastern_Tiger_Swallowtail.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/9/90/Pristine_Eastern_Tiger_Swallowtail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "A beautiful male Eastern Tiger Swallowtail. Taken by Kenneth Dwain Harrelson on August 7th, 2007."
+        },
+        {
+          "src": "/assets/animals/60551-commons-2.jpg",
+          "author": "Peterwchen",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Papilio_glaucus-female_dark_form.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/8/84/Papilio_glaucus-female_dark_form.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Female Papilio glaucus dark form. Naperville, USA"
+        }
+      ]
+    },
+    {
+      "id": "49133",
+      "name": "Red Admiral",
+      "scientific": "Vanessa atalanta",
+      "group": "invertebrates",
+      "count": 4,
+      "source": "https://www.inaturalist.org/taxa/49133",
+      "sign": "butterflies",
+      "photos": [
+        {
+          "src": "/assets/animals/49133-commons-1.jpg",
+          "author": "Christian Fischer",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:VanessaAtalanta_Closeup.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/2/24/VanessaAtalanta_Closeup.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "The butterfly Red Admiral, Vanessa atalanta, dorsal view."
+        },
+        {
+          "src": "/assets/animals/49133-commons-2.jpg",
+          "author": "Charles J. Sharp",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Le_Vulcain_(Vanessa_atalanta)_red_admiral.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Le_Vulcain_%28Vanessa_atalanta%29_red_admiral.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Le Vulcain (Vanessa atalanta) red admiral, Saint-Amand-les-Eaux, France"
+        }
+      ]
+    },
+    {
+      "id": "53491",
+      "name": "Eastern Diamondback Rattlesnake",
+      "scientific": "Crotalus adamanteus",
+      "group": "reptiles",
+      "count": 0,
+      "source": "https://www.inaturalist.org/taxa/53491",
+      "sign": "snakes",
+      "venomous": true,
+      "photos": [
+        {
+          "src": "/assets/animals/53491-commons-1.jpg",
+          "author": "Caudatejake",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Adult_Crotalus_adamanteus.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Adult_Crotalus_adamanteus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Eastern Diamondback Rattlesnake (Crotalus adamanteus) from North-Central Florida."
+        },
+        {
+          "src": "/assets/animals/53491-commons-2.jpg",
+          "author": "Tad Arensmeier from St. Louis, MO, USA",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Crotalus_adamanteus_(1).jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Crotalus_adamanteus_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Eastern Diamondback Rattlesnake (Crotalus adamanteus)"
+        },
+        {
+          "src": "/assets/animals/53491-commons-3.jpg",
+          "author": "FinneJager",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:LouisvilleZooCrotalus.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/d/d8/LouisvilleZooCrotalus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Close-up of a Crotalus Adamanteus at Louisville Zoo, 2009"
+        }
+      ]
+    },
+    {
+      "id": "30983",
+      "name": "Pygmy Rattlesnake",
+      "scientific": "Sistrurus miliarius",
+      "group": "reptiles",
+      "count": 0,
+      "source": "https://www.inaturalist.org/taxa/30983",
+      "sign": "snakes",
+      "venomous": true,
+      "photos": [
+        {
+          "src": "/assets/animals/30983-commons-1.png",
+          "author": "Unspecified author; see source",
+          "license": "Public domain",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+          "source": "https://commons.wikimedia.org/wiki/File:Sistrurus_miliaris_miliaris_CDC.png",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Sistrurus_miliaris_miliaris_CDC.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Pygmy Rattlesnake"
+        },
+        {
+          "src": "/assets/animals/30983-commons-2.jpg",
+          "author": "Peter Paplanus from St. Louis, Missouri",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Western_Pygmy_Rattlesnake_(Sistrurus_miliarius_streckeri)_(20799317490).jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Western_Pygmy_Rattlesnake_%28Sistrurus_miliarius_streckeri%29_%2820799317490%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "High of 86 degrees Fahrenheit, Wayne County, Missouri"
+        },
+        {
+          "src": "/assets/animals/30983-commons-3.jpg",
+          "author": "User:Haplochromis",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "source": "https://commons.wikimedia.org/wiki/File:Sistrurus_miliaris_barbouri_2.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Sistrurus_miliaris_barbouri_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Sistrurus miliaris barbouri"
+        }
+      ]
+    },
+    {
+      "id": "904173",
+      "name": "Florida Cottonmouth",
+      "scientific": "Agkistrodon conanti",
+      "group": "reptiles",
+      "count": 4,
+      "source": "https://www.inaturalist.org/taxa/904173",
+      "sign": "snakes",
+      "venomous": true,
+      "photos": [
+        {
+          "src": "/assets/animals/904173-commons-1.jpg",
+          "author": "Geoff Gallice from Gainesville",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Agkistrodon_piscivorus_7.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/3/36/Agkistrodon_piscivorus_7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Viperidae: Agkistrodon piscivorus Paynes Prairie, near Gainesville, Florida"
+        },
+        {
+          "src": "/assets/animals/904173-commons-2.jpg",
+          "author": "Geoff Gallice from Gainesville",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Agkistrodon_piscivorus_6.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/0/06/Agkistrodon_piscivorus_6.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Viperidae: Agkistrodon piscivorus North-central Florida"
+        },
+        {
+          "src": "/assets/animals/904173-commons-3.jpg",
+          "author": "Athene cunicularia (talk) 19:22, 11 April 2008 (UTC)",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Agkistrodon-piscivorus.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Agkistrodon-piscivorus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Agkistrodon piscivorus"
+        }
+      ]
+    },
+    {
+      "id": "73867",
+      "name": "Eastern Coral Snake",
+      "scientific": "Micrurus fulvius",
+      "group": "reptiles",
+      "count": 0,
+      "source": "https://www.inaturalist.org/taxa/73867",
+      "sign": "snakes",
+      "venomous": true,
+      "photos": [
+        {
+          "src": "/assets/animals/73867-commons-1.jpg",
+          "author": "Unspecified author; see source",
+          "license": "CC0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "source": "https://commons.wikimedia.org/wiki/File:Micrurus_fulvius,_Polk_County,_FL,_USA_imported_from_iNaturalist_photo_286627672.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/1/13/Micrurus_fulvius%2C_Polk_County%2C_FL%2C_USA_imported_from_iNaturalist_photo_286627672.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Photo of Eastern Coralsnake (undefined) uploaded from iNaturalist."
+        },
+        {
+          "src": "/assets/animals/73867-commons-2.jpg",
+          "author": "(c) Court Harding, some rights reserved (CC BY)",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Micrurus_fulvius,_Putnam_County,_FL,_USA_imported_from_iNaturalist_photo_109226414.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Micrurus_fulvius%2C_Putnam_County%2C_FL%2C_USA_imported_from_iNaturalist_photo_109226414.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Photo of Eastern Coralsnake (undefined) uploaded from iNaturalist."
+        },
+        {
+          "src": "/assets/animals/73867-commons-3.jpg",
+          "author": "Norman.benton",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Coral_009.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Coral_009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Micrurus fulvius, Eastern Coral Snake, Jacksonville, FL"
+        }
+      ]
+    },
+    {
+      "id": "27137",
+      "name": "Southern Black Racer",
+      "scientific": "Coluber constrictor",
+      "group": "reptiles",
+      "count": 8,
+      "source": "https://www.inaturalist.org/taxa/27137",
+      "sign": "snakes",
+      "photos": [
+        {
+          "src": "/assets/animals/27137-commons-1.jpg",
+          "author": "(c) Deana Tempest Thomas, some rights reserved (CC BY)",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Coluber_constrictor_ssp._constrictor,_United_States_imported_from_iNaturalist_photo_370142239.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Coluber_constrictor_ssp._constrictor%2C_United_States_imported_from_iNaturalist_photo_370142239.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Photo of Northern Black Racer (undefined) uploaded from iNaturalist."
+        },
+        {
+          "src": "/assets/animals/27137-commons-2.jpg",
+          "author": "Patrick Coin (Patrick Coin)",
+          "license": "CC BY-SA 2.5",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+          "source": "https://commons.wikimedia.org/wiki/File:Coluber_constrictorPCCP20030612-1115B.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Coluber_constrictorPCCP20030612-1115B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Northern Black Racer, Coluber constrictor constrictor, detail of head as snake was \"periscoping\" near a sidewalk. Location: Durham County, North Carolina, United States."
+        },
+        {
+          "src": "/assets/animals/27137-commons-3.jpg",
+          "author": "Patrick Coin (Patrick Coin)",
+          "license": "CC BY-SA 2.5",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+          "source": "https://commons.wikimedia.org/wiki/File:Coluber_constrictorPCCA20040327-1229B.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Coluber_constrictorPCCA20040327-1229B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Northern Black Racer, Coluber constrictor constrictor, in typical old-field habitat. Location: Harnett County, North Carolina, United States."
+        }
+      ]
+    },
+    {
+      "id": "29793",
+      "name": "Scarlet Kingsnake",
+      "scientific": "Lampropeltis elapsoides",
+      "group": "reptiles",
+      "count": 0,
+      "source": "https://www.inaturalist.org/taxa/29793",
+      "sign": "snakes",
+      "photos": [
+        {
+          "src": "/assets/animals/29793-commons-1.jpg",
+          "author": "MH Herpetology",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Scarlet_kingsnake_(Lampropeltis_elapsoides).jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/4/40/Scarlet_kingsnake_%28Lampropeltis_elapsoides%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "This snake was found on a tree."
+        },
+        {
+          "src": "/assets/animals/29793-commons-2.jpg",
+          "author": "en:User:Dawson",
+          "license": "CC BY-SA 2.5",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+          "source": "https://commons.wikimedia.org/wiki/File:Lampropeltis_elapsoides.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Lampropeltis_elapsoides.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Lampropeltis elapsoides"
+        }
+      ]
+    },
+    {
+      "id": "1661279",
+      "name": "Yellow Rat Snake",
+      "scientific": "Pantherophis alleghaniensis",
+      "group": "reptiles",
+      "count": 0,
+      "source": "https://www.inaturalist.org/taxa/1661279",
+      "sign": "snakes",
+      "photos": [
+        {
+          "author": "gailhampshire from Cradley, Malvern, U.K",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Yellow_Rat_Snake_(Elaphe_obsoleta_quadrivittata)_(24209659368).jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Yellow_Rat_Snake_%28Elaphe_obsoleta_quadrivittata%29_%2824209659368%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Nature Reserve a mile south of Darien on US17. Georgia",
+          "src": "/assets/animals/1661279-commons-1.jpg"
+        },
+        {
+          "author": "Cliff from Arlington, Virginia, USA",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Yellow_Rat_Snake_(Elaphe_obsolete)_(3151992241).jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/4/48/Yellow_Rat_Snake_%28Elaphe_obsolete%29_%283151992241%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Yellow Rat Snake (Elaphe obsolete)",
+          "src": "/assets/animals/1661279-commons-2.jpg"
+        }
+      ]
+    },
+    {
+      "id": "73887",
+      "name": "Corn Snake",
+      "scientific": "Pantherophis guttatus",
+      "group": "reptiles",
+      "count": 8,
+      "source": "https://www.inaturalist.org/taxa/73887",
+      "sign": "snakes",
+      "photos": [
+        {
+          "src": "/assets/animals/73887-commons-1.jpg",
+          "author": "Glenn Bartolotti",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Corn_Snake_Adult.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/4/40/Corn_Snake_Adult.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Corn Snake Adult"
+        },
+        {
+          "src": "/assets/animals/73887-commons-2.jpg",
+          "author": "Antsterr at English Wikipedia",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "source": "https://commons.wikimedia.org/wiki/File:Anerycorn.JPG",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Anerycorn.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Anerythristic Corn snake Age: 1 year Size: 2'6\" Name: Mordecai"
+        }
+      ]
+    },
+    {
+      "id": "28362",
+      "name": "Eastern Garter Snake",
+      "scientific": "Thamnophis sirtalis",
+      "group": "reptiles",
+      "count": 1,
+      "source": "https://www.inaturalist.org/taxa/28362",
+      "sign": "snakes",
+      "photos": [
+        {
+          "src": "/assets/animals/28362-commons-1.jpg",
+          "author": "Wilson44691",
+          "license": "Public domain",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+          "source": "https://commons.wikimedia.org/wiki/File:Thamnophis_sirtalis_sirtalis_Wooster.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Thamnophis_sirtalis_sirtalis_Wooster.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Thamnophis sirtalis sirtalis (Eastern Garter Snake) in Spangler Park, Wooster, Ohio."
+        },
+        {
+          "src": "/assets/animals/28362-commons-2.jpg",
+          "author": "D. Gordon E. Robertson",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Eastern_Garter_Snake.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Eastern_Garter_Snake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Eastern Garter Snake (Thamnophis sirtalis sirtalis), Ottawa, Ontario"
+        }
+      ]
+    },
+    {
+      "id": "558951",
+      "name": "Ribbon Snake",
+      "scientific": "Thamnophis saurita",
+      "group": "reptiles",
+      "count": 1,
+      "source": "https://www.inaturalist.org/taxa/558951",
+      "sign": "snakes",
+      "photos": [
+        {
+          "src": "/assets/animals/558951-commons-1.jpg",
+          "author": "MH Herpetology",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Eastern_ribbon_snake.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Eastern_ribbon_snake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "This snake was found along the edge of a pond."
+        },
+        {
+          "src": "/assets/animals/558951-commons-2.jpg",
+          "author": "(c) Matthew, some rights reserved (CC BY)",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Common_Ribbon_Snake,_North_Carolina,_US_imported_from_iNaturalist_photo_415276091.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Common_Ribbon_Snake%2C_North_Carolina%2C_US_imported_from_iNaturalist_photo_415276091.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Photo of Common Ribbon Snake uploaded from iNaturalist."
+        }
+      ]
+    },
+    {
+      "id": "26575",
+      "name": "Florida Ringneck Snake",
+      "scientific": "Diadophis punctatus",
+      "group": "reptiles",
+      "count": 0,
+      "source": "https://www.inaturalist.org/taxa/26575",
+      "sign": "snakes",
+      "photos": [
+        {
+          "src": "/assets/animals/26575-commons-1.jpg",
+          "author": "Benjamin Genter",
+          "license": "Public domain",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+          "source": "https://commons.wikimedia.org/wiki/File:Ring-necked_Snake_(Diadophis_punctatus).jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Ring-necked_Snake_%28Diadophis_punctatus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Georgia Coastal Plain - Winter 2025"
+        },
+        {
+          "src": "/assets/animals/26575-commons-2.jpg",
+          "author": "TheAlphaWolf",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Diadophis_punctatus_punctatus.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/5/52/Diadophis_punctatus_punctatus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Southern ringneck snake (Diadophis punctatus punctatus) closeup. Even though it has a ring which is (almost?) complete, the ID was verified by the location (Southern NC, USA), and by the mid-ventral row of black spots."
+        },
+        {
+          "src": "/assets/animals/26575-commons-3.jpg",
+          "author": "Greg Schechter",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Diadophis_punctatus_5.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Diadophis_punctatus_5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Ring-necked Snake (Diadophis punctatus)"
+        }
+      ]
+    },
+    {
+      "id": "29924",
+      "name": "Southern Hog-nosed Snake",
+      "scientific": "Heterodon simus",
+      "group": "reptiles",
+      "count": 0,
+      "source": "https://www.inaturalist.org/taxa/29924",
+      "sign": "snakes",
+      "photos": [
+        {
+          "src": "/assets/animals/29924-commons-1.jpg",
+          "author": "Caudatejake",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Adult_Heterodon_simus.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Adult_Heterodon_simus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Southern Hognose Snake (Heterodon simus)"
+        },
+        {
+          "author": "Benjamin Genter",
+          "license": "Public domain",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+          "source": "https://commons.wikimedia.org/wiki/File:Southern_Hog-nosed_Snake_(Heterodon_simus).jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Southern_Hog-nosed_Snake_%28Heterodon_simus%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Suwannee County, Florida - Fall 2023",
+          "src": "/assets/animals/29924-commons-2.jpg"
+        },
+        {
+          "author": "Spineback1",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Female_red_southern_hognose_snake.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Female_red_southern_hognose_snake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Female red southern hognose snake",
+          "src": "/assets/animals/29924-commons-3.jpg"
+        }
+      ]
+    },
+    {
+      "id": "29200",
+      "name": "Rough Green Snake",
+      "scientific": "Opheodrys aestivus",
+      "group": "reptiles",
+      "count": 1,
+      "source": "https://www.inaturalist.org/taxa/29200",
+      "sign": "snakes",
+      "photos": [
+        {
+          "src": "/assets/animals/29200-commons-1.jpg",
+          "author": "MH Herpetology",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Rough_green_snake_(Opheodrys_aestivus)_Madden_Haag.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Rough_green_snake_%28Opheodrys_aestivus%29_Madden_Haag.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Rough green snake (Opheodrys aestivus)"
+        },
+        {
+          "src": "/assets/animals/29200-commons-2.jpg",
+          "author": "Patrick Coin (Patrick Coin)",
+          "license": "CC BY-SA 2.5",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+          "source": "https://commons.wikimedia.org/wiki/File:Opheodrys_aestivusPCCA20050621-8702B.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Opheodrys_aestivusPCCA20050621-8702B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Rough Green Snake, Opheodrys aestivus. Notes: draped over vegetation (Rubus species) in typical posture. Location: Orange County, North Carolina, United States."
+        },
+        {
+          "src": "/assets/animals/29200-commons-3.jpg",
+          "author": "Jrw1203",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Rough_Green_Snake.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Rough_Green_Snake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "A rough green snake seen at Pocahontas State Park in Virginia."
+        }
+      ]
+    },
+    {
+      "id": "547193",
+      "name": "Eastern Coachwhip",
+      "scientific": "Masticophis flagellum",
+      "group": "reptiles",
+      "count": 1,
+      "source": "https://www.inaturalist.org/taxa/547193",
+      "sign": "snakes",
+      "photos": [
+        {
+          "src": "/assets/animals/547193-commons-1.jpg",
+          "author": "MH Herpetology",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Eastern_coachwhip_(Masticophis_flagellum_flagellum)_Madden_Haag.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/9/96/Eastern_coachwhip_%28Masticophis_flagellum_flagellum%29_Madden_Haag.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Eastern coachwhip (Masticophis flagellum flagellum)"
+        },
+        {
+          "src": "/assets/animals/547193-commons-2.jpg",
+          "author": "Peter Paplanus",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Eastern_Coachwhip_(Coluber_flagellum_flagellum).jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/6/64/Eastern_Coachwhip_%28Coluber_flagellum_flagellum%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Eastern Coachwhip (Coluber flagellum flagellum) April, 2014 St. Genevieve, Missouri"
+        },
+        {
+          "src": "/assets/animals/547193-commons-3.jpg",
+          "author": "Peter Paplanus from St. Louis, Missouri",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Eastern_Coachwhip_(Coluber_flagellum_flagellum)_(17504592061).jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Eastern_Coachwhip_%28Coluber_flagellum_flagellum%29_%2817504592061%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "April 11th, 2015 High of 74 degrees Fahrenheit Taney County, Missouri"
+        }
+      ]
+    },
+    {
+      "id": "47902",
+      "name": "Prickly Pear",
+      "scientific": "Opuntia sp.",
+      "group": "plants",
+      "count": 1,
+      "source": "https://www.inaturalist.org/taxa/47902",
+      "photos": [
+        {
+          "src": "/assets/field/egans-2026-10-23-1956.jpg",
+          "author": "Paul Fishwick",
+          "field": true,
+          "date": "2026-10-23",
+          "caption": "Growing on a creek bank just above the waterline, Egans Creek"
+        },
+        {
+          "author": "Ianaré Sévi",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Opuntia_humifusa_flower.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Opuntia_humifusa_flower.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Flower of Opuntia humifusa",
+          "src": "/assets/animals/47902-commons-1.jpg"
+        },
+        {
+          "author": "Ted Bodner, Southern Weed Science Society, United States",
+          "license": "CC BY 3.0 us",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0/us/deed.en",
+          "source": "https://commons.wikimedia.org/wiki/File:Opuntia_humifusa1UGA1120625.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Opuntia_humifusa1UGA1120625.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Opuntia humifusa",
+          "src": "/assets/animals/47902-commons-2.jpg"
+        },
+        {
+          "author": "Christian Ferrer",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Opuntia_stricta,_S%C3%A8te,_H%C3%A9rault_01.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/0/04/Opuntia_stricta%2C_S%C3%A8te%2C_H%C3%A9rault_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Opuntia stricta (Erect Prickly Pear).",
+          "src": "/assets/animals/47902-commons-3.jpg"
+        },
+        {
+          "author": "H. Zell",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Opuntia_stricta_-_Tenerife_02.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/9/95/Opuntia_stricta_-_Tenerife_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Opuntia stricta (Haw.) Haw. (1812), fruits; Punta de Teno, Tenerife, Canary Islands, Spain.",
+          "src": "/assets/animals/47902-commons-4.jpg"
+        }
+      ]
+    },
+    {
+      "id": "165543",
+      "name": "Pink Muhly",
+      "scientific": "Muhlenbergia capillaris",
+      "group": "plants",
+      "count": 1,
+      "source": "https://www.inaturalist.org/taxa/165543",
+      "photos": [
+        {
+          "src": "/assets/field/egans-2026-10-23-1968.jpg",
+          "author": "Paul Fishwick",
+          "field": true,
+          "date": "2026-10-23",
+          "caption": "Fall bloom in the Greenway, Egans Creek"
+        },
+        {
+          "author": "Photo by David J. Stang",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Muhlenbergia_capillaris_5zz.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/7/74/Muhlenbergia_capillaris_5zz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Location taken: Merrifield Garden Center, Fairfax VA USA. Names: Muhlenbergia capillaris (Lam.) Trin., Cutover Muhly, Florida Muhly Grass, Hair Awn Muhly Grass, Hairawn Muhly, Long-Awn Hairgrass, Muhly Grass, Pink Muhly, Texas Muhly Grass, White Clou",
+          "src": "/assets/animals/165543-commons-1.jpg"
+        },
+        {
+          "author": "Stickpen",
+          "license": "Public domain",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+          "source": "https://commons.wikimedia.org/wiki/File:Muhlenbergia_capillaris_001.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Muhlenbergia_capillaris_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Muhlenbergia capillaris, syn: Muhlenbergia filipes, in the Water Conservation Garden at Cuyamaca College, El Cajon, California, USA. Ornamental bunchgrass, identified by sign.",
+          "src": "/assets/animals/165543-commons-2.jpg"
+        }
+      ]
+    },
+    {
+      "id": "1619460",
+      "name": "Bushy Bluestem",
+      "scientific": "Andropogon glomeratus",
+      "group": "plants",
+      "count": 0,
+      "source": "https://www.inaturalist.org/taxa/1619460",
+      "photos": [
+        {
+          "src": "/assets/field/egans-2026-10-23-1969.jpg",
+          "author": "Paul Fishwick",
+          "field": true,
+          "date": "2026-10-23",
+          "caption": "Seed heads in the Greenway, Egans Creek"
+        },
+        {
+          "author": "Matt Lavin from Bozeman, Montana, USA",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Andropogon_glomeratus_(4056253754).jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Andropogon_glomeratus_%284056253754%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Both the dense hairs and many spikes terminating the lateral branches render the bushy appearance of Andropogon glomeratus.",
+          "src": "/assets/animals/1619460-commons-1.jpg"
+        },
+        {
+          "author": "Forest & Kim Starr",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Starr_071222-0260_Andropogon_glomeratus.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Starr_071222-0260_Andropogon_glomeratus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Andropogon glomeratus (inflorescences). Location: Nevada, Calico Basin",
+          "src": "/assets/animals/1619460-commons-2.jpg"
+        }
+      ]
+    },
+    {
+      "id": "119956",
+      "name": "Wax Myrtle",
+      "scientific": "Morella cerifera",
+      "group": "plants",
+      "count": 7,
+      "source": "https://www.inaturalist.org/taxa/119956",
+      "photos": [
+        {
+          "author": "Krzysztof Ziarnek, Kenraiz",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Myrica_cerifera_kz01.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/9/95/Myrica_cerifera_kz01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Myrica cerifera in Flamingo, Everglades NP, Florida, USA",
+          "src": "/assets/animals/119956-commons-1.jpg"
+        },
+        {
+          "author": "Forest & Kim Starr",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Starr_031108-0155_Morella_cerifera.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Starr_031108-0155_Morella_cerifera.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Morella cerifera, syn. Myrica cerifera (habit). Location: Florida, Sarasota",
+          "src": "/assets/animals/119956-commons-2.jpg"
+        },
+        {
+          "author": "User:BotBln",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "source": "https://commons.wikimedia.org/wiki/File:Myrica_cerifera_HabitusLeaves_BotGardBln0906.JPG",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Myrica_cerifera_HabitusLeaves_BotGardBln0906.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Morella cerifera (syn. Myrica cerifera) Location: Botanical Gardens Berlin Habitus and Leaves",
+          "src": "/assets/animals/119956-commons-3.jpg"
         }
       ]
     }

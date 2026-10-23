@@ -22,7 +22,7 @@ test('formation, plant cover, and historical state respond',async({page})=>{
  await page.goto('./#page=history');await page.locator('[data-history="3"]').click();await expect(page.locator('#south-state')).toHaveText('Saltwater intrusion');await page.locator('[data-history="4"]').click();await expect(page.locator('#south-state')).toHaveText('Freshwater habitat');
 });
 test('birds filter, compare, browse photos and save an observation',async({page})=>{
- await page.goto('./#page=birds');await expect(page.locator('.bird-card')).toHaveCount(12);
+ await page.goto('./#page=birds');await expect(page.locator('.bird-card')).toHaveCount(13);
  await page.locator('#bird-search').fill('snowy');await expect(page.locator('.bird-card')).toHaveCount(1);await page.locator('#bird-search').fill('');
  await page.locator('[data-compare="snowy"]').check();await page.locator('[data-compare="great-egret"]').check();await page.locator('#compare-open').click();await expect(page.locator('.comparison article')).toHaveCount(2);await page.locator('#close-dialog').click();
  await page.locator('[data-bird="little-blue"]').click();await page.locator('#bird-photo-slider').fill('2');await expect(page.locator('#photo-number')).toContainText('2 of');await expect(page.locator('#bird-photo-track img').nth(1)).toBeVisible();await page.locator('#photo-next').click();await expect(page.locator('#photo-number')).toContainText('3 of');await page.locator('#record-bird').click();await page.locator('[name="notes"]').fill('<b>A white juvenile near the edge</b>');await page.getByRole('button',{name:'Save observation',exact:true}).click();await expect(page.locator('.note-list')).toContainText('<b>A white juvenile near the edge</b>');await expect(page.locator('.note-list b')).toHaveCount(0);await page.locator('#close-dialog').click();await expect(page.locator('#note-count')).toHaveText('1');
@@ -52,9 +52,9 @@ test('latest observed tide is distinct from slider predictions and Now restores 
 });
 test('all species have local loaded photos and mouse dragging changes the gallery',async({page})=>{
  await page.goto('./#page=birds');for(const img of await page.locator('.bird-view img').all()){await img.scrollIntoViewIfNeeded();await expect.poll(()=>img.evaluate(el=>el.complete&&el.naturalWidth>0)).toBe(true);}
- await page.locator('[data-bird="snowy"]').click();await expect(page.locator('#bird-photo-track img')).toHaveCount(4);await page.locator('#bird-photo-slider').fill('2');await expect(page.locator('#photo-number')).toContainText('2 of 4');
- const track=page.locator('#bird-photo-track');const box=await track.boundingBox();await page.mouse.move(box.x+box.width*.9,box.y+60);await page.mouse.down();await page.mouse.move(box.x+box.width*.1,box.y+60,{steps:12});await page.mouse.up();await expect(page.locator('#photo-number')).toContainText('3 of 4');
- await track.focus();await page.keyboard.press('ArrowLeft');await expect(page.locator('#photo-number')).toContainText('2 of 4');
+ await page.locator('[data-bird="snowy"]').click();await expect(page.locator('#bird-photo-track img')).toHaveCount(7);await page.locator('#bird-photo-slider').fill('2');await expect(page.locator('#photo-number')).toContainText('2 of 7');
+ const track=page.locator('#bird-photo-track');const box=await track.boundingBox();await page.mouse.move(box.x+box.width*.9,box.y+60);await page.mouse.down();await page.mouse.move(box.x+box.width*.1,box.y+60,{steps:12});await page.mouse.up();await expect(page.locator('#photo-number')).toContainText('3 of 7');
+ await track.focus();await page.keyboard.press('ArrowLeft');await expect(page.locator('#photo-number')).toContainText('2 of 7');
  const results=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();expect(results.violations.filter(v=>['critical','serious'].includes(v.impact))).toEqual([]);
 });
 test('stale latest measurement is clearly labeled',async({page})=>{
@@ -86,12 +86,12 @@ test('every location arrow moves the map and opens its destination repeatedly',a
 
 test('Animals defaults to Birds and includes both anoles, galleries, and notebook records',async({page},testInfo)=>{
  await page.goto('./');await expect(page).toHaveTitle('Egans Creek: A Model');await expect(page.locator('.brand small')).toHaveText('A LIVING LANDSCAPE AND MODEL');await expect(page.locator('.creator-credit')).toHaveText('Creatively spawned by Paul Fishwick & OpenAI Codex');
- await page.locator('[data-page="animals"]').click();await expect(page.locator('[data-animal-group="birds"]')).toHaveAttribute('aria-pressed','true');await expect(page.locator('.bird-card')).toHaveCount(12);await expect(page.locator('[data-animal-group]')).toHaveCount(6);
+ await page.locator('[data-page="animals"]').click();await expect(page.locator('[data-animal-group="birds"]')).toHaveAttribute('aria-pressed','true');await expect(page.locator('.bird-card')).toHaveCount(13);await expect(page.locator('[data-animal-group]')).toHaveCount(7);
  await page.locator('[data-animal-group="reptiles"]').click();await expect(page.locator('[data-animal="116461"]')).toContainText('Brown Anole');await expect(page.locator('[data-animal="36514"]')).toContainText('Green Anole');await expect(page.locator('.anole-note')).toContainText('Green Anole can be brown');
  await page.locator('[data-animal="36514"]').click();await page.locator('#animal-photo-slider').fill('2');await expect(page.locator('#animal-photo-number')).toHaveText('2 of 2');await page.locator('#record-animal').click();await expect(page.locator('[name="species"]')).toHaveValue('36514');await page.getByRole('button',{name:'Save observation',exact:true}).click();await expect(page.locator('.note-list')).toContainText('Green Anole');await page.locator('#close-dialog').click();
  await page.screenshot({path:`validation/${testInfo.project.name}-reptiles.png`,fullPage:true});
- for(const group of ['mammals','amphibians','fish','invertebrates']){await page.locator(`[data-animal-group="${group}"]`).click();await expect(page.locator('.animal-grid .bird-card').first()).toBeVisible();}
- await page.locator('[data-animal-group="birds"]').click();await expect(page.locator('.bird-card')).toHaveCount(12);
+ for(const group of ['mammals','amphibians','fish','invertebrates','plants']){await page.locator(`[data-animal-group="${group}"]`).click();await expect(page.locator('.animal-grid .bird-card').first()).toBeVisible();}
+ await page.locator('[data-animal-group="birds"]').click();await expect(page.locator('.bird-card')).toHaveCount(13);
 });
 test('animal sightings map filters records and shows honest empty states',async({page},testInfo)=>{
  await page.goto('./#page=animals&group=reptiles');await page.locator('#animal-map-view').click();await expect(page.locator('.wildlife-point').first()).toBeVisible();await page.locator('#sighting-species').selectOption('36514');await expect(page.locator('#sighting-count')).toHaveText('1 saved observation');await expect(page.locator('.wildlife-point')).toHaveCount(1);await page.locator('.wildlife-point').click();await expect(page.locator('.leaflet-popup-content')).toContainText('Green Anole');await expect(page.locator('.leaflet-popup-content')).toContainText('2021-06-23');

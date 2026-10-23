@@ -8,8 +8,8 @@ import {readFile} from 'node:fs/promises';
 test('curated bird galleries have distinct local photographs and license attribution',async()=>{
  const photos=JSON.parse(await readFile(new URL('../src/data/bird-photos.json',import.meta.url)));
  for(const b of birds){
-  const gallery=photos[b.id];assert.ok(gallery.length>=3);assert.equal(new Set(gallery.map(p=>p.original)).size,gallery.length);
-  for(const p of gallery){assert.ok(p.author&&p.license&&p.licenseUrl.startsWith('https://'));assert.ok(p.source.startsWith('https://commons.wikimedia.org/wiki/File:'));assert.ok((await readFile(new URL('../public'+p.src,import.meta.url))).length>1000);}
+  const gallery=photos[b.id];assert.ok(gallery.length>=3);assert.equal(new Set(gallery.map(p=>p.original||p.src)).size,gallery.length);
+  for(const p of gallery){if(p.field){assert.ok(p.author&&p.date&&p.src.startsWith('/assets/field/'));assert.ok((await readFile(new URL('../public'+p.src,import.meta.url))).length>1000);continue;}assert.ok(p.author&&p.license&&p.licenseUrl.startsWith('https://'));assert.ok(p.source.startsWith('https://commons.wikimedia.org/wiki/File:'));assert.ok((await readFile(new URL('../public'+p.src,import.meta.url))).length>1000);}
  }
 });
 test('creek geometry is sourced Egans Creek hydrography in geographic coordinates',async()=>{
@@ -17,10 +17,12 @@ test('creek geometry is sourced Egans Creek hydrography in geographic coordinate
  assert.equal(data.features.length,35);assert.ok(data.metadata.source.startsWith('https://hydro.nationalmap.gov/'));
  for(const f of data.features){assert.equal(f.properties.gnis_name,'Egans Creek');assert.equal(f.geometry.type,'LineString');for(const [lon,lat] of f.geometry.coordinates)assert.ok(lon>-81.49&&lon<-81.41&&lat>30.61&&lat<30.72);}
 });
-test('animal guide includes both anoles and licensed local reference photos',async()=>{
+test('field guide includes both anoles, sign species, plants, and licensed local photos',async()=>{
  const data=JSON.parse(await readFile(new URL('../src/data/animals.json',import.meta.url)));
- assert.equal(data.species.length,20);assert.ok(data.species.some(s=>s.scientific==='Anolis sagrei'));assert.ok(data.species.some(s=>s.scientific==='Anolis carolinensis'));
- for(const s of data.species){assert.ok(s.count>0);assert.equal(s.photos.length,2);for(const p of s.photos){assert.ok(p.author&&p.source.startsWith('https://')&&p.license);assert.ok((await readFile(new URL('../public'+p.src,import.meta.url))).length>1000);}}
+ assert.equal(data.species.length,48);assert.ok(data.species.some(s=>s.scientific==='Anolis sagrei'));assert.ok(data.species.some(s=>s.scientific==='Anolis carolinensis'));
+ assert.equal(data.species.filter(s=>s.sign==='butterflies').length,12);assert.equal(data.species.filter(s=>s.sign==='snakes').length,15);assert.equal(data.species.filter(s=>s.venomous).length,4);assert.ok(data.species.some(s=>s.group==='plants'));
+ assert.equal(new Set(data.species.map(s=>s.id)).size,data.species.length);
+ for(const s of data.species){assert.ok(s.count>0||s.sign||s.group==='plants');assert.ok(s.photos.length>=2);assert.equal(new Set(s.photos.map(p=>p.src)).size,s.photos.length);for(const p of s.photos){if(p.field)assert.ok(p.author&&p.date&&p.src.startsWith('/assets/field/'));else assert.ok(p.author&&p.source.startsWith('https://')&&p.license);assert.ok((await readFile(new URL('../public'+p.src,import.meta.url))).length>1000);}}
 });
 test('wildlife map records preserve attribution, bounded coordinates, dates and accuracy',async()=>{
  const data=JSON.parse(await readFile(new URL('../src/data/animal-observations.json',import.meta.url)));
@@ -33,6 +35,6 @@ test('interpolation rejects gaps and never extrapolates',()=>{const points=[{t:0
 test('datum mismatch cannot become a claimed depth',()=>{assert.throws(()=>depth({value:2,datum:'MLLW'},{value:.5,datum:'NAVD88'}));assert.equal(depth({value:2,datum:'example'},{value:3,datum:'example'}),0);});
 test('NOAA parser rejects errors and omits missing observations, keeping provenance flags',()=>{assert.throws(()=>parseNOAA({error:{message:'No data'}},'predictions'),/No data/);const p=parseNOAA({data:[{t:'2026-10-01 00:06',v:'1.2',q:'p',f:'0,0,0,0'},{t:'2026-10-01 00:00',v:''}]},'water_level');assert.deepEqual(p,[{t:Date.UTC(2026,9,1,0,6),v:1.2,quality:'p',flags:'0,0,0,0'}]);});
 test('Eastern time labels distinguish repeated fall-back hours',()=>{assert.match(eastTime(Date.UTC(2026,10,1,5,30)),/1:30.*EDT/);assert.match(eastTime(Date.UTC(2026,10,1,6,30)),/1:30.*EST/);});
-test('all twelve sign birds have unique IDs and supporting references',()=>{assert.equal(birds.length,12);assert.equal(new Set(birds.map(b=>b.id)).size,12);for(const b of birds){assert.ok(b.marks&&b.feeding&&b.scientific);assert.ok(b.source.startsWith('https://www.allaboutbirds.org/guide/'));}assert.equal(filterBirds({search:'yellow feet'})[0].id,'snowy');assert.equal(filterBirds({color:'Pink',habitat:'Shallows'})[0].id,'spoonbill');assert.equal(filterBirds({color:'Pink',habitat:'Grassland'}).length,0);});
+test('twelve sign birds plus the field-photographed Anhinga have unique IDs and supporting references',()=>{assert.equal(birds.length,13);assert.equal(new Set(birds.map(b=>b.id)).size,13);assert.ok(birds.find(b=>b.id==='anhinga').evidence.includes('Egans Creek'));for(const b of birds){assert.ok(b.marks&&b.feeding&&b.scientific);assert.ok(b.source.startsWith('https://www.allaboutbirds.org/guide/'));}assert.equal(filterBirds({search:'yellow feet'})[0].id,'snowy');assert.equal(filterBirds({color:'Pink',habitat:'Shallows'})[0].id,'spoonbill');assert.equal(filterBirds({color:'Pink',habitat:'Grassland'}).length,0);});
 test('notebook round trip retains text without interpreting HTML or formulas',()=>{const row={id:'test',date:'2026-10-01',species:'snowy',confidence:'Likely',place:'Northern Greenway',notes:'=HYPERLINK("bad")\n<script>alert(1)</script>'};const file={version:1,entries:[row]};assert.deepEqual(validateNotebook(JSON.parse(JSON.stringify(file))),[row]);assert.match(csvExport([row]),/"'=HYPERLINK/);assert.throws(()=>validateNotebook({version:2,entries:[]}),/version 1/);assert.throws(()=>validateNotebook({version:1,entries:[{...row,confidence:'Invented'}]}),/invalid/);});
 test('content provenance and point geometry are present',async()=>{for(const h of history)assert.ok(sources[h.source]);assert.equal(stages.length,5);const geo=JSON.parse(await readFile(new URL('../src/data/places.json',import.meta.url)));for(const f of geo.features){assert.equal(f.geometry.type,'Point');assert.ok(f.properties.source&&f.properties.accuracy);const [lon,lat]=f.geometry.coordinates;assert.ok(lon>-82&&lon<-81&&lat>30&&lat<31);}});
