@@ -52,9 +52,9 @@ test('latest observed tide is distinct from slider predictions and Now restores 
 });
 test('all species have local loaded photos and mouse dragging changes the gallery',async({page})=>{
  await page.goto('./#page=birds');for(const img of await page.locator('.bird-view img').all()){await img.scrollIntoViewIfNeeded();await expect.poll(()=>img.evaluate(el=>el.complete&&el.naturalWidth>0)).toBe(true);}
- await page.locator('[data-bird="snowy"]').click();await expect(page.locator('#bird-photo-track img')).toHaveCount(7);await page.locator('#bird-photo-slider').fill('2');await expect(page.locator('#photo-number')).toContainText('2 of 7');
- const track=page.locator('#bird-photo-track');const box=await track.boundingBox();await page.mouse.move(box.x+box.width*.9,box.y+60);await page.mouse.down();await page.mouse.move(box.x+box.width*.1,box.y+60,{steps:12});await page.mouse.up();await expect(page.locator('#photo-number')).toContainText('3 of 7');
- await track.focus();await page.keyboard.press('ArrowLeft');await expect(page.locator('#photo-number')).toContainText('2 of 7');
+ await page.locator('[data-bird="snowy"]').click();await expect(page.locator('#bird-photo-track img')).toHaveCount(8);await page.locator('#bird-photo-slider').fill('2');await expect(page.locator('#photo-number')).toContainText('2 of 8');
+ const track=page.locator('#bird-photo-track');const box=await track.boundingBox();await page.mouse.move(box.x+box.width*.9,box.y+60);await page.mouse.down();await page.mouse.move(box.x+box.width*.1,box.y+60,{steps:12});await page.mouse.up();await expect(page.locator('#photo-number')).toContainText('3 of 8');
+ await track.focus();await page.keyboard.press('ArrowLeft');await expect(page.locator('#photo-number')).toContainText('2 of 8');
  const results=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();expect(results.violations.filter(v=>['critical','serious'].includes(v.impact))).toEqual([]);
 });
 test('stale latest measurement is clearly labeled',async({page})=>{
