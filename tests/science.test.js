@@ -19,10 +19,10 @@ test('creek geometry is sourced Egans Creek hydrography in geographic coordinate
 });
 test('field guide includes both anoles, sign species, plants, and licensed local photos',async()=>{
  const data=JSON.parse(await readFile(new URL('../src/data/animals.json',import.meta.url)));
- assert.equal(data.species.length,48);assert.ok(data.species.some(s=>s.scientific==='Anolis sagrei'));assert.ok(data.species.some(s=>s.scientific==='Anolis carolinensis'));
- assert.equal(data.species.filter(s=>s.sign==='butterflies').length,12);assert.equal(data.species.filter(s=>s.sign==='snakes').length,15);assert.equal(data.species.filter(s=>s.venomous).length,4);assert.ok(data.species.some(s=>s.group==='plants'));
+ assert.equal(data.species.length,62);assert.ok(data.species.some(s=>s.scientific==='Anolis sagrei'));assert.ok(data.species.some(s=>s.scientific==='Anolis carolinensis'));
+ assert.equal(data.species.filter(s=>s.sign==='butterflies').length,12);assert.equal(data.species.filter(s=>s.sign==='snakes').length,15);assert.equal(data.species.filter(s=>s.venomous).length,4);assert.ok(data.species.some(s=>s.group==='plants'));assert.equal(data.species.filter(s=>s.guide==='saltmarsh').length,15);
  assert.equal(new Set(data.species.map(s=>s.id)).size,data.species.length);
- for(const s of data.species){assert.ok(s.count>0||s.sign||s.group==='plants');assert.ok(s.photos.length>=2);assert.equal(new Set(s.photos.map(p=>p.src)).size,s.photos.length);for(const p of s.photos){if(p.field)assert.ok(p.author&&p.date&&p.src.startsWith('/assets/field/'));else assert.ok(p.author&&p.source.startsWith('https://')&&p.license);assert.ok((await readFile(new URL('../public'+p.src,import.meta.url))).length>1000);}}
+ for(const s of data.species){assert.ok(s.count>0||s.sign||s.group==='plants');assert.ok(s.photos.length>=2);assert.equal(new Set(s.photos.map(p=>p.src)).size,s.photos.length);for(const p of s.photos){if(p.field)assert.ok(p.author&&p.date&&p.src.startsWith('/assets/field/'));else if(p.publication)assert.ok(p.author==='Maia McGuire'&&p.publisher&&p.src.startsWith('/assets/plants/'));else assert.ok(p.author&&p.source.startsWith('https://')&&p.license);assert.ok((await readFile(new URL('../public'+p.src,import.meta.url))).length>1000);}}
 });
 test('wildlife map records preserve attribution, bounded coordinates, dates and accuracy',async()=>{
  const data=JSON.parse(await readFile(new URL('../src/data/animal-observations.json',import.meta.url)));

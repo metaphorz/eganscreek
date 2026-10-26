@@ -1622,6 +1622,13 @@
           "caption": "Growing on a creek bank just above the waterline, Egans Creek"
         },
         {
+          "src": "/assets/plants/mcguire-prickly-pear-cactus.jpg",
+          "author": "Maia McGuire",
+          "publication": "Salt Marsh Plants of NE Florida",
+          "publisher": "Florida Sea Grant Extension Program",
+          "caption": "Prickly Pear Cactus, from Salt Marsh Plants of NE Florida"
+        },
+        {
           "author": "Ianaré Sévi",
           "license": "CC BY-SA 3.0",
           "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
@@ -1657,7 +1664,8 @@
           "caption": "Opuntia stricta (Haw.) Haw. (1812), fruits; Punta de Teno, Tenerife, Canary Islands, Spain.",
           "src": "/assets/animals/47902-commons-4.jpg"
         }
-      ]
+      ],
+      "guide": "saltmarsh"
     },
     {
       "id": "165543",
@@ -1770,6 +1778,449 @@
           "original": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Myrica_cerifera_HabitusLeaves_BotGardBln0906.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
           "caption": "Morella cerifera (syn. Myrica cerifera) Location: Botanical Gardens Berlin Habitus and Leaves",
           "src": "/assets/animals/119956-commons-3.jpg"
+        }
+      ]
+    },
+    {
+      "id": "772903",
+      "name": "Smooth Cordgrass",
+      "scientific": "Spartina alterniflora",
+      "accepted": "Sporobolus alterniflorus",
+      "group": "plants",
+      "count": 5,
+      "source": "https://www.inaturalist.org/taxa/772903",
+      "guide": "saltmarsh",
+      "photos": [
+        {
+          "src": "/assets/plants/mcguire-smooth-cordgrass.jpg",
+          "author": "Maia McGuire",
+          "publication": "Salt Marsh Plants of NE Florida",
+          "publisher": "Florida Sea Grant Extension Program",
+          "caption": "Smooth Cordgrass, from Salt Marsh Plants of NE Florida"
+        },
+        {
+          "src": "/assets/animals/772903-commons-1.jpg",
+          "author": "Unspecified author; see source",
+          "license": "Public domain",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+          "source": "https://commons.wikimedia.org/wiki/File:Spartina_alterniflora.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Spartina_alterniflora.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Smooth Cordgrass"
+        }
+      ]
+    },
+    {
+      "id": "773004",
+      "name": "Saltmeadow Cordgrass",
+      "scientific": "Spartina patens",
+      "accepted": "Sporobolus pumilus",
+      "group": "plants",
+      "count": 0,
+      "source": "https://www.inaturalist.org/taxa/773004",
+      "guide": "saltmarsh",
+      "photos": [
+        {
+          "src": "/assets/plants/mcguire-saltmeadow-cordgrass.jpg",
+          "author": "Maia McGuire",
+          "publication": "Salt Marsh Plants of NE Florida",
+          "publisher": "Florida Sea Grant Extension Program",
+          "caption": "Saltmeadow Cordgrass, from Salt Marsh Plants of NE Florida"
+        },
+        {
+          "src": "/assets/animals/773004-commons-2.jpg",
+          "author": "V. Howard, UCGS",
+          "license": "Public domain",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+          "source": "https://commons.wikimedia.org/wiki/File:Spartina_patens-saltmeadow_cordgrass.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/9/90/Spartina_patens-saltmeadow_cordgrass.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Spartina patens-Common name: saltmeadow cordgrass"
+        }
+      ]
+    },
+    {
+      "id": "164279",
+      "name": "Black Needle Rush",
+      "scientific": "Juncus roemerianus",
+      "group": "plants",
+      "count": 0,
+      "source": "https://www.inaturalist.org/taxa/164279",
+      "guide": "saltmarsh",
+      "photos": [
+        {
+          "src": "/assets/plants/mcguire-black-needle-rush.jpg",
+          "author": "Maia McGuire",
+          "publication": "Salt Marsh Plants of NE Florida",
+          "publisher": "Florida Sea Grant Extension Program",
+          "caption": "Black Needle Rush, from Salt Marsh Plants of NE Florida"
+        },
+        {
+          "src": "/assets/animals/164279-commons-1.jpg",
+          "author": "William B. Skaradek, USDA NRCS Cape May Plant Materials Center",
+          "license": "Public domain",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+          "source": "https://commons.wikimedia.org/wiki/File:Juncus_roemerianus.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Juncus_roemerianus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Juncus roemerianus"
+        }
+      ]
+    },
+    {
+      "id": "78932",
+      "name": "Glasswort",
+      "scientific": "Salicornia perennis",
+      "group": "plants",
+      "count": 0,
+      "source": "https://www.inaturalist.org/taxa/78932",
+      "guide": "saltmarsh",
+      "photos": [
+        {
+          "src": "/assets/plants/mcguire-glasswort.jpg",
+          "author": "Maia McGuire",
+          "publication": "Salt Marsh Plants of NE Florida",
+          "publisher": "Florida Sea Grant Extension Program",
+          "caption": "Glasswort, from Salt Marsh Plants of NE Florida"
+        },
+        {
+          "src": "/assets/animals/78932-commons-1.jpg",
+          "author": "Zeynel Cebeci",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Sarcocornia_perennis_-_Perennial_glasswort,_Mersin_2016-11-19_02-3.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Sarcocornia_perennis_-_Perennial_glasswort%2C_Mersin_2016-11-19_02-3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Perennial glasswort (Sarcocornia perennis). Paradeniz Lagoon, Delta Göksu, Silifke - Mersin, Turkey."
+        }
+      ]
+    },
+    {
+      "id": "70040",
+      "name": "Saltwort",
+      "scientific": "Batis maritima",
+      "group": "plants",
+      "count": 1,
+      "source": "https://www.inaturalist.org/taxa/70040",
+      "guide": "saltmarsh",
+      "photos": [
+        {
+          "src": "/assets/plants/mcguire-saltwort.jpg",
+          "author": "Maia McGuire",
+          "publication": "Salt Marsh Plants of NE Florida",
+          "publisher": "Florida Sea Grant Extension Program",
+          "caption": "Saltwort, from Salt Marsh Plants of NE Florida"
+        },
+        {
+          "src": "/assets/animals/70040-commons-1.jpg",
+          "author": "Forest & Kim Starr",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Starr_010206-0250_Batis_maritima.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Starr_010206-0250_Batis_maritima.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Batis maritima (male). Location: Maui, Kanaha Beach"
+        }
+      ]
+    },
+    {
+      "id": "130743",
+      "name": "Sea Purslane",
+      "scientific": "Sesuvium portulacastrum",
+      "group": "plants",
+      "count": 0,
+      "source": "https://www.inaturalist.org/taxa/130743",
+      "guide": "saltmarsh",
+      "photos": [
+        {
+          "src": "/assets/plants/mcguire-sea-purslane.jpg",
+          "author": "Maia McGuire",
+          "publication": "Salt Marsh Plants of NE Florida",
+          "publisher": "Florida Sea Grant Extension Program",
+          "caption": "Sea Purslane, from Salt Marsh Plants of NE Florida"
+        },
+        {
+          "src": "/assets/animals/130743-commons-1.jpg",
+          "author": "Forest & Kim Starr",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Starr_080602-5547_Sesuvium_portulacastrum.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/6/60/Starr_080602-5547_Sesuvium_portulacastrum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Sesuvium portulacastrum (flowers and leaves). Location: Midway Atoll, Bulky Dump Sand Island"
+        }
+      ]
+    },
+    {
+      "id": "131552",
+      "name": "Sea Blite",
+      "scientific": "Suaeda linearis",
+      "group": "plants",
+      "count": 0,
+      "source": "https://www.inaturalist.org/taxa/131552",
+      "guide": "saltmarsh",
+      "photos": [
+        {
+          "src": "/assets/plants/mcguire-sea-blite.jpg",
+          "author": "Maia McGuire",
+          "publication": "Salt Marsh Plants of NE Florida",
+          "publisher": "Florida Sea Grant Extension Program",
+          "caption": "Sea Blite, from Salt Marsh Plants of NE Florida"
+        },
+        {
+          "src": "/assets/animals/131552-commons-1.jpg",
+          "author": "Krzysztof Ziarnek, Kenraiz",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Suaeda_linearis_kz01.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/8/89/Suaeda_linearis_kz01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Suaeda linearis in Flamingo, Everglades NP, Florida, USA"
+        },
+        {
+          "src": "/assets/animals/131552-commons-2.jpg",
+          "author": "Krzysztof Ziarnek, Kenraiz",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Suaeda_linearis_kz02.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Suaeda_linearis_kz02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Suaeda linearis in Flamingo, Everglades NP, Florida, USA"
+        }
+      ]
+    },
+    {
+      "id": "62853",
+      "name": "Black Mangrove",
+      "scientific": "Avicennia germinans",
+      "group": "plants",
+      "count": 0,
+      "source": "https://www.inaturalist.org/taxa/62853",
+      "guide": "saltmarsh",
+      "photos": [
+        {
+          "src": "/assets/plants/mcguire-black-mangrove.jpg",
+          "author": "Maia McGuire",
+          "publication": "Salt Marsh Plants of NE Florida",
+          "publisher": "Florida Sea Grant Extension Program",
+          "caption": "Black Mangrove, from Salt Marsh Plants of NE Florida"
+        },
+        {
+          "src": "/assets/animals/62853-commons-1.jpg",
+          "author": "Codiferous at English Wikipedia",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "source": "https://commons.wikimedia.org/wiki/File:Avicennia-germinans.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Avicennia-germinans.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Avicennia germinans in Guanacaste, Costa Rica. Author: Cody Hinchliff, 2004"
+        },
+        {
+          "src": "/assets/animals/62853-commons-2.jpg",
+          "author": "Andrewtappert at English Wikipedia",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "source": "https://commons.wikimedia.org/wiki/File:Avicennia_germinans-everglades_natl_park.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Avicennia_germinans-everglades_natl_park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "A free-standing black mangrove tree growing in shallow water in the backcountry of the Cape Sable area of Everglades National Park. February 2007. Contrast with this photo of a red mangrove growing in the identical setting (also taken by me, same pla"
+        },
+        {
+          "src": "/assets/animals/62853-commons-3.jpg",
+          "author": "Ulf Mehlig",
+          "license": "CC BY-SA 2.5",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+          "source": "https://commons.wikimedia.org/wiki/File:Avicennia_germinans-flowers2.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/0/02/Avicennia_germinans-flowers2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Flowering shoot of the Black Mangrove (Avicennia germinans), mangrove forest near Perimirim, Augusto Corrêa, Pará, Brazil"
+        }
+      ]
+    },
+    {
+      "id": "62854",
+      "name": "White Mangrove",
+      "scientific": "Laguncularia racemosa",
+      "group": "plants",
+      "count": 0,
+      "source": "https://www.inaturalist.org/taxa/62854",
+      "guide": "saltmarsh",
+      "photos": [
+        {
+          "src": "/assets/plants/mcguire-white-mangrove.jpg",
+          "author": "Maia McGuire",
+          "publication": "Salt Marsh Plants of NE Florida",
+          "publisher": "Florida Sea Grant Extension Program",
+          "caption": "White Mangrove, from Salt Marsh Plants of NE Florida"
+        },
+        {
+          "src": "/assets/animals/62854-commons-1.jpg",
+          "author": "Ulf Mehlig",
+          "license": "CC BY-SA 2.5",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+          "source": "https://commons.wikimedia.org/wiki/File:Laguncularia_racemosa.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Laguncularia_racemosa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Flowering shoot of Laguncularia racemosa; mangroves in Caeté estuary, Bragança, Pará, Brazil"
+        }
+      ]
+    },
+    {
+      "id": "131165",
+      "name": "Marsh Elder",
+      "scientific": "Iva frutescens",
+      "group": "plants",
+      "count": 5,
+      "source": "https://www.inaturalist.org/taxa/131165",
+      "guide": "saltmarsh",
+      "photos": [
+        {
+          "src": "/assets/plants/mcguire-marsh-elder.jpg",
+          "author": "Maia McGuire",
+          "publication": "Salt Marsh Plants of NE Florida",
+          "publisher": "Florida Sea Grant Extension Program",
+          "caption": "Marsh Elder, from Salt Marsh Plants of NE Florida"
+        },
+        {
+          "src": "/assets/animals/131165-commons-1.jpg",
+          "author": "USDA-NRCS",
+          "license": "Public domain",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+          "source": "https://commons.wikimedia.org/wiki/File:Iva_frutescens.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Iva_frutescens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Iva frutescens"
+        }
+      ]
+    },
+    {
+      "id": "127270",
+      "name": "Sea Oxeye",
+      "scientific": "Borrichia frutescens",
+      "group": "plants",
+      "count": 1,
+      "source": "https://www.inaturalist.org/taxa/127270",
+      "guide": "saltmarsh",
+      "photos": [
+        {
+          "src": "/assets/plants/mcguire-sea-oxeye.jpg",
+          "author": "Maia McGuire",
+          "publication": "Salt Marsh Plants of NE Florida",
+          "publisher": "Florida Sea Grant Extension Program",
+          "caption": "Sea Oxeye, from Salt Marsh Plants of NE Florida"
+        },
+        {
+          "src": "/assets/animals/127270-commons-1.jpg",
+          "author": "Bob Peterson from North Palm Beach, Florida, Planet Earth!",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Borrichia_frutescens_(Bushy_seaside_oxeye)_(7028865977).jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Borrichia_frutescens_%28Bushy_seaside_oxeye%29_%287028865977%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "The bushy seaside oxeye now blooming at Juno Dunes Natural Area (and in my little mangrove swamp too). They love to grow on the edge of mangrove areas near saltwater. The blossom above is a small one, about 25mm in diameter. There were larger ones bl"
+        }
+      ]
+    },
+    {
+      "id": "133293",
+      "name": "Sea Lavender",
+      "scientific": "Limonium carolinianum",
+      "group": "plants",
+      "count": 0,
+      "source": "https://www.inaturalist.org/taxa/133293",
+      "guide": "saltmarsh",
+      "photos": [
+        {
+          "src": "/assets/plants/mcguire-sea-lavender.jpg",
+          "author": "Maia McGuire",
+          "publication": "Salt Marsh Plants of NE Florida",
+          "publisher": "Florida Sea Grant Extension Program",
+          "caption": "Sea Lavender, from Salt Marsh Plants of NE Florida"
+        },
+        {
+          "src": "/assets/animals/133293-commons-1.jpg",
+          "author": "Limonium-nashii.JPG: Botsci derivative work: Bff (talk)",
+          "license": "Public domain",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+          "source": "https://commons.wikimedia.org/wiki/File:Limonium-nashii-2.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Limonium-nashii-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Photographie d'un Limonium carolinianum [syn. Limonium nashii], plante de la famille des Plumbaginaceae, prise à l'Île aux Basques."
+        }
+      ]
+    },
+    {
+      "id": "81605",
+      "name": "Adam’s Needle",
+      "scientific": "Yucca filamentosa",
+      "group": "plants",
+      "count": 0,
+      "source": "https://www.inaturalist.org/taxa/81605",
+      "guide": "saltmarsh",
+      "photos": [
+        {
+          "src": "/assets/plants/mcguire-adams-needle.jpg",
+          "author": "Maia McGuire",
+          "publication": "Salt Marsh Plants of NE Florida",
+          "publisher": "Florida Sea Grant Extension Program",
+          "caption": "Adam’s Needle, from Salt Marsh Plants of NE Florida"
+        },
+        {
+          "src": "/assets/animals/81605-commons-1.jpg",
+          "author": "Moriori",
+          "license": "Public domain",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+          "source": "https://commons.wikimedia.org/wiki/File:Yucca_filamentosa.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/5/56/Yucca_filamentosa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Superb spiking of yukka filamentosa near Kerikeri, New Zealand"
+        },
+        {
+          "src": "/assets/animals/81605-commons-2.jpg",
+          "author": "Forest & Kim Starr",
+          "license": "CC BY 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Starr_071024-0034_Yucca_filamentosa.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Starr_071024-0034_Yucca_filamentosa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Yucca filamentosa (habit). Location: Maui, Enchanting Floral Gardens of Kula"
+        },
+        {
+          "src": "/assets/animals/81605-commons-3.jpg",
+          "author": "Indigostock",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Yucca_filamentosa_(Adam%27s_needle).jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Yucca_filamentosa_%28Adam%27s_needle%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Yucca filamentosa flowers"
+        }
+      ]
+    },
+    {
+      "id": "133334",
+      "name": "Spanish Bayonet",
+      "scientific": "Yucca aloifolia",
+      "group": "plants",
+      "count": 0,
+      "source": "https://www.inaturalist.org/taxa/133334",
+      "guide": "saltmarsh",
+      "photos": [
+        {
+          "src": "/assets/plants/mcguire-spanish-bayonet.jpg",
+          "author": "Maia McGuire",
+          "publication": "Salt Marsh Plants of NE Florida",
+          "publisher": "Florida Sea Grant Extension Program",
+          "caption": "Spanish Bayonet, from Salt Marsh Plants of NE Florida"
+        },
+        {
+          "src": "/assets/animals/133334-commons-1.jpg",
+          "author": "Miwasatoshi",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Yucca-aloifolia-20071002-2.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Yucca-aloifolia-20071002-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Yucca aloifolia, cultivated, Arizona State University, Tempe, Arizona"
+        },
+        {
+          "src": "/assets/animals/133334-commons-2.jpg",
+          "author": "Maria Sieglinda von Nudeldorf",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Flowering_Yucca_aloifolia.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Flowering_Yucca_aloifolia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Greenish fruits of Yucca aloifolia"
+        },
+        {
+          "src": "/assets/animals/133334-commons-3.jpg",
+          "author": "Stan Shebs",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+          "source": "https://commons.wikimedia.org/wiki/File:Yucca_aloifolia_1.jpg",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Yucca_aloifolia_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "caption": "Photo of Yucca aloifolia at the San Francisco Botanical Garden"
         }
       ]
     }

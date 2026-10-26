@@ -11,7 +11,7 @@ npm ci
 npm run dev
 ```
 
-Open the local URL printed by Vite. The opening **Map** tab shows the creek's USGS channel geometry over an OpenStreetMap basemap. Additional tabs cover tides, geological formation, cordgrass ecology, animals, and restoration history. The Animals submenu defaults to Birds, with Reptiles, Mammals, Amphibians, Fish, Invertebrates, and Plants & Trees alongside.
+Open the local URL printed by Vite. The opening **Map** tab shows the creek's USGS channel geometry over an OpenStreetMap basemap. Additional tabs cover tides, geological formation, cordgrass ecology, animals, and restoration history. The Animals submenu defaults to Birds, with Reptiles, Mammals, Amphibians, Fish, and Invertebrates alongside. Plants & Trees is its own chapter next to Animals.
 
 ```sh
 npm run build
@@ -39,6 +39,7 @@ VITE_BASE_PATH=/eganscreek/ npm run preview
 - **Birds:** 12 species from the supplied interpretive-sign photograph plus an Anhinga photographed at the creek, with 44 credited photographs across draggable galleries. Photos depict the species at various locations, not verified sightings at Egans Creek. Gallery sliders, arrow keys/buttons, mouse dragging, and touch swiping are supported. Small birds within the conceptual tide animation remain illustrations.
 - **Other animals:** 20 additional species selected from research-grade iNaturalist records in an area around the Greenway, including Brown and Green Anoles. Forty reference photographs show these species; the search rectangle includes neighboring habitats and is not the park boundary.
 - **Sign species, plants, and field photos:** every species on the Greenway butterfly and snake signs, with venomous snakes flagged. Four plants, and field photographs taken at Egans Creek on October 23, 2026, appear in the species galleries. See [provenance](docs/PROVENANCE.md).
+- **Plants & Trees:** its own chapter, with the 15 species from Maia McGuire’s *Salt Marsh Plants of NE Florida* (Florida Sea Grant Extension Program). The sheet’s photographs are credited to her beside each image.
 - **Animal sightings map:** a dated snapshot of 26 openly licensed observation records, with group, species, and date filters, observer attribution, reported accuracy, and source links. Locations must be public and unobscured with reported accuracy at most 100 m. Some groups have no records passing those filters; this does not imply absence. Links open the broader current iNaturalist map and eBird hotspot explorer.
 - **Formation and marsh ecology:** source-backed explanatory models. The precise local stratigraphic contacts, wave attenuation, sediment accumulation, and future habitat distributions are not measured by the app.
 

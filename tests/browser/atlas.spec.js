@@ -1,8 +1,8 @@
 import {test,expect} from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
-test('six chapters load without errors and fit the viewport',async({page},testInfo)=>{
+test('seven chapters load without errors and fit the viewport',async({page},testInfo)=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
- for(const chapter of ['tides','formation','marsh','birds','map','history']){
+ for(const chapter of ['tides','formation','marsh','birds','plants','map','history']){
   await page.goto(`./#page=${chapter}`);await expect(page.locator('main h1')).toBeVisible();
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1)).toBe(true);
   await page.screenshot({path:`validation/${testInfo.project.name}-${chapter}.png`,fullPage:true});
@@ -36,7 +36,7 @@ test('NOAA error is explicit and learning mode recovers',async({page})=>{
  await page.goto('./#page=tides');await page.locator('#tide-mode').selectOption('prediction');await expect(page.locator('#series-status')).toContainText('Data unavailable:');await expect(page.locator('#water-value')).toHaveText('No data');await page.locator('#tide-mode').selectOption('learn');await expect(page.locator('#data-badge')).toHaveText('Learning mode');await expect(page.locator('#water-value')).not.toHaveText('No data');
 });
 test('key chapters have no serious accessibility violations',async({page})=>{
- for(const chapter of ['tides','formation','marsh','birds','history']){await page.goto(`./#page=${chapter}`);await expect(page.locator('main h1')).toBeVisible();const results=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze();expect(results.violations.filter(v=>['critical','serious'].includes(v.impact)),JSON.stringify(results.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)})))).toEqual([]);}
+ for(const chapter of ['tides','formation','marsh','birds','plants','history']){await page.goto(`./#page=${chapter}`);await expect(page.locator('main h1')).toBeVisible();const results=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa','wcag22aa']).analyze();expect(results.violations.filter(v=>['critical','serious'].includes(v.impact)),JSON.stringify(results.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)})))).toEqual([]);}
 });
 
 test('latest observed tide is distinct from slider predictions and Now restores it',async({page})=>{
@@ -86,12 +86,17 @@ test('every location arrow moves the map and opens its destination repeatedly',a
 
 test('Animals defaults to Birds and includes both anoles, galleries, and notebook records',async({page},testInfo)=>{
  await page.goto('./');await expect(page).toHaveTitle('Egans Creek: A Model');await expect(page.locator('.brand small')).toHaveText('A LIVING LANDSCAPE AND MODEL');await expect(page.locator('.creator-credit')).toHaveText('Creatively spawned by Paul Fishwick, OpenAI Codex & Claude Code');
- await page.locator('[data-page="animals"]').click();await expect(page.locator('[data-animal-group="birds"]')).toHaveAttribute('aria-pressed','true');await expect(page.locator('.bird-card')).toHaveCount(13);await expect(page.locator('[data-animal-group]')).toHaveCount(7);
+ await page.locator('[data-page="animals"]').click();await expect(page.locator('[data-animal-group="birds"]')).toHaveAttribute('aria-pressed','true');await expect(page.locator('.bird-card')).toHaveCount(13);await expect(page.locator('[data-animal-group]')).toHaveCount(6);
  await page.locator('[data-animal-group="reptiles"]').click();await expect(page.locator('[data-animal="116461"]')).toContainText('Brown Anole');await expect(page.locator('[data-animal="36514"]')).toContainText('Green Anole');await expect(page.locator('.anole-note')).toContainText('Green Anole can be brown');
  await page.locator('[data-animal="36514"]').click();await page.locator('#animal-photo-slider').fill('2');await expect(page.locator('#animal-photo-number')).toHaveText('2 of 2');await page.locator('#record-animal').click();await expect(page.locator('[name="species"]')).toHaveValue('36514');await page.getByRole('button',{name:'Save observation',exact:true}).click();await expect(page.locator('.note-list')).toContainText('Green Anole');await page.locator('#close-dialog').click();
  await page.screenshot({path:`validation/${testInfo.project.name}-reptiles.png`,fullPage:true});
- for(const group of ['mammals','amphibians','fish','invertebrates','plants']){await page.locator(`[data-animal-group="${group}"]`).click();await expect(page.locator('.animal-grid .bird-card').first()).toBeVisible();}
+ for(const group of ['mammals','amphibians','fish','invertebrates']){await page.locator(`[data-animal-group="${group}"]`).click();await expect(page.locator('.animal-grid .bird-card').first()).toBeVisible();}
  await page.locator('[data-animal-group="birds"]').click();await expect(page.locator('.bird-card')).toHaveCount(13);
+});
+test('Plants & Trees is its own chapter with credited salt marsh plants',async({page})=>{
+ await page.goto('./');await page.locator('[data-page="plants"]').click();await expect(page.locator('[data-animal-group]')).toHaveCount(0);await expect(page.locator('.animal-grid .bird-card')).toHaveCount(18);
+ await page.locator('[data-animal="62853"]').click();await expect(page.locator('.bird-detail figcaption').first()).toContainText('Maia McGuire');await page.locator('#close-dialog').click();
+ await page.goto('./#page=animals&group=plants');await expect(page.locator('[data-page="plants"]')).toHaveAttribute('aria-current','page');
 });
 test('animal sightings map filters records and shows honest empty states',async({page},testInfo)=>{
  await page.goto('./#page=animals&group=reptiles');await page.locator('#animal-map-view').click();await expect(page.locator('.wildlife-point').first()).toBeVisible();await page.locator('#sighting-species').selectOption('36514');await expect(page.locator('#sighting-count')).toHaveText('1 saved observation');await expect(page.locator('.wildlife-point')).toHaveCount(1);await page.locator('.wildlife-point').click();await expect(page.locator('.leaflet-popup-content')).toContainText('Green Anole');await expect(page.locator('.leaflet-popup-content')).toContainText('2021-06-23');
