@@ -20,7 +20,6 @@
    "published": 1878,
    "url": "https://en.wikisource.org/wiki/Hymns_of_the_Marshes/The_Marshes_of_Glynn",
    "targets": {
-    "chapter:marsh": "marsh-grass",
     "species:772903": "marsh-grass",
     "stage:4": "By so many roots as the marsh-grass sends in the sod",
     "place:low-places": "the uttermost creeks and the low-lying lanes"
@@ -212,7 +211,7 @@
    "published": 1866,
    "url": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html",
    "targets": {
-    "place:snakes": "A narrow fellow in the grass"
+    "species:29317": "A narrow fellow in the grass"
    },
    "text": "A narrow fellow in the grass\nOccasionally rides;\nYou may have met him, -- did you not,\nHis notice sudden is.\n\nThe grass divides as with a comb,\nA spotted shaft is seen;\nAnd then it closes at your feet\nAnd opens further on.\n\nHe likes a boggy acre,\nA floor too cool for corn.\nYet when a child, and barefoot,\nI more than once, at morn,\n\nHave passed, I thought, a whip-lash\nUnbraiding in the sun, --\nWhen, stooping to secure it,\nIt wrinkled, and was gone.\n\nSeveral of nature's people\nI know, and they know me;\nI feel for them a transport\nOf cordiality;\n\nBut never met this fellow,\nAttended or alone,\nWithout a tighter breathing,\nAnd zero at the bone.",
    "source": "https://www.gutenberg.org/cache/epub/12242/pg12242.txt"
