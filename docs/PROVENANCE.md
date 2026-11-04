@@ -72,3 +72,5 @@ Paul Fishwick photographed the Greenway on October 23, 2026. Fifteen of his phot
 `src/data/poems.json` is built by `node scripts/fetch-poems.mjs`, which takes each poem's text from Wikisource or Project Gutenberg and stops if a highlighted phrase is missing or a linked URL does not load. It grew from a draft list, `poetry_atlas.json`. A poem qualifies by naming the item it is attached to, wherever the poet is from.
 
 Full text appears only for poems published before 1931, which are out of copyright in the US. Later poems are `linkOnly`: the window shows the title, poet, and link, because showing the whole poem would republish it. A poet's permission would allow a full-text entry.
+
+Wikisource's scan of Frost's "West-Running Brook" has errors such as lost spaces and quotation marks. The script's `fix` list corrects them, so that text should be compared with a printed copy. Stanza breaks in "Dover Beach" and "Binsey Poplars" are also restored there, because the source's page layout does not preserve them.

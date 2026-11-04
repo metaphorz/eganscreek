@@ -10,7 +10,7 @@ const butterflies=['49150','49766','51536','68232','48662','48505','67435','1650
 const grassSnakes=['27137','28362','558951','29200'];
 const poems=[
  {id:'tide-rises',title:'The Tide Rises, the Tide Falls',poet:'Henry Wadsworth Longfellow',published:1880,wiki:'Ultima Thule/The Tide Rises, the Tide Falls',start:'The tide rises, the tide falls,',end:'And the tide rises, the tide falls.',last:true,url:'https://poets.org/poem/tide-rises-tide-falls',targets:{'chapter:tides':'The tide rises, the tide falls'}},
- {id:'marshes-of-glynn',title:'The Marshes of Glynn',poet:'Sidney Lanier',published:1878,book:LANIER,start:'Glooms of the live-oaks, beautiful-braided and woven',end:'marvellous marshes of Glynn',url:wiki('Hymns of the Marshes/The Marshes of Glynn'),targets:{'chapter:marsh':'marsh-grass','species:772903':'marsh-grass'}},
+ {id:'marshes-of-glynn',title:'The Marshes of Glynn',poet:'Sidney Lanier',published:1878,book:LANIER,start:'Glooms of the live-oaks, beautiful-braided and woven',end:'marvellous marshes of Glynn',url:wiki('Hymns of the Marshes/The Marshes of Glynn'),targets:{'chapter:marsh':'marsh-grass','species:772903':'marsh-grass','stage:4':'By so many roots as the marsh-grass sends in the sod','place:low-places':'the uttermost creeks and the low-lying lanes'}},
  {id:'in-memoriam',title:'In Memoriam A.H.H., Canto CXXI (CXXIII in most editions)',poet:'Alfred, Lord Tennyson',published:1850,excerpt:true,wiki:'In Memoriam (Tennyson)/Canto 121',start:'There rolls the deep where grew the tree.',end:'I cannot think the thing farewell.',stanza:4,url:wiki('In Memoriam (Tennyson)/Canto 121'),targets:{'chapter:formation':'There rolls the deep where grew the tree'}},
  {id:'fabliau',title:'Fabliau of Florida',poet:'Wallace Stevens',published:1923,wiki:'Harmonium (Stevens)/Fabliau of Florida',start:'Barque of phosphor',end:'To this droning of the surf.',url:wiki('Harmonium (Stevens)/Fabliau of Florida'),targets:{'place:coast':'On the palmy beach'}},
  {id:'inversnaid',title:'Inversnaid',poet:'Gerard Manley Hopkins',published:1918,wiki:'Poems of Gerard Manley Hopkins/Inversnaid',start:'This darksome burn, horseback brown,',end:'Long live the weeds and the wilderness yet.',stanza:4,url:wiki('Poems of Gerard Manley Hopkins/Inversnaid'),targets:{'chapter:history':'Of wet and of wildness'}},
@@ -21,22 +21,41 @@ const poems=[
  {id:'our-old-feuillage',title:'Our Old Feuillage',poet:'Walt Whitman',published:1860,book:WHITMAN,after:'Our Old Feuillage',start:'  Always our old feuillage!',before:'BOOK XI',reflow:true,url:page(WHITMAN),targets:{'species:snowy':'snowy herons','species:58530':'two little yellow butterflies'}},
  {id:'magnet-south',title:'O Magnet-South',poet:'Walt Whitman',published:1860,book:WHITMAN,after:'O Magnet-South',start:'  O magnet-south! O glistening perfumed South! my South!',before:'Mannahatta',reflow:true,url:page(WHITMAN),targets:{'species:41663':'the raccoon','species:47902':'The cactus guarded with thorns'}},
  {id:'patient-spider',title:'A Noiseless Patient Spider',poet:'Walt Whitman',published:1868,book:WHITMAN,after:'A Noiseless Patient Spider',start:'  A noiseless patient spider,',end:'Till the gossamer thread you fling catch somewhere, O my soul.',reflow:true,url:'https://poets.org/poem/noiseless-patient-spider',targets:{'species:67707':'noiseless patient spider'}},
- {id:'hiawatha-intro',title:'The Song of Hiawatha, Introduction',poet:'Henry Wadsworth Longfellow',published:1855,excerpt:true,book:HIAWATHA,start:'Should you ask me, whence these stories?',before:'I',url:page(HIAWATHA),targets:{'species:great-blue':'The blue heron, the Shuh-shuh-gah'}},
+ {id:'hiawatha-intro',title:'The Song of Hiawatha, Introduction',poet:'Henry Wadsworth Longfellow',published:1855,excerpt:true,book:HIAWATHA,start:'Should you ask me, whence these stories?',before:'I',url:page(HIAWATHA),targets:{'species:great-blue':'The blue heron, the Shuh-shuh-gah','part:habitat':'Feeds among the reeds and rushes'}},
  {id:'two-voices',title:'The Two Voices',poet:'Alfred, Lord Tennyson',published:1842,excerpt:true,book:TENNYSON,start:'To which the voice did urge reply;',end:'A living flash of light he flew',url:page(TENNYSON),targets:{'species:61495':'dragon-fly'}},
  {id:'walrus',title:'The Walrus and the Carpenter',poet:'Lewis Carroll',published:1871,book:CARROLL,start:'“The sun was shining on the sea,',end:'They’d eaten every one.”',url:page(CARROLL),targets:{'species:47585':'Oysters'}},
  {id:'two-look',title:'Two Look at Two',poet:'Robert Frost',published:1923,book:FROST,start:'TWO LOOK AT TWO',skipStart:true,before:'NOT TO KEEP',url:page(FROST),targets:{'species:42223':'doe'}},
  {id:'butterflys-day',title:'The Butterfly’s Day',poet:'Emily Dickinson',published:1891,book:DICKINSON,start:'From cocoon forth a butterfly',end:'Extinguished in its sea.',url:page(DICKINSON),targets:Object.fromEntries(butterflies.map(id=>[`species:${id}`,'butterfly']))},
  {id:'narrow-fellow',title:'The Snake (“A narrow fellow in the grass”)',poet:'Emily Dickinson',published:1866,book:DICKINSON,start:'A narrow fellow in the grass',end:'And zero at the bone.',url:page(DICKINSON),targets:Object.fromEntries(grassSnakes.map(id=>[`species:${id}`,'A narrow fellow in the grass']))},
  {id:'im-nobody',title:'I’m Nobody! Who Are You?',poet:'Emily Dickinson',published:1891,book:DICKINSON,start:"I'm nobody!  Who are you?",end:'To an admiring bog!',url:page(DICKINSON),targets:{'species:65979':'like a frog'}},
- {id:'toad',title:'A Toad Can Die of Light',poet:'Emily Dickinson',published:1896,book:DICKINSON,start:'A toad can die of light!',end:'Is large as thine.',url:page(DICKINSON),targets:{'species:64988':'A toad can die of light'}}
+ {id:'toad',title:'A Toad Can Die of Light',poet:'Emily Dickinson',published:1896,book:DICKINSON,start:'A toad can die of light!',end:'Is large as thine.',url:page(DICKINSON),targets:{'species:64988':'A toad can die of light'}},
+ {id:'song-of-myself-6',title:'Song of Myself, Section 6',poet:'Walt Whitman',published:1855,excerpt:true,book:WHITMAN,after:'Song of Myself',start:'       6',skipStart:true,before:'       7',reflow:true,url:page(WHITMAN),targets:{'part:stem':'What is the grass?'}},
+ {id:'song-of-myself-44',title:'Song of Myself, Section 44',poet:'Walt Whitman',published:1855,excerpt:true,book:WHITMAN,after:'Song of Myself',start:'       44',skipStart:true,before:'       45',reflow:true,url:page(WHITMAN),targets:{'stage:0':'The long slow strata piled to rest it on'}},
+ {id:'song-of-joys',title:'A Song of Joys',poet:'Walt Whitman',published:1860,book:WHITMAN,after:'A Song of Joys',start:'A Song of Joys',skipStart:true,before:'BOOK XII',reflow:true,url:page(WHITMAN),targets:{'stage:3':'bays, lagoons, creeks'}},
+ {id:'as-i-ebbd',title:'As I Ebb’d with the Ocean of Life',poet:'Walt Whitman',published:1860,book:WHITMAN,after:'As I Ebb’d with the Ocean of Life',start:'As I Ebb’d with the Ocean of Life',skipStart:true,before:'Tears',reflow:true,url:page(WHITMAN),targets:{'place:edge':'The rim, the sediment that stands for all the water and all the land of the globe'}},
+ {id:'below-the-brine',title:'The World below the Brine',poet:'Walt Whitman',published:1860,book:WHITMAN,after:'The World below the Brine',start:'The World below the Brine',skipStart:true,before:'On the Beach at Night Alone',reflow:true,url:page(WHITMAN),targets:{'place:below':'The world below the brine'}},
+ {id:'this-compost',title:'This Compost',poet:'Walt Whitman',published:1856,book:WHITMAN,after:'This Compost',start:'This Compost',skipStart:true,before:'To a Foil’d European Revolutionaire',reflow:true,url:page(WHITMAN),targets:{'part:sediment':'Behold this compost!'}},
+ {id:'open-road',title:'Song of the Open Road, Section 1',poet:'Walt Whitman',published:1856,excerpt:true,book:WHITMAN,after:'Song of the Open Road',start:'       1',skipStart:true,before:'       2',reflow:true,url:page(WHITMAN),targets:{'step:2':'Afoot and light-hearted I take to the open road'}},
+ {id:'chattahoochee',title:'The Song of the Chattahoochee',poet:'Sidney Lanier',published:1877,book:LANIER,after:'Baltimore, 1879-80.',start:'Out of the hills of Habersham,',end:'Calls through the valleys of Hall.',url:wiki('The Song of the Chattahoochee'),targets:{'place:friction':'The rushes cried'}},
+ {id:'sunrise',title:'Sunrise',poet:'Sidney Lanier',published:1882,book:LANIER,start:'In my sleep I was fain of their fellowship, fain',before:'____',url:wiki('Hymns of the Marshes/Sunrise'),targets:{'step:0':'The tide\'s at full'}},
+ {id:'dover-beach',title:'Dover Beach',poet:'Matthew Arnold',published:1867,wiki:'The poetical works of Matthew Arnold/Dover Beach',start:'The sea is calm to-night.',end:'Where ignorant armies clash by night.',stanza:999,fix:[['\nSophocles long ago','\n\nSophocles long ago'],['\nThe Sea of Faith','\n\nThe Sea of Faith'],['\nAh, love, let us be true','\n\nAh, love, let us be true']],url:wiki('The poetical works of Matthew Arnold/Dover Beach'),targets:{'stage:1':'melancholy, long, withdrawing roar'}},
+ {id:'sonnet-64',title:'Sonnet 64',poet:'William Shakespeare',published:1609,wiki:"Shakespeare's Sonnets (1883)/Sonnet 64",start:'When I have seen by Time\'s fell hand defac\'d',end:'But weep to have that which it fears to lose.',stanza:14,url:wiki("Shakespeare's Sonnets (1883)/Sonnet 64"),targets:{'stage:2':'hungry ocean gain','place:two-ways':'firm soil win of the watery main'}},
+ {id:'each-and-all',title:'Each and All',poet:'Ralph Waldo Emerson',published:1839,wiki:'Poems (Emerson, 1847)/Each and All',start:'Little thinks, in the field, yon red-cloaked clown,',end:'I yielded myself to the perfect whole.',stanza:999,url:wiki('Poems (Emerson, 1847)/Each and All'),targets:{'place:alone':'Nothing is fair or good alone'}},
+ {id:'binsey-poplars',title:'Binsey Poplars',poet:'Gerard Manley Hopkins',published:1918,wiki:'Poems of Gerard Manley Hopkins/Binsey Poplars',start:'My aspens dear, whose airy cages quelled,',end:'Sweet especial rural scene.',last:true,stanza:999,fix:[['\nO if we but knew','\n\nO if we but knew']],url:wiki('Poems of Gerard Manley Hopkins/Binsey Poplars'),targets:{'step:1':'O if we but knew what we do'}},
+ {id:'say-not',title:'Say Not the Struggle Nought Availeth',poet:'Arthur Hugh Clough',published:1855,wiki:'The Poems and Prose Remains of Arthur Hugh Clough/Volume 2/Say not the struggle nought availeth',start:'Say not, the struggle nought availeth,',end:'But westward, look, the land is bright.',url:wiki('The Poems and Prose Remains of Arthur Hugh Clough/Volume 2/Say not the struggle nought availeth'),targets:{'step:3':'creeks and inlets making'}},
+ {id:'crannied-wall',title:'Flower in the Crannied Wall',poet:'Alfred, Lord Tennyson',published:1869,wiki:'Flower in the Crannied Wall',start:'Flower in the crannied wall,',end:'I should know what God and man is.',stanza:6,url:wiki('Flower in the Crannied Wall'),targets:{'part:roots':'root and all'}},
+ {id:'west-running-brook',title:'West-Running Brook',poet:'Robert Frost',published:1928,wiki:'West-running Brook/Chapter III',start:'Fred, where is north?"',end:'of what we both said',fix:[['Fred, where is north?"','"Fred, where is north?"'],['call it.""','call it."'],['shore—""','shore—'],['take if off','take it off'],[/([?.!])(?=[A-Z])/g,'$1 '],[/was n't/g,"wasn't"],[/As't were/g,"As 't were"]],url:wiki('West-running Brook/Chapter III'),targets:{'place:two-systems':'Flung backward on itself in one white wave','step:4':'go by contraries'}}
 ];
-const decode=s=>s.replace(/&#(\d+);/g,(_,n)=>String.fromCodePoint(Number(n))).replace(/&#x([0-9a-f]+);/gi,(_,n)=>String.fromCodePoint(parseInt(n,16))).replace(/&nbsp;/g,' ').replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/​/g,'');
+const decode=s=>s.replace(/&#(\d+);/g,(_,n)=>String.fromCodePoint(Number(n))).replace(/&#x([0-9a-f]+);/gi,(_,n)=>String.fromCodePoint(parseInt(n,16))).replace(/&nbsp;/g,' ').replace(/&amp;/g,'&').replace(/&quot;/g,'"').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/\u200b/g,'').replace(/\u00a0/g,' ').replace(/\u202b/g,'');
 const cache=new Map();
-function load(url,parse){if(!cache.has(url))cache.set(url,fetch(url,UA).then(r=>{if(!r.ok)throw Error(`${url}: HTTP ${r.status}`);return parse(r);}));return cache.get(url);}
+// Wikisource rate-limits bursts, so its requests are spaced out and retried.
+const pause=ms=>new Promise(done=>setTimeout(done,ms));
+async function get(url){const slow=url.includes('wikisource');for(let tries=0;;tries++){if(slow)await pause(3000);const r=await fetch(url,UA);if(r.status!==429||tries===5)return r;await pause(30000);}}
+function load(url,parse){if(!cache.has(url))cache.set(url,get(url).then(r=>{if(!r.ok)throw Error(`${url}: HTTP ${r.status}`);return parse(r);}));return cache.get(url);}
 const bookLines=id=>load(gutenberg(id),async r=>(await r.text()).replaceAll('\r','').split('\n'));
 const wikiLines=title=>load('https://en.wikisource.org/w/api.php?action=parse&format=json&prop=text&redirects=1&page='+encodeURIComponent(title),async r=>{const html=(await r.json()).parse.text['*'];return decode(html.replace(/<style[\s\S]*?<\/style>/g,'').replace(/<br\s*\/?>/g,'\n').replace(/<\/(p|div|dd|li|tr)>/g,'\n').replace(/<[^>]+>/g,'')).split('\n').map(l=>l.trimEnd());});
 function cut(lines,p){
- const same=(line,want)=>line.trim()===want.trim();
+ const same=(line,want)=>line.trim().toLowerCase()===want.trim().toLowerCase();
  const from=p.after?lines.findIndex(l=>same(l,p.after)):0;if(from<0)throw Error(`${p.id}: no "${p.after}"`);
  const start=lines.findIndex((l,i)=>i>=from&&same(l,p.start));if(start<0)throw Error(`${p.id}: no start`);
  let end=-1;
@@ -46,18 +65,19 @@ function cut(lines,p){
  return lines.slice(p.skipStart?start+1:start,end+1);
 }
 function shape(raw,p){
- let lines=raw.map(l=>l.trimEnd().replace(/_/g,''));
+ let lines=raw.filter(l=>!/^\s+\d+$/.test(l)).map(l=>l.trimEnd().replace(/_/g,''));
  if(p.reflow)lines=lines.reduce((out,l)=>{if(/^ {6}\S/.test(l)&&out.length)out[out.length-1]+=' '+l.trim();else out.push(l);return out;},[]);
  if(p.stanza){const body=lines.filter(l=>l.trim());lines=body.flatMap((l,i)=>i&&i%p.stanza===0?['',l]:[l]);}
  const indent=Math.min(...lines.filter(l=>l.trim()).map(l=>l.match(/^ */)[0].length));
  return lines.map(l=>l.slice(indent)).join('\n').replace(/\n{3,}/g,'\n\n').trim();
 }
 const out=[];
-for(const {book,wiki:page,after,start,before,end,last,skipStart,reflow,stanza,...p} of poems){
- const check=await fetch(p.url,UA);if(!check.ok)throw Error(`${p.id}: ${p.url} returned HTTP ${check.status}`);
+// fix corrects scanning errors in a source, such as a lost opening quotation mark.
+for(const {book,wiki:page,after,start,before,end,last,skipStart,reflow,stanza,fix=[],...p} of poems){
+ const check=await get(p.url);if(!check.ok)throw Error(`${p.id}: ${p.url} returned HTTP ${check.status}`);
  if(p.linkOnly){out.push(p);continue;}
  const lines=book?await bookLines(book):await wikiLines(page);
- const text=shape(cut(lines,{id:p.id,after,start,before,end,last,skipStart}),{reflow,stanza});
+ const text=fix.reduce((t,[a,b])=>t.replace(a,b),shape(cut(lines,{id:p.id,after,start,before,end,last,skipStart}),{reflow,stanza}));
  for(const phrase of Object.values(p.targets))if(!text.toLowerCase().includes(phrase.toLowerCase()))throw Error(`${p.id}: phrase not in text: ${phrase}`);
  out.push({...p,text,source:book?gutenberg(book):wiki(page)});
 }

@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {tideLevel,interpolate,depth,parseNOAA,eastTime,metresToFeet,validateNotebook,csvExport} from '../src/science.js';
 import {birds,filterBirds} from '../src/data/birds.js';
-import {sources,stages,history} from '../src/data/content.js';
+import {sources,stages,history,plantParts} from '../src/data/content.js';
 import {readFile} from 'node:fs/promises';
 
 test('curated bird galleries have distinct local photographs and license attribution',async()=>{
@@ -15,7 +15,7 @@ test('curated bird galleries have distinct local photographs and license attribu
 test('poems name real site items, contain their highlighted phrase, and link to an online text',async()=>{
  const {poems}=JSON.parse(await readFile(new URL('../src/data/poems.json',import.meta.url)));
  const animals=JSON.parse(await readFile(new URL('../src/data/animals.json',import.meta.url)));
- const places=['chapter:map','chapter:tides','chapter:formation','chapter:marsh','chapter:history','place:coast','place:river'];
+ const places=['chapter:map','chapter:tides','chapter:formation','chapter:marsh','chapter:history','place:coast','place:river','place:two-ways','place:friction','place:alone','place:below','place:low-places','place:edge','place:two-systems',...stages.map((_,i)=>`stage:${i}`),...plantParts.map(p=>`part:${p.id}`),...history.map((_,i)=>`step:${i}`)];
  const known=new Set([...places,...birds.map(b=>`species:${b.id}`),...animals.species.map(s=>`species:${s.id}`)]);
  const used=new Set();
  for(const p of poems){assert.ok(p.title&&p.poet&&p.published);assert.ok(p.url.startsWith('https://'));for(const [key,phrase] of Object.entries(p.targets)){assert.ok(known.has(key),key);assert.ok(!used.has(key),`${key} has two poems`);used.add(key);if(!p.linkOnly)assert.ok(p.text.toLowerCase().includes(phrase.toLowerCase()),phrase);}if(p.linkOnly)assert.equal(p.text,undefined);else assert.ok(p.published<=1930,`${p.title} may be under copyright`);}

@@ -117,3 +117,10 @@ test('poems open only on click, highlight the match, and show their URL',async({
  await page.goto('./#page=plants');await page.locator('[data-poem="species:47902"]').click();await expect(win.locator('mark')).toHaveText('The cactus guarded with thorns');
  await page.evaluate(()=>{location.hash='page=history';});await expect(win).toBeHidden();
 });
+test('stage, plant part, and timeline poems follow the selected step',async({page})=>{
+ const win=page.locator('#poem-window'),read=async(key,text)=>{await page.locator(`[data-poem="${key}"]`).click();await expect(win.locator('mark').first()).toHaveText(text);await page.keyboard.press('Escape');await expect(win).toBeHidden();};
+ await page.goto('./#page=formation');await page.locator('[data-stage="3"]').click();await expect(page.locator('#geo-title')).toHaveText('A sheltered lagoon');await read('stage:3','bays, lagoons, creeks');await read('place:two-ways','firm soil win of the watery main');
+ await page.goto('./#page=marsh');await page.locator('[data-part="stem"]').click();await expect(page.locator('#part-title')).toHaveText('Stems');await read('part:stem','What is the grass?');await page.locator('[data-part="habitat"]').click();await read('part:habitat','Feeds among the reeds and rushes');await read('place:alone','Nothing is fair or good alone');await read('place:below','The world below the brine');
+ await page.goto('./#page=history');await page.locator('[data-history="3"]').click();await read('step:3','creeks and inlets making');
+ await page.goto('./#page=tides&mode=learn');await read('place:edge','The rim, the sediment that stands for all the water and all the land of the globe');
+});
