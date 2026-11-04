@@ -89,19 +89,6 @@
    }
   },
   {
-   "id": "song-of-myself-1",
-   "title": "Song of Myself, Section 1",
-   "poet": "Walt Whitman",
-   "published": 1855,
-   "excerpt": true,
-   "url": "https://www.gutenberg.org/cache/epub/1322/pg1322-images.html",
-   "targets": {
-    "species:773004": "a spear of summer grass"
-   },
-   "text": "I celebrate myself, and sing myself,\nAnd what I assume you shall assume,\nFor every atom belonging to me as good belongs to you.\n\nI loafe and invite my soul,\nI lean and loafe at my ease observing a spear of summer grass.\n\nMy tongue, every atom of my blood, form’d from this soil, this air,\nBorn here of parents born here from parents the same, and their parents the same,\nI, now thirty-seven years old in perfect health begin,\nHoping to cease not till death.\n\nCreeds and schools in abeyance,\nRetiring back a while sufficed at what they are, but never forgotten,\nI harbor for good or bad, I permit to speak at every hazard,\nNature without check with original energy.",
-   "source": "https://www.gutenberg.org/cache/epub/1322/pg1322.txt"
-  },
-  {
    "id": "song-of-myself-33",
    "title": "Song of Myself, Section 33",
    "poet": "Walt Whitman",
@@ -213,17 +200,7 @@
    "published": 1891,
    "url": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html",
    "targets": {
-    "species:49150": "butterfly",
-    "species:49766": "butterfly",
-    "species:51536": "butterfly",
-    "species:68232": "butterfly",
-    "species:48662": "butterfly",
-    "species:48505": "butterfly",
-    "species:67435": "butterfly",
-    "species:1650171": "butterfly",
-    "species:58586": "butterfly",
-    "species:60551": "butterfly",
-    "species:49133": "butterfly"
+    "place:butterflies": "butterfly"
    },
    "text": "From cocoon forth a butterfly\nAs lady from her door\nEmerged -- a summer afternoon --\nRepairing everywhere,\n\nWithout design, that I could trace,\nExcept to stray abroad\nOn miscellaneous enterprise\nThe clovers understood.\n\nHer pretty parasol was seen\nContracting in a field\nWhere men made hay, then struggling hard\nWith an opposing cloud,\n\nWhere parties, phantom as herself,\nTo Nowhere seemed to go\nIn purposeless circumference,\nAs 't were a tropic show.\n\nAnd notwithstanding bee that worked,\nAnd flower that zealous blew,\nThis audience of idleness\nDisdained them, from the sky,\n\nTill sundown crept, a steady tide,\nAnd men that made the hay,\nAnd afternoon, and butterfly,\nExtinguished in its sea.",
    "source": "https://www.gutenberg.org/cache/epub/12242/pg12242.txt"
@@ -235,10 +212,7 @@
    "published": 1866,
    "url": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html",
    "targets": {
-    "species:27137": "A narrow fellow in the grass",
-    "species:28362": "A narrow fellow in the grass",
-    "species:558951": "A narrow fellow in the grass",
-    "species:29200": "A narrow fellow in the grass"
+    "place:snakes": "A narrow fellow in the grass"
    },
    "text": "A narrow fellow in the grass\nOccasionally rides;\nYou may have met him, -- did you not,\nHis notice sudden is.\n\nThe grass divides as with a comb,\nA spotted shaft is seen;\nAnd then it closes at your feet\nAnd opens further on.\n\nHe likes a boggy acre,\nA floor too cool for corn.\nYet when a child, and barefoot,\nI more than once, at morn,\n\nHave passed, I thought, a whip-lash\nUnbraiding in the sun, --\nWhen, stooping to secure it,\nIt wrinkled, and was gone.\n\nSeveral of nature's people\nI know, and they know me;\nI feel for them a transport\nOf cordiality;\n\nBut never met this fellow,\nAttended or alone,\nWithout a tighter breathing,\nAnd zero at the bone.",
    "source": "https://www.gutenberg.org/cache/epub/12242/pg12242.txt"
