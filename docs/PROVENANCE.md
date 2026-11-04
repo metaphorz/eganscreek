@@ -74,3 +74,9 @@ Paul Fishwick photographed the Greenway on October 23, 2026. Fifteen of his phot
 Full text appears only for poems published before 1931, which are out of copyright in the US. Later poems are `linkOnly`: the window shows the title, poet, and link, because showing the whole poem would republish it. A poet's permission would allow a full-text entry.
 
 Wikisource's scan of Frost's "West-Running Brook" has errors such as lost spaces and quotation marks. The script's `fix` list corrects them, so that text should be compared with a printed copy. Stanza breaks in "Dover Beach" and "Binsey Poplars" are also restored there, because the source's page layout does not preserve them.
+
+## Art links
+
+`src/data/art.json` and `public/assets/art/` are built by `node scripts/fetch-art.mjs`, which reads each work's license and source from its Wikimedia Commons record and stops on any license other than public domain, CC0, CC BY, or CC BY-SA. The art window shows the license and source for every work.
+
+The works were chosen by the site's owner in a review of candidates on 2026-11-04. Most are public domain. The butterfly is a photograph by MathewTownsend under CC BY-SA 3.0, resized here, so its credit and license link must stay with it. The prickly pear engraving comes from Old Book Illustrations, which judges it public domain in the US as an 1885–91 publication and notes that such assessments are its best guess. Museum color bars were cropped from the four Audubon mammal plates.

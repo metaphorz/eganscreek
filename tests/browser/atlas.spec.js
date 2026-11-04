@@ -126,3 +126,13 @@ test('stage, plant part, and timeline poems follow the selected step',async({pag
  await page.goto('./#page=history');await page.locator('[data-history="3"]').click();await read('step:3','creeks and inlets making');
  await page.goto('./#page=tides&mode=learn');await read('place:edge','The rim, the sediment that stands for all the water and all the land of the globe');
 });
+
+test('art opens on click with its credit, beside any poem',async({page})=>{
+ const win=page.locator('#art-window');
+ await page.goto('./#page=animals&group=birds');const mark=page.locator('.bird-card [data-art="species:anhinga"]');await mark.hover();await expect(win).toHaveCount(0);await mark.click();
+ await expect(win).toBeVisible();await expect(win.locator('h2')).toHaveText('Black-bellied Darter');await expect(win).toContainText('John James Audubon');await expect(win).toContainText('Public domain');await expect(win.locator('#art-source')).toHaveAttribute('href',/commons\.wikimedia\.org/);
+ await expect.poll(()=>win.locator('#art-image').evaluate(i=>i.complete&&i.naturalWidth)).toBeGreaterThan(0);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1)).toBe(true);expect(await new AxeBuilder({page}).include('#art-window').analyze().then(r=>r.violations)).toEqual([]);await win.locator('#art-close').click();await expect(win).toBeHidden();
+ await page.goto('./#page=plants');const poem=await page.locator('[data-poem="species:47902"]').boundingBox(),art=await page.locator('[data-art="species:47902"]').boundingBox();expect(art.x+art.width<=poem.x||poem.x+poem.width<=art.x).toBe(true);
+ await page.goto('./#page=animals&group=invertebrates');await page.locator('[data-art="place:butterflies"]').click();await expect(win).toContainText('MathewTownsend');await expect(win.getByRole('link',{name:'CC BY-SA 3.0'})).toHaveAttribute('href',/creativecommons\.org/);await page.goto('./#page=map');await expect(win).toBeHidden();
+ await page.goto('./#page=formation');await expect(page.locator('[data-art="place:coast"]')).toBeVisible();await expect(page.locator('[data-art="stage:4"]')).toHaveCount(0);await page.locator('[data-stage="4"]').click();await page.locator('[data-art="stage:4"]').click();await expect(win.locator('h2')).toHaveText('The Great Florida Marsh');
+});
