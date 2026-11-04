@@ -115,4 +115,5 @@ test('poems open only on click, highlight the match, and show their URL',async({
  await page.keyboard.press('Escape');await expect(win).toBeHidden();
  await page.goto('./#page=map');await page.locator('[data-poem="chapter:map"]').click();await expect(win).toContainText('still under copyright');await expect(win.locator('mark')).toHaveCount(0);await expect(win.locator('#poem-url')).toHaveAttribute('href',/rattle\.com/);await win.locator('#poem-close').click();
  await page.goto('./#page=plants');await page.locator('[data-poem="species:47902"]').click();await expect(win.locator('mark')).toHaveText('The cactus guarded with thorns');
+ await page.evaluate(()=>{location.hash='page=history';});await expect(win).toBeHidden();
 });

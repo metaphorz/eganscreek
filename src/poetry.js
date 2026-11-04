@@ -13,3 +13,4 @@ function openPoem(key){const {poem,phrase}=targets.get(key),d=poemWindow(),body=
  body.classList.toggle('poem-link-only',Boolean(poem.linkOnly));body.innerHTML=poem.linkOnly?'This poem is still under copyright, so it is not reproduced here. Follow the link below to read it where it was published.':highlightPoem(poem.text,phrase);d.showModal();
  const first=body.querySelector('mark');body.scrollTop=first?Math.max(0,first.offsetTop-body.offsetTop-body.clientHeight/3):0;body.focus();}
 document.addEventListener('click',e=>{const mark=e.target.closest('[data-poem]');if(mark)openPoem(mark.dataset.poem);});
+window.addEventListener('hashchange',()=>document.querySelector('#poem-window')?.close());
