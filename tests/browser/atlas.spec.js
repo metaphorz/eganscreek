@@ -108,3 +108,11 @@ test('map accepts mouse wheel zoom and History links both Angela Ray stories',as
  await page.goto('./');const scale=page.locator('.leaflet-control-scale-line').first();const before=await scale.textContent();await page.locator('#atlas-map').hover();await page.mouse.wheel(0,-450);await expect(scale).not.toHaveText(before);
  await page.locator('[data-page="history"]').click();await expect(page).toHaveTitle('Egans Creek: A Model');const stories=page.getByRole('navigation',{name:'Angela Ray’s two-part history'});await expect(stories.getByRole('link')).toHaveCount(2);await expect(stories.getByRole('link').nth(0)).toHaveAttribute('href',/106405$/);await expect(stories.getByRole('link').nth(1)).toHaveAttribute('href',/107197$/);
 });
+test('poems open only on click, highlight the match, and show their URL',async({page})=>{
+ await page.goto('./#page=animals&group=birds');const mark=page.locator('.bird-card [data-poem="species:great-blue"]');await mark.hover();await expect(page.locator('#poem-window')).toHaveCount(0);await mark.click();
+ const win=page.locator('#poem-window');await expect(win).toBeVisible();await expect(win.locator('h2')).toHaveText('The Song of Hiawatha, Introduction');await expect(win).toContainText('Henry Wadsworth Longfellow');await expect(win.locator('mark').first()).toHaveText('The blue heron, the Shuh-shuh-gah');await expect(win.locator('mark').first()).toBeInViewport();await expect(win.locator('#poem-url')).toHaveAttribute('href',/^https:/);
+ expect(await win.locator('#poem-text').evaluate(el=>el.scrollHeight>el.clientHeight)).toBe(true);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1)).toBe(true);expect(await new AxeBuilder({page}).include('#poem-window').analyze().then(r=>r.violations)).toEqual([]);
+ await page.keyboard.press('Escape');await expect(win).toBeHidden();
+ await page.goto('./#page=map');await page.locator('[data-poem="chapter:map"]').click();await expect(win).toContainText('still under copyright');await expect(win.locator('mark')).toHaveCount(0);await expect(win.locator('#poem-url')).toHaveAttribute('href',/rattle\.com/);await win.locator('#poem-close').click();
+ await page.goto('./#page=plants');await page.locator('[data-poem="species:47902"]').click();await expect(win.locator('mark')).toHaveText('The cactus guarded with thorns');
+});

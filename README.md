@@ -41,6 +41,7 @@ VITE_BASE_PATH=/eganscreek/ npm run preview
 - **Sign species, plants, and field photos:** every species on the Greenway butterfly and snake signs, with venomous snakes flagged. Four plants, and field photographs taken at Egans Creek on October 23, 2026, appear in the species galleries. See [provenance](docs/PROVENANCE.md).
 - **Plants & Trees:** its own chapter, with the 15 species from Maia McGuire’s *Salt Marsh Plants of NE Florida* (Florida Sea Grant Extension Program). The sheet’s photographs are credited to her beside each image.
 - **Animal sightings map:** a dated snapshot of 26 openly licensed observation records, with group, species, and date filters, observer attribution, reported accuracy, and source links. Locations must be public and unobscured with reported accuracy at most 100 m. Some groups have no records passing those filters; this does not imply absence. Links open the broader current iNaturalist map and eBird hotspot explorer.
+- **Poetry links:** a quill beside some species and chapter text opens a poem on click, with the matching phrase highlighted and the online source at the bottom. Poems out of copyright show in full; later ones show a link only. See [provenance](docs/PROVENANCE.md).
 - **Formation and marsh ecology:** source-backed explanatory models. The precise local stratigraphic contacts, wave attenuation, sediment accumulation, and future habitat distributions are not measured by the app.
 
 ## Data and assets

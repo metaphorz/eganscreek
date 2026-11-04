@@ -1,0 +1,268 @@
+{
+ "retrieved": "2026-11-04",
+ "poems": [
+  {
+   "id": "tide-rises",
+   "title": "The Tide Rises, the Tide Falls",
+   "poet": "Henry Wadsworth Longfellow",
+   "published": 1880,
+   "url": "https://poets.org/poem/tide-rises-tide-falls",
+   "targets": {
+    "chapter:tides": "The tide rises, the tide falls"
+   },
+   "text": "The tide rises, the tide falls,\nThe twilight darkens, the curlew calls;\nAlong the sea-sands damp and brown\nThe traveller hastens toward the town,\nAnd the tide rises, the tide falls.\n\nDarkness settles on roofs and walls,\nBut the sea in the darkness calls and calls;\nThe little waves, with their soft, white hands,\nEfface the footprints in the sands,\nAnd the tide rises, the tide falls.\n\nThe morning breaks; the steeds in their stalls\n Stamp and neigh, as the hostler calls;\nThe day returns, but nevermore\nReturns the traveller to the shore,\nAnd the tide rises, the tide falls.",
+   "source": "https://en.wikisource.org/wiki/Ultima_Thule/The_Tide_Rises,_the_Tide_Falls"
+  },
+  {
+   "id": "marshes-of-glynn",
+   "title": "The Marshes of Glynn",
+   "poet": "Sidney Lanier",
+   "published": 1878,
+   "url": "https://en.wikisource.org/wiki/Hymns_of_the_Marshes/The_Marshes_of_Glynn",
+   "targets": {
+    "chapter:marsh": "marsh-grass",
+    "species:772903": "marsh-grass"
+   },
+   "text": "Glooms of the live-oaks, beautiful-braided and woven\nWith intricate shades of the vines that myriad-cloven\n Clamber the forks of the multiform boughs, --\n            Emerald twilights, --\n            Virginal shy lights,\nWrought of the leaves to allure to the whisper of vows,\nWhen lovers pace timidly down through the green colonnades\nOf the dim sweet woods, of the dear dark woods,\n Of the heavenly woods and glades,\nThat run to the radiant marginal sand-beach within\n    The wide sea-marshes of Glynn; --\n\nBeautiful glooms, soft dusks in the noon-day fire, --\nWildwood privacies, closets of lone desire,\nChamber from chamber parted with wavering arras of leaves, --\nCells for the passionate pleasure of prayer to the soul that grieves,\nPure with a sense of the passing of saints through the wood,\nCool for the dutiful weighing of ill with good; --\n\nO braided dusks of the oak and woven shades of the vine,\nWhile the riotous noon-day sun of the June-day long did shine\nYe held me fast in your heart and I held you fast in mine;\nBut now when the noon is no more, and riot is rest,\nAnd the sun is a-wait at the ponderous gate of the West,\nAnd the slant yellow beam down the wood-aisle doth seem\nLike a lane into heaven that leads from a dream, --\nAy, now, when my soul all day hath drunken the soul of the oak,\nAnd my heart is at ease from men, and the wearisome sound of the stroke\n Of the scythe of time and the trowel of trade is low,\n And belief overmasters doubt, and I know that I know,\n And my spirit is grown to a lordly great compass within,\nThat the length and the breadth and the sweep of the marshes of Glynn\nWill work me no fear like the fear they have wrought me of yore\nWhen length was fatigue, and when breadth was but bitterness sore,\nAnd when terror and shrinking and dreary unnamable pain\nDrew over me out of the merciless miles of the plain, --\n\nOh, now, unafraid, I am fain to face\n The vast sweet visage of space.\nTo the edge of the wood I am drawn, I am drawn,\nWhere the gray beach glimmering runs, as a belt of the dawn,\n For a mete and a mark\n  To the forest-dark: --\n            So:\nAffable live-oak, leaning low, --\nThus -- with your favor -- soft, with a reverent hand,\n(Not lightly touching your person, Lord of the land!)\nBending your beauty aside, with a step I stand\nOn the firm-packed sand,\n            Free\nBy a world of marsh that borders a world of sea.\n\n Sinuous southward and sinuous northward the shimmering band\n Of the sand-beach fastens the fringe of the marsh to the folds of the land.\nInward and outward to northward and southward the beach-lines linger and curl\nAs a silver-wrought garment that clings to and follows\n  the firm sweet limbs of a girl.\nVanishing, swerving, evermore curving again into sight,\nSoftly the sand-beach wavers away to a dim gray looping of light.\nAnd what if behind me to westward the wall of the woods stands high?\nThe world lies east:  how ample, the marsh and the sea and the sky!\nA league and a league of marsh-grass, waist-high, broad in the blade,\nGreen, and all of a height, and unflecked with a light or a shade,\nStretch leisurely off, in a pleasant plain,\nTo the terminal blue of the main.\n\nOh, what is abroad in the marsh and the terminal sea?\n Somehow my soul seems suddenly free\nFrom the weighing of fate and the sad discussion of sin,\nBy the length and the breadth and the sweep of the marshes of Glynn.\n\nYe marshes, how candid and simple and nothing-withholding and free\nYe publish yourselves to the sky and offer yourselves to the sea!\nTolerant plains, that suffer the sea and the rains and the sun,\nYe spread and span like the catholic man who hath mightily won\nGod out of knowledge and good out of infinite pain\nAnd sight out of blindness and purity out of a stain.\n\nAs the marsh-hen secretly builds on the watery sod,\nBehold I will build me a nest on the greatness of God:\nI will fly in the greatness of God as the marsh-hen flies\nIn the freedom that fills all the space 'twixt the marsh and the skies:\nBy so many roots as the marsh-grass sends in the sod\nI will heartily lay me a-hold on the greatness of God:\nOh, like to the greatness of God is the greatness within\nThe range of the marshes, the liberal marshes of Glynn.\n\nAnd the sea lends large, as the marsh:  lo, out of his plenty the sea\nPours fast:  full soon the time of the flood-tide must be:\nLook how the grace of the sea doth go\nAbout and about through the intricate channels that flow\n    Here and there,\n            Everywhere,\nTill his waters have flooded the uttermost creeks and the low-lying lanes,\nAnd the marsh is meshed with a million veins,\nThat like as with rosy and silvery essences flow\n In the rose-and-silver evening glow.\n            Farewell, my lord Sun!\nThe creeks overflow:  a thousand rivulets run\n'Twixt the roots of the sod; the blades of the marsh-grass stir;\nPasseth a hurrying sound of wings that westward whirr;\nPasseth, and all is still; and the currents cease to run;\nAnd the sea and the marsh are one.\n\nHow still the plains of the waters be!\nThe tide is in his ecstasy.\nThe tide is at his highest height:\n            And it is night.\n\nAnd now from the Vast of the Lord will the waters of sleep\nRoll in on the souls of men,\nBut who will reveal to our waking ken\nThe forms that swim and the shapes that creep\n            Under the waters of sleep?\nAnd I would I could know what swimmeth below when the tide comes in\nOn the length and the breadth of the marvellous marshes of Glynn.",
+   "source": "https://www.gutenberg.org/cache/epub/579/pg579.txt"
+  },
+  {
+   "id": "in-memoriam",
+   "title": "In Memoriam A.H.H., Canto CXXI (CXXIII in most editions)",
+   "poet": "Alfred, Lord Tennyson",
+   "published": 1850,
+   "excerpt": true,
+   "url": "https://en.wikisource.org/wiki/In_Memoriam_(Tennyson)/Canto_121",
+   "targets": {
+    "chapter:formation": "There rolls the deep where grew the tree"
+   },
+   "text": "There rolls the deep where grew the tree.\nO earth, what changes hast thou seen!\nThere where the long street roars, hath been\nThe stillness of the central sea.\n\nThe hills are shadows, and they flow\nFrom form to form, and nothing stands;\nThey melt like mist, the solid lands,\nLike clouds they shape themselves and go.\n\nBut in my spirit will I dwell,\nAnd dream my dream, and hold it true;\nFor tho' my lips may breathe adieu,\nI cannot think the thing farewell.",
+   "source": "https://en.wikisource.org/wiki/In_Memoriam_(Tennyson)/Canto_121"
+  },
+  {
+   "id": "fabliau",
+   "title": "Fabliau of Florida",
+   "poet": "Wallace Stevens",
+   "published": 1923,
+   "url": "https://en.wikisource.org/wiki/Harmonium_(Stevens)/Fabliau_of_Florida",
+   "targets": {
+    "place:coast": "On the palmy beach"
+   },
+   "text": "Barque of phosphor\nOn the palmy beach,\n\nMove outward into heaven,\nInto the alabasters\nAnd night blues.\n\nFoam and cloud are one.\nSultry moon-monsters\nAre dissolving.\n\nFill your black hull\nWith white moonlight.\n\nThere will never be an end\nTo this droning of the surf.",
+   "source": "https://en.wikisource.org/wiki/Harmonium_(Stevens)/Fabliau_of_Florida"
+  },
+  {
+   "id": "inversnaid",
+   "title": "Inversnaid",
+   "poet": "Gerard Manley Hopkins",
+   "published": 1918,
+   "url": "https://en.wikisource.org/wiki/Poems_of_Gerard_Manley_Hopkins/Inversnaid",
+   "targets": {
+    "chapter:history": "Of wet and of wildness"
+   },
+   "text": "This darksome burn, horseback brown,\nHis rollrock highroad roaring down,\nIn coop and in comb the fleece of his foam\nFlutes and low to the lake falls home.\n\nA windpuff-bonnet of fáwn-fróth\nTurns and twindles over the broth\nOf a pool so pitchblack, féll-frówning,\nIt rounds and rounds Despair to drowning.\n\nDegged with dew, dappled with dew\nAre the groins of the braes that the brook treads through,\nWiry heathpacks, flitches of fern,\nAnd the beadbonny ash that sits over the burn.\n\nWhat would the world be, once bereft\nOf wet and of wildness? Let them be left,\nO let them be left, wildness and wet;\nLong live the weeds and the wilderness yet.",
+   "source": "https://en.wikisource.org/wiki/Poems_of_Gerard_Manley_Hopkins/Inversnaid"
+  },
+  {
+   "id": "rivers",
+   "title": "The Negro Speaks of Rivers",
+   "poet": "Langston Hughes",
+   "published": 1921,
+   "url": "https://poets.org/poem/negro-speaks-rivers",
+   "targets": {
+    "place:river": "I've known rivers"
+   },
+   "text": "I've known rivers:\n\nI've known rivers ancient as the world and older than the flow of human blood in human veins.\n\nMy soul has grown deep like the rivers.\n\nI bathed in the Euphrates when dawns were young.\n\nI built my hut near the Congo and it lulled me to sleep.\n\nI looked upon the Nile and raised the pyramids above it.\n\nI heard the singing of the Mississippi when Abe Lincoln went down to New Orleans, and I've seen its muddy bosom turn all golden in the sunset.\n\nI've known rivers:\n\nAncient, dusky rivers.\n\nMy soul has grown deep like the rivers.",
+   "source": "https://en.wikisource.org/wiki/The_Weary_Blues_(collection)/The_Negro_Speaks_of_Rivers"
+  },
+  {
+   "id": "creek-light",
+   "title": "Creek Light",
+   "poet": "Lola Haskins",
+   "published": 2011,
+   "linkOnly": true,
+   "url": "https://rattle.com/creek-light-by-lola-haskins",
+   "targets": {
+    "chapter:map": "Creek Light"
+   }
+  },
+  {
+   "id": "song-of-myself-1",
+   "title": "Song of Myself, Section 1",
+   "poet": "Walt Whitman",
+   "published": 1855,
+   "excerpt": true,
+   "url": "https://www.gutenberg.org/cache/epub/1322/pg1322-images.html",
+   "targets": {
+    "species:773004": "a spear of summer grass"
+   },
+   "text": "I celebrate myself, and sing myself,\nAnd what I assume you shall assume,\nFor every atom belonging to me as good belongs to you.\n\nI loafe and invite my soul,\nI lean and loafe at my ease observing a spear of summer grass.\n\nMy tongue, every atom of my blood, form’d from this soil, this air,\nBorn here of parents born here from parents the same, and their parents the same,\nI, now thirty-seven years old in perfect health begin,\nHoping to cease not till death.\n\nCreeds and schools in abeyance,\nRetiring back a while sufficed at what they are, but never forgotten,\nI harbor for good or bad, I permit to speak at every hazard,\nNature without check with original energy.",
+   "source": "https://www.gutenberg.org/cache/epub/1322/pg1322.txt"
+  },
+  {
+   "id": "song-of-myself-33",
+   "title": "Song of Myself, Section 33",
+   "poet": "Walt Whitman",
+   "published": 1855,
+   "excerpt": true,
+   "url": "https://www.gutenberg.org/cache/epub/1322/pg1322-images.html",
+   "targets": {
+    "species:yellow-crown": "yellow-crown’d heron",
+    "species:26159": "the alligator in his tough pimples",
+    "species:53491": "the rattlesnake suns his flabby length",
+    "species:555974": "small crabs"
+   },
+   "text": "Space and Time! now I see it is true, what I guess’d at,\nWhat I guess’d when I loaf’d on the grass,\nWhat I guess’d while I lay alone in my bed,\nAnd again as I walk’d the beach under the paling stars of the morning.\n\nMy ties and ballasts leave me, my elbows rest in sea-gaps,\nI skirt sierras, my palms cover continents,\nI am afoot with my vision.\n\nBy the city’s quadrangular houses--in log huts, camping with lumber-men,\nAlong the ruts of the turnpike, along the dry gulch and rivulet bed,\nWeeding my onion-patch or hosing rows of carrots and parsnips, crossing savannas, trailing in forests,\nProspecting, gold-digging, girdling the trees of a new purchase,\nScorch’d ankle-deep by the hot sand, hauling my boat down the shallow river,\nWhere the panther walks to and fro on a limb overhead, where the buck turns furiously at the hunter,\nWhere the rattlesnake suns his flabby length on a rock, where the otter is feeding on fish,\nWhere the alligator in his tough pimples sleeps by the bayou,\nWhere the black bear is searching for roots or honey, where the beaver pats the mud with his paddle-shaped tall;\nOver the growing sugar, over the yellow-flower’d cotton plant, over the rice in its low moist field,\nOver the sharp-peak’d farm house, with its scallop’d scum and slender shoots from the gutters,\nOver the western persimmon, over the long-leav’d corn, over the delicate blue-flower flax,\nOver the white and brown buckwheat, a hummer and buzzer there with the rest,\nOver the dusky green of the rye as it ripples and shades in the breeze;\nScaling mountains, pulling myself cautiously up, holding on by low scragged limbs,\nWalking the path worn in the grass and beat through the leaves of the brush,\nWhere the quail is whistling betwixt the woods and the wheat-lot,\nWhere the bat flies in the Seventh-month eve, where the great goldbug drops through the dark,\nWhere the brook puts out of the roots of the old tree and flows to the meadow,\nWhere cattle stand and shake away flies with the tremulous shuddering of their hides,\nWhere the cheese-cloth hangs in the kitchen, where andirons straddle the hearth-slab, where cobwebs fall in festoons from the rafters;\nWhere trip-hammers crash, where the press is whirling its cylinders,\nWherever the human heart beats with terrible throes under its ribs,\nWhere the pear-shaped balloon is floating aloft, (floating in it myself and looking composedly down,)\nWhere the life-car is drawn on the slip-noose, where the heat hatches pale-green eggs in the dented sand,\nWhere the she-whale swims with her calf and never forsakes it,\nWhere the steam-ship trails hind-ways its long pennant of smoke,\nWhere the fin of the shark cuts like a black chip out of the water,\nWhere the half-burn’d brig is riding on unknown currents,\nWhere shells grow to her slimy deck, where the dead are corrupting below;\nWhere the dense-starr’d flag is borne at the head of the regiments,\nApproaching Manhattan up by the long-stretching island,\nUnder Niagara, the cataract falling like a veil over my countenance,\nUpon a door-step, upon the horse-block of hard wood outside,\nUpon the race-course, or enjoying picnics or jigs or a good game of base-ball,\nAt he-festivals, with blackguard gibes, ironical license, bull-dances, drinking, laughter,\nAt the cider-mill tasting the sweets of the brown mash, sucking the juice through a straw,\nAt apple-peelings wanting kisses for all the red fruit I find,\nAt musters, beach-parties, friendly bees, huskings, house-raisings;\nWhere the mocking-bird sounds his delicious gurgles, cackles, screams, weeps,\nWhere the hay-rick stands in the barn-yard, where the dry-stalks are scatter’d, where the brood-cow waits in the hovel,\nWhere the bull advances to do his masculine work, where the stud to the mare, where the cock is treading the hen,\nWhere the heifers browse, where geese nip their food with short jerks,\nWhere sun-down shadows lengthen over the limitless and lonesome prairie,\nWhere herds of buffalo make a crawling spread of the square miles far and near,\nWhere the humming-bird shimmers, where the neck of the long-lived swan is curving and winding,\nWhere the laughing-gull scoots by the shore, where she laughs her near-human laugh,\nWhere bee-hives range on a gray bench in the garden half hid by the high weeds,\nWhere band-neck’d partridges roost in a ring on the ground with their heads out,\nWhere burial coaches enter the arch’d gates of a cemetery,\nWhere winter wolves bark amid wastes of snow and icicled trees,\nWhere the yellow-crown’d heron comes to the edge of the marsh at night and feeds upon small crabs,\nWhere the splash of swimmers and divers cools the warm noon,\nWhere the katy-did works her chromatic reed on the walnut-tree over the well,\nThrough patches of citrons and cucumbers with silver-wired leaves,\nThrough the salt-lick or orange glade, or under conical firs,\nThrough the gymnasium, through the curtain’d saloon, through the office or public hall;\nPleas’d with the native and pleas’d with the foreign, pleas’d with the new and old,\nPleas’d with the homely woman as well as the handsome,\nPleas’d with the quakeress as she puts off her bonnet and talks melodiously,\nPleas’d with the tune of the choir of the whitewash’d church,\nPleas’d with the earnest words of the sweating Methodist preacher, impress’d seriously at the camp-meeting;\nLooking in at the shop-windows of Broadway the whole forenoon, flatting the flesh of my nose on the thick plate glass,\nWandering the same afternoon with my face turn’d up to the clouds, or down a lane or along the beach,\nMy right and left arms round the sides of two friends, and I in the middle;\nComing home with the silent and dark-cheek’d bush-boy, (behind me he rides at the drape of the day,)\nFar from the settlements studying the print of animals’ feet, or the moccasin print,\nBy the cot in the hospital reaching lemonade to a feverish patient,\nNigh the coffin’d corpse when all is still, examining with a candle;\nVoyaging to every port to dicker and adventure,\nHurrying with the modern crowd as eager and fickle as any,\nHot toward one I hate, ready in my madness to knife him,\nSolitary at midnight in my back yard, my thoughts gone from me a long while,\nWalking the old hills of Judaea with the beautiful gentle God by my side,\nSpeeding through space, speeding through heaven and the stars,\nSpeeding amid the seven satellites and the broad ring, and the diameter of eighty thousand miles,\nSpeeding with tail’d meteors, throwing fire-balls like the rest,\nCarrying the crescent child that carries its own full mother in its belly,\nStorming, enjoying, planning, loving, cautioning,\nBacking and filling, appearing and disappearing,\nI tread day and night such roads.\n\nI visit the orchards of spheres and look at the product,\nAnd look at quintillions ripen’d and look at quintillions green.\n\nI fly those flights of a fluid and swallowing soul,\nMy course runs below the soundings of plummets.\n\nI help myself to material and immaterial,\nNo guard can shut me off, no law prevent me.\n\nI anchor my ship for a little while only,\nMy messengers continually cruise away or bring their returns to me.\n\nI go hunting polar furs and the seal, leaping chasms with a pike-pointed staff, clinging to topples of brittle and blue.\n\nI ascend to the foretruck,\nI take my place late at night in the crow’s-nest,\nWe sail the arctic sea, it is plenty light enough,\nThrough the clear atmosphere I stretch around on the wonderful beauty,\nThe enormous masses of ice pass me and I pass them, the scenery is plain in all directions,\nThe white-topt mountains show in the distance, I fling out my fancies toward them,\nWe are approaching some great battle-field in which we are soon to be engaged,\nWe pass the colossal outposts of the encampment, we pass with still feet and caution,\nOr we are entering by the suburbs some vast and ruin’d city,\nThe blocks and fallen architecture more than all the living cities of the globe.\n\nI am a free companion, I bivouac by invading watchfires,\nI turn the bridegroom out of bed and stay with the bride myself,\nI tighten her all night to my thighs and lips.\n\nMy voice is the wife’s voice, the screech by the rail of the stairs,\nThey fetch my man’s body up dripping and drown’d.\n\nI understand the large hearts of heroes,\nThe courage of present times and all times,\nHow the skipper saw the crowded and rudderless wreck of the steamship, and Death chasing it up and down the storm,\nHow he knuckled tight and gave not back an inch, and was faithful of days and faithful of nights,\nAnd chalk’d in large letters on a board, Be of good cheer, we will not desert you;\nHow he follow’d with them and tack’d with them three days and would not give it up,\nHow he saved the drifting company at last,\nHow the lank loose-gown’d women look’d when boated from the side of their prepared graves,\nHow the silent old-faced infants and the lifted sick, and the sharp-lipp’d unshaved men;\nAll this I swallow, it tastes good, I like it well, it becomes mine,\nI am the man, I suffer’d, I was there.\n\nThe disdain and calmness of martyrs,\nThe mother of old, condemn’d for a witch, burnt with dry wood, her children gazing on,\nThe hounded slave that flags in the race, leans by the fence, blowing, cover’d with sweat,\nThe twinges that sting like needles his legs and neck, the murderous buckshot and the bullets,\nAll these I feel or am.\n\nI am the hounded slave, I wince at the bite of the dogs,\nHell and despair are upon me, crack and again crack the marksmen,\nI clutch the rails of the fence, my gore dribs, thinn’d with the ooze of my skin,\nI fall on the weeds and stones,\nThe riders spur their unwilling horses, haul close,\nTaunt my dizzy ears and beat me violently over the head with whip-stocks.\n\nAgonies are one of my changes of garments,\nI do not ask the wounded person how he feels, I myself become the wounded person,\nMy hurts turn livid upon me as I lean on a cane and observe.\n\nI am the mash’d fireman with breast-bone broken,\nTumbling walls buried me in their debris,\nHeat and smoke I inspired, I heard the yelling shouts of my comrades,\nI heard the distant click of their picks and shovels,\nThey have clear’d the beams away, they tenderly lift me forth.\n\nI lie in the night air in my red shirt, the pervading hush is for my sake,\nPainless after all I lie exhausted but not so unhappy,\nWhite and beautiful are the faces around me, the heads are bared of their fire-caps,\nThe kneeling crowd fades with the light of the torches.\n\nDistant and dead resuscitate,\nThey show as the dial or move as the hands of me, I am the clock myself.\n\nI am an old artillerist, I tell of my fort’s bombardment,\nI am there again.\n\nAgain the long roll of the drummers,\nAgain the attacking cannon, mortars,\nAgain to my listening ears the cannon responsive.\n\nI take part, I see and hear the whole,\nThe cries, curses, roar, the plaudits for well-aim’d shots,\nThe ambulanza slowly passing trailing its red drip,\nWorkmen searching after damages, making indispensable repairs,\nThe fall of grenades through the rent roof, the fan-shaped explosion,\nThe whizz of limbs, heads, stone, wood, iron, high in the air.\n\nAgain gurgles the mouth of my dying general, he furiously waves with his hand,\nHe gasps through the clot Mind not me--mind--the entrenchments.",
+   "source": "https://www.gutenberg.org/cache/epub/1322/pg1322.txt"
+  },
+  {
+   "id": "our-old-feuillage",
+   "title": "Our Old Feuillage",
+   "poet": "Walt Whitman",
+   "published": 1860,
+   "url": "https://www.gutenberg.org/cache/epub/1322/pg1322-images.html",
+   "targets": {
+    "species:snowy": "snowy herons",
+    "species:58530": "two little yellow butterflies"
+   },
+   "text": "Always our old feuillage!\nAlways Florida’s green peninsula--always the priceless delta of Louisiana--always the cotton-fields of Alabama and Texas,\nAlways California’s golden hills and hollows, and the silver mountains of New Mexico--always soft-breath’d Cuba,\nAlways the vast slope drain’d by the Southern sea, inseparable with the slopes drain’d by the Eastern and Western seas,\nThe area the eighty-third year of these States, the three and a half millions of square miles,\nThe eighteen thousand miles of sea-coast and bay-coast on the main, the thirty thousand miles of river navigation,\nThe seven millions of distinct families and the same number of dwellings-- always these, and more, branching forth into numberless branches,\nAlways the free range and diversity--always the continent of Democracy;\nAlways the prairies, pastures, forests, vast cities, travelers, Kanada, the snows;\nAlways these compact lands tied at the hips with the belt stringing the huge oval lakes;\nAlways the West with strong native persons, the increasing density there, the habitans, friendly, threatening, ironical, scorning invaders;\nAll sights, South, North, East--all deeds, promiscuously done at all times,\nAll characters, movements, growths, a few noticed, myriads unnoticed,\nThrough Mannahatta’s streets I walking, these things gathering,\nOn interior rivers by night in the glare of pine knots, steamboats wooding up,\nSunlight by day on the valley of the Susquehanna, and on the valleys of the Potomac and Rappahannock, and the valleys of the Roanoke and Delaware,\nIn their northerly wilds beasts of prey haunting the Adirondacks the hills, or lapping the Saginaw waters to drink,\nIn a lonesome inlet a sheldrake lost from the flock, sitting on the water rocking silently,\nIn farmers’ barns oxen in the stable, their harvest labor done, they rest standing, they are too tired,\nAfar on arctic ice the she-walrus lying drowsily while her cubs play around,\nThe hawk sailing where men have not yet sail’d, the farthest polar sea, ripply, crystalline, open, beyond the floes,\nWhite drift spooning ahead where the ship in the tempest dashes,\nOn solid land what is done in cities as the bells strike midnight together,\nIn primitive woods the sounds there also sounding, the howl of the wolf, the scream of the panther, and the hoarse bellow of the elk,\nIn winter beneath the hard blue ice of Moosehead lake, in summer visible through the clear waters, the great trout swimming,\nIn lower latitudes in warmer air in the Carolinas the large black buzzard floating slowly high beyond the tree tops,\nBelow, the red cedar festoon’d with tylandria, the pines and cypresses growing out of the white sand that spreads far and flat,\nRude boats descending the big Pedee, climbing plants, parasites with color’d flowers and berries enveloping huge trees,\nThe waving drapery on the live-oak trailing long and low, noiselessly waved by the wind,\nThe camp of Georgia wagoners just after dark, the supper-fires and the cooking and eating by whites and negroes,\nThirty or forty great wagons, the mules, cattle, horses, feeding from troughs,\nThe shadows, gleams, up under the leaves of the old sycamore-trees, the flames with the black smoke from the pitch-pine curling and rising;\nSouthern fishermen fishing, the sounds and inlets of North Carolina’s coast, the shad-fishery and the herring-fishery, the large sweep-seines, the windlasses on shore work’d by horses, the clearing, curing, and packing-houses;\nDeep in the forest in piney woods turpentine dropping from the incisions in the trees, there are the turpentine works,\nThere are the negroes at work in good health, the ground in all directions is cover’d with pine straw;\nIn Tennessee and Kentucky slaves busy in the coalings, at the forge, by the furnace-blaze, or at the corn-shucking,\nIn Virginia, the planter’s son returning after a long absence, joyfully welcom’d and kiss’d by the aged mulatto nurse,\nOn rivers boatmen safely moor’d at nightfall in their boats under shelter of high banks,\nSome of the younger men dance to the sound of the banjo or fiddle, others sit on the gunwale smoking and talking;\nLate in the afternoon the mocking-bird, the American mimic, singing in the Great Dismal Swamp,\nThere are the greenish waters, the resinous odor, the plenteous moss, the cypress-tree, and the juniper-tree;\nNorthward, young men of Mannahatta, the target company from an excursion returning home at evening, the musket-muzzles all bear bunches of flowers presented by women;\nChildren at play, or on his father’s lap a young boy fallen asleep, (how his lips move! how he smiles in his sleep!)\nThe scout riding on horseback over the plains west of the Mississippi, he ascends a knoll and sweeps his eyes around;\nCalifornia life, the miner, bearded, dress’d in his rude costume, the stanch California friendship, the sweet air, the graves one in passing meets solitary just aside the horse-path;\nDown in Texas the cotton-field, the negro-cabins, drivers driving mules or oxen before rude carts, cotton bales piled on banks and wharves;\nEncircling all, vast-darting up and wide, the American Soul, with equal hemispheres, one Love, one Dilation or Pride;\nIn arriere the peace-talk with the Iroquois the aborigines, the calumet, the pipe of good-will, arbitration, and indorsement,\nThe sachem blowing the smoke first toward the sun and then toward the earth,\nThe drama of the scalp-dance enacted with painted faces and guttural exclamations,\nThe setting out of the war-party, the long and stealthy march,\nThe single file, the swinging hatchets, the surprise and slaughter of enemies;\nAll the acts, scenes, ways, persons, attitudes of these States, reminiscences, institutions,\nAll these States compact, every square mile of these States without excepting a particle;\nMe pleas’d, rambling in lanes and country fields, Paumanok’s fields,\nObserving the spiral flight of two little yellow butterflies shuffling between each other, ascending high in the air,\nThe darting swallow, the destroyer of insects, the fall traveler southward but returning northward early in the spring,\nThe country boy at the close of the day driving the herd of cows and shouting to them as they loiter to browse by the roadside,\nThe city wharf, Boston, Philadelphia, Baltimore, Charleston, New Orleans, San Francisco,\nThe departing ships when the sailors heave at the capstan;\nEvening--me in my room--the setting sun,\nThe setting summer sun shining in my open window, showing the swarm of flies, suspended, balancing in the air in the centre of the room, darting athwart, up and down, casting swift shadows in specks on the opposite wall where the shine is;\nThe athletic American matron speaking in public to crowds of listeners,\nMales, females, immigrants, combinations, the copiousness, the individuality of the States, each for itself--the moneymakers,\nFactories, machinery, the mechanical forces, the windlass, lever, pulley, all certainties,\nThe certainty of space, increase, freedom, futurity,\nIn space the sporades, the scatter’d islands, the stars--on the firm earth, the lands, my lands,\nO lands! all so dear to me--what you are, (whatever it is,) I putting it at random in these songs, become a part of that, whatever it is,\nSouthward there, I screaming, with wings slow flapping, with the myriads of gulls wintering along the coasts of Florida,\nOtherways there atwixt the banks of the Arkansaw, the Rio Grande, the Nueces, the Brazos, the Tombigbee, the Red River, the Saskatchawan or the Osage, I with the spring waters laughing and skipping and running,\nNorthward, on the sands, on some shallow bay of Paumanok, I with parties of snowy herons wading in the wet to seek worms and aquatic plants,\nRetreating, triumphantly twittering, the king-bird, from piercing the crow with its bill, for amusement--and I triumphantly twittering,\nThe migrating flock of wild geese alighting in autumn to refresh themselves, the body of the flock feed, the sentinels outside move around with erect heads watching, and are from time to time reliev’d by other sentinels--and I feeding and taking turns with the rest,\nIn Kanadian forests the moose, large as an ox, corner’d by hunters, rising desperately on his hind-feet, and plunging with his fore-feet, the hoofs as sharp as knives--and I, plunging at the hunters, corner’d and desperate,\nIn the Mannahatta, streets, piers, shipping, store-houses, and the countless workmen working in the shops,\nAnd I too of the Mannahatta, singing thereof--and no less in myself than the whole of the Mannahatta in itself,\nSinging the song of These, my ever-united lands--my body no more inevitably united, part to part, and made out of a thousand diverse contributions one identity, any more than my lands are inevitably united and made ONE IDENTITY;\nNativities, climates, the grass of the great pastoral Plains,\nCities, labors, death, animals, products, war, good and evil--these me,\nThese affording, in all their particulars, the old feuillage to me and to America, how can I do less than pass the clew of the union of them, to afford the like to you?\nWhoever you are! how can I but offer you divine leaves, that you also be eligible as I am?\nHow can I but as here chanting, invite you for yourself to collect bouquets of the incomparable feuillage of these States?",
+   "source": "https://www.gutenberg.org/cache/epub/1322/pg1322.txt"
+  },
+  {
+   "id": "magnet-south",
+   "title": "O Magnet-South",
+   "poet": "Walt Whitman",
+   "published": 1860,
+   "url": "https://www.gutenberg.org/cache/epub/1322/pg1322-images.html",
+   "targets": {
+    "species:41663": "the raccoon",
+    "species:47902": "The cactus guarded with thorns"
+   },
+   "text": "O magnet-south! O glistening perfumed South! my South!\nO quick mettle, rich blood, impulse and love! good and evil! O all dear to me!\nO dear to me my birth-things--all moving things and the trees where I was born--the grains, plants, rivers,\nDear to me my own slow sluggish rivers where they flow, distant, over flats of slivery sands or through swamps,\nDear to me the Roanoke, the Savannah, the Altamahaw, the Pedee, the Tombigbee, the Santee, the Coosa and the Sabine,\nO pensive, far away wandering, I return with my soul to haunt their banks again,\nAgain in Florida I float on transparent lakes, I float on the Okeechobee, I cross the hummock-land or through pleasant openings or dense forests,\nI see the parrots in the woods, I see the papaw-tree and the blossoming titi;\nAgain, sailing in my coaster on deck, I coast off Georgia, I coast up the Carolinas,\nI see where the live-oak is growing, I see where the yellow-pine, the scented bay-tree, the lemon and orange, the cypress, the graceful palmetto,\nI pass rude sea-headlands and enter Pamlico sound through an inlet, and dart my vision inland;\nO the cotton plant! the growing fields of rice, sugar, hemp!\nThe cactus guarded with thorns, the laurel-tree with large white flowers,\nThe range afar, the richness and barrenness, the old woods charged with mistletoe and trailing moss,\nThe piney odor and the gloom, the awful natural stillness, (here in these dense swamps the freebooter carries his gun, and the fugitive has his conceal’d hut;)\nO the strange fascination of these half-known half-impassable swamps, infested by reptiles, resounding with the bellow of the alligator, the sad noises of the night-owl and the wild-cat, and the whirr of the rattlesnake,\nThe mocking-bird, the American mimic, singing all the forenoon, singing through the moon-lit night,\nThe humming-bird, the wild turkey, the raccoon, the opossum;\nA Kentucky corn-field, the tall, graceful, long-leav’d corn, slender, flapping, bright green, with tassels, with beautiful ears each well-sheath’d in its husk;\nO my heart! O tender and fierce pangs, I can stand them not, I will depart;\nO to be a Virginian where I grew up! O to be a Carolinian!\nO longings irrepressible! O I will go back to old Tennessee and never wander more.",
+   "source": "https://www.gutenberg.org/cache/epub/1322/pg1322.txt"
+  },
+  {
+   "id": "patient-spider",
+   "title": "A Noiseless Patient Spider",
+   "poet": "Walt Whitman",
+   "published": 1868,
+   "url": "https://poets.org/poem/noiseless-patient-spider",
+   "targets": {
+    "species:67707": "noiseless patient spider"
+   },
+   "text": "A noiseless patient spider,\nI mark’d where on a little promontory it stood isolated,\nMark’d how to explore the vacant vast surrounding,\nIt launch’d forth filament, filament, filament out of itself,\nEver unreeling them, ever tirelessly speeding them.\n\nAnd you O my soul where you stand,\nSurrounded, detached, in measureless oceans of space,\nCeaselessly musing, venturing, throwing, seeking the spheres to connect them,\nTill the bridge you will need be form’d, till the ductile anchor hold,\nTill the gossamer thread you fling catch somewhere, O my soul.",
+   "source": "https://www.gutenberg.org/cache/epub/1322/pg1322.txt"
+  },
+  {
+   "id": "hiawatha-intro",
+   "title": "The Song of Hiawatha, Introduction",
+   "poet": "Henry Wadsworth Longfellow",
+   "published": 1855,
+   "excerpt": true,
+   "url": "https://www.gutenberg.org/cache/epub/19/pg19-images.html",
+   "targets": {
+    "species:great-blue": "The blue heron, the Shuh-shuh-gah"
+   },
+   "text": "Should you ask me, whence these stories?\nWhence these legends and traditions,\nWith the odors of the forest\nWith the dew and damp of meadows,\nWith the curling smoke of wigwams,\nWith the rushing of great rivers,\nWith their frequent repetitions,\nAnd their wild reverberations\nAs of thunder in the mountains?\n\nI should answer, I should tell you,\n“From the forests and the prairies,\nFrom the great lakes of the Northland,\nFrom the land of the Ojibways,\nFrom the land of the Dacotahs,\nFrom the mountains, moors, and fen-lands\nWhere the heron, the Shuh-shuh-gah,\nFeeds among the reeds and rushes.\nI repeat them as I heard them\nFrom the lips of Nawadaha,\nThe musician, the sweet singer.”\n\nShould you ask where Nawadaha\nFound these songs so wild and wayward,\nFound these legends and traditions,\nI should answer, I should tell you,\n“In the bird’s-nests of the forest,\nIn the lodges of the beaver,\nIn the hoofprint of the bison,\nIn the eyry of the eagle!\n\n“All the wild-fowl sang them to him,\nIn the moorlands and the fen-lands,\nIn the melancholy marshes;\nChetowaik, the plover, sang them,\nMahng, the loon, the wild-goose, Wawa,\nThe blue heron, the Shuh-shuh-gah,\nAnd the grouse, the Mushkodasa!”\n\nIf still further you should ask me,\nSaying, “Who was Nawadaha?\nTell us of this Nawadaha,”\nI should answer your inquiries\nStraightway in such words as follow.\n\n“In the vale of Tawasentha,\nIn the green and silent valley,\nBy the pleasant water-courses,\nDwelt the singer Nawadaha.\nRound about the Indian village\nSpread the meadows and the corn-fields,\nAnd beyond them stood the forest,\nStood the groves of singing pine-trees,\nGreen in Summer, white in Winter,\nEver sighing, ever singing.\n\n“And the pleasant water-courses,\nYou could trace them through the valley,\nBy the rushing in the Spring-time,\nBy the alders in the Summer,\nBy the white fog in the Autumn,\nBy the black line in the Winter;\nAnd beside them dwelt the singer,\nIn the vale of Tawasentha,\nIn the green and silent valley.\n\n“There he sang of Hiawatha,\nSang the Song of Hiawatha,\nSang his wondrous birth and being,\nHow he prayed and how he fasted,\nHow he lived, and toiled, and suffered,\nThat the tribes of men might prosper,\nThat he might advance his people!”\n\nYe who love the haunts of Nature,\nLove the sunshine of the meadow,\nLove the shadow of the forest,\nLove the wind among the branches,\nAnd the rain-shower and the snow-storm,\nAnd the rushing of great rivers\nThrough their palisades of pine-trees,\nAnd the thunder in the mountains,\nWhose innumerable echoes\nFlap like eagles in their eyries;--\nListen to these wild traditions,\nTo this Song of Hiawatha!\n\nYe who love a nation’s legends,\nLove the ballads of a people,\nThat like voices from afar off\nCall to us to pause and listen,\nSpeak in tones so plain and childlike,\nScarcely can the ear distinguish\nWhether they are sung or spoken;--\nListen to this Indian Legend,\nTo this Song of Hiawatha!\n\nYe whose hearts are fresh and simple,\nWho have faith in God and Nature,\nWho believe that in all ages\nEvery human heart is human,\nThat in even savage bosoms\nThere are longings, yearnings, strivings\nFor the good they comprehend not,\nThat the feeble hands and helpless,\nGroping blindly in the darkness,\nTouch God’s right hand in that darkness\nAnd are lifted up and strengthened;--\nListen to this simple story,\nTo this Song of Hiawatha!\n\nYe, who sometimes, in your rambles\nThrough the green lanes of the country,\nWhere the tangled barberry-bushes\nHang their tufts of crimson berries\nOver stone walls gray with mosses,\nPause by some neglected graveyard,\nFor a while to muse, and ponder\nOn a half-effaced inscription,\nWritten with little skill of song-craft,\nHomely phrases, but each letter\nFull of hope and yet of heart-break,\nFull of all the tender pathos\nOf the Here and the Hereafter;\nStay and read this rude inscription,\nRead this Song of Hiawatha!",
+   "source": "https://www.gutenberg.org/cache/epub/19/pg19.txt"
+  },
+  {
+   "id": "two-voices",
+   "title": "The Two Voices",
+   "poet": "Alfred, Lord Tennyson",
+   "published": 1842,
+   "excerpt": true,
+   "url": "https://www.gutenberg.org/cache/epub/8601/pg8601-images.html",
+   "targets": {
+    "species:61495": "dragon-fly"
+   },
+   "text": "To which the voice did urge reply;\n“To-day I saw the dragon-fly\nCome from the wells where he did lie.\n\n“An inner impulse rent the veil\nOf his old husk: from head to tail\nCame out clear plates of sapphire mail.\n\n“He dried his wings: like gauze they grew:\nThro’ crofts and pastures wet with dew\nA living flash of light he flew.”",
+   "source": "https://www.gutenberg.org/cache/epub/8601/pg8601.txt"
+  },
+  {
+   "id": "walrus",
+   "title": "The Walrus and the Carpenter",
+   "poet": "Lewis Carroll",
+   "published": 1871,
+   "url": "https://www.gutenberg.org/cache/epub/12/pg12-images.html",
+   "targets": {
+    "species:47585": "Oysters"
+   },
+   "text": "“The sun was shining on the sea,\n    Shining with all his might:\nHe did his very best to make\n    The billows smooth and bright—\nAnd this was odd, because it was\n    The middle of the night.\n\nThe moon was shining sulkily,\n    Because she thought the sun\nHad got no business to be there\n    After the day was done—\n‘It’s very rude of him,’ she said,\n    ‘To come and spoil the fun!’\n\nThe sea was wet as wet could be,\n    The sands were dry as dry.\nYou could not see a cloud, because\n    No cloud was in the sky:\nNo birds were flying over head—\n    There were no birds to fly.\n\nThe Walrus and the Carpenter\n    Were walking close at hand;\nThey wept like anything to see\n    Such quantities of sand:\n‘If this were only cleared away,’\n    They said, ‘it would be grand!’\n\n‘If seven maids with seven mops\n    Swept it for half a year,\nDo you suppose,’ the Walrus said,\n    ‘That they could get it clear?’\n‘I doubt it,’ said the Carpenter,\n    And shed a bitter tear.\n\n‘O Oysters, come and walk with us!’\n    The Walrus did beseech.\n‘A pleasant walk, a pleasant talk,\n    Along the briny beach:\nWe cannot do with more than four,\n    To give a hand to each.’\n\nThe eldest Oyster looked at him.\n    But never a word he said:\nThe eldest Oyster winked his eye,\n    And shook his heavy head—\nMeaning to say he did not choose\n    To leave the oyster-bed.\n\nBut four young oysters hurried up,\n    All eager for the treat:\nTheir coats were brushed, their faces washed,\n    Their shoes were clean and neat—\nAnd this was odd, because, you know,\n    They hadn’t any feet.\n\nFour other Oysters followed them,\n    And yet another four;\nAnd thick and fast they came at last,\n    And more, and more, and more—\nAll hopping through the frothy waves,\n    And scrambling to the shore.\n\nThe Walrus and the Carpenter\n    Walked on a mile or so,\nAnd then they rested on a rock\n    Conveniently low:\nAnd all the little Oysters stood\n    And waited in a row.\n\n‘The time has come,’ the Walrus said,\n    ‘To talk of many things:\nOf shoes—and ships—and sealing-wax—\n    Of cabbages—and kings—\nAnd why the sea is boiling hot—\n    And whether pigs have wings.’\n\n‘But wait a bit,’ the Oysters cried,\n    ‘Before we have our chat;\nFor some of us are out of breath,\n    And all of us are fat!’\n‘No hurry!’ said the Carpenter.\n    They thanked him much for that.\n\n‘A loaf of bread,’ the Walrus said,\n    ‘Is what we chiefly need:\nPepper and vinegar besides\n    Are very good indeed—\nNow if you’re ready Oysters dear,\n    We can begin to feed.’\n\n‘But not on us!’ the Oysters cried,\n    Turning a little blue,\n‘After such kindness, that would be\n    A dismal thing to do!’\n‘The night is fine,’ the Walrus said\n    ‘Do you admire the view?\n\n‘It was so kind of you to come!\n    And you are very nice!’\nThe Carpenter said nothing but\n    ‘Cut us another slice:\nI wish you were not quite so deaf—\n    I’ve had to ask you twice!’\n\n‘It seems a shame,’ the Walrus said,\n    ‘To play them such a trick,\nAfter we’ve brought them out so far,\n    And made them trot so quick!’\nThe Carpenter said nothing but\n    ‘The butter’s spread too thick!’\n\n‘I weep for you,’ the Walrus said.\n    ‘I deeply sympathize.’\nWith sobs and tears he sorted out\n    Those of the largest size.\nHolding his pocket handkerchief\n    Before his streaming eyes.\n\n‘O Oysters,’ said the Carpenter.\n    ‘You’ve had a pleasant run!\nShall we be trotting home again?’\n    But answer came there none—\nAnd that was scarcely odd, because\n    They’d eaten every one.”",
+   "source": "https://www.gutenberg.org/cache/epub/12/pg12.txt"
+  },
+  {
+   "id": "two-look",
+   "title": "Two Look at Two",
+   "poet": "Robert Frost",
+   "published": 1923,
+   "url": "https://www.gutenberg.org/cache/epub/58611/pg58611-images.html",
+   "targets": {
+    "species:42223": "doe"
+   },
+   "text": "Love and forgetting might have carried them\nA little further up the mountain side\nWith night so near, but not much further up.\nThey must have halted soon in any case\nWith thoughts of the path back, how rough it was\nWith rock and washout, and unsafe in darkness;\nWhen they were halted by a tumbled wall\nWith barbed-wire binding. They stood facing this,\nSpending what onward impulse they still had\nIn one last look the way they must not go,\nOn up the failing path, where, if a stone\nOr earthslide moved at night, it moved itself;\nNo footstep moved it. \"This is all,\" they sighed,\n\"Good-night to woods.\" But not so; there was more.\nA doe from round a spruce stood looking at them\nAcross the wall, as near the wall as they.\nShe saw them in their field, they her in hers.\nThe difficulty of seeing what stood still,\nLike some up-ended boulder split in two,\nWas in her clouded eyes: they saw no fear there.\nShe seemed to think that two thus they were safe.\nThen, as if they were something that, though strange,\nShe could not trouble her mind with too long,\nShe sighed and passed unscared along the wall.\n\"This, then, is all. What more is there to ask?\"\nBut no, not yet. A snort to bid them wait.\nA buck from round the spruce stood looking at them\nAcross the wall as near the wall as they.\nThis was an antlered buck of lusty nostril,\nNot the same doe come back into her place.\nHe viewed them quizzically with jerks of head,\nAs if to ask, \"Why don't you make some motion?\nOr give some sign of life? Because you can't.\nI doubt if you're as living as you look.\"\nThus till he had them almost feeling dared\nTo stretch a proffering hand--and a spell-breaking.\nThen he too passed unscared along the wall.\nTwo had seen two, whichever side you spoke from.\n\"This must be all.\" It was all. Still they stood,\nA great wave from it going over them,\nAs if the earth in one unlooked-for favor\nHad made them certain earth returned their love.",
+   "source": "https://www.gutenberg.org/cache/epub/58611/pg58611.txt"
+  },
+  {
+   "id": "butterflys-day",
+   "title": "The Butterfly’s Day",
+   "poet": "Emily Dickinson",
+   "published": 1891,
+   "url": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html",
+   "targets": {
+    "species:49150": "butterfly",
+    "species:49766": "butterfly",
+    "species:51536": "butterfly",
+    "species:68232": "butterfly",
+    "species:48662": "butterfly",
+    "species:48505": "butterfly",
+    "species:67435": "butterfly",
+    "species:1650171": "butterfly",
+    "species:58586": "butterfly",
+    "species:60551": "butterfly",
+    "species:49133": "butterfly"
+   },
+   "text": "From cocoon forth a butterfly\nAs lady from her door\nEmerged -- a summer afternoon --\nRepairing everywhere,\n\nWithout design, that I could trace,\nExcept to stray abroad\nOn miscellaneous enterprise\nThe clovers understood.\n\nHer pretty parasol was seen\nContracting in a field\nWhere men made hay, then struggling hard\nWith an opposing cloud,\n\nWhere parties, phantom as herself,\nTo Nowhere seemed to go\nIn purposeless circumference,\nAs 't were a tropic show.\n\nAnd notwithstanding bee that worked,\nAnd flower that zealous blew,\nThis audience of idleness\nDisdained them, from the sky,\n\nTill sundown crept, a steady tide,\nAnd men that made the hay,\nAnd afternoon, and butterfly,\nExtinguished in its sea.",
+   "source": "https://www.gutenberg.org/cache/epub/12242/pg12242.txt"
+  },
+  {
+   "id": "narrow-fellow",
+   "title": "The Snake (“A narrow fellow in the grass”)",
+   "poet": "Emily Dickinson",
+   "published": 1866,
+   "url": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html",
+   "targets": {
+    "species:27137": "A narrow fellow in the grass",
+    "species:28362": "A narrow fellow in the grass",
+    "species:558951": "A narrow fellow in the grass",
+    "species:29200": "A narrow fellow in the grass"
+   },
+   "text": "A narrow fellow in the grass\nOccasionally rides;\nYou may have met him, -- did you not,\nHis notice sudden is.\n\nThe grass divides as with a comb,\nA spotted shaft is seen;\nAnd then it closes at your feet\nAnd opens further on.\n\nHe likes a boggy acre,\nA floor too cool for corn.\nYet when a child, and barefoot,\nI more than once, at morn,\n\nHave passed, I thought, a whip-lash\nUnbraiding in the sun, --\nWhen, stooping to secure it,\nIt wrinkled, and was gone.\n\nSeveral of nature's people\nI know, and they know me;\nI feel for them a transport\nOf cordiality;\n\nBut never met this fellow,\nAttended or alone,\nWithout a tighter breathing,\nAnd zero at the bone.",
+   "source": "https://www.gutenberg.org/cache/epub/12242/pg12242.txt"
+  },
+  {
+   "id": "im-nobody",
+   "title": "I’m Nobody! Who Are You?",
+   "poet": "Emily Dickinson",
+   "published": 1891,
+   "url": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html",
+   "targets": {
+    "species:65979": "like a frog"
+   },
+   "text": "I'm nobody!  Who are you?\nAre you nobody, too?\nThen there 's a pair of us -- don't tell!\nThey 'd banish us, you know.\n\nHow dreary to be somebody!\nHow public, like a frog\nTo tell your name the livelong day\nTo an admiring bog!",
+   "source": "https://www.gutenberg.org/cache/epub/12242/pg12242.txt"
+  },
+  {
+   "id": "toad",
+   "title": "A Toad Can Die of Light",
+   "poet": "Emily Dickinson",
+   "published": 1896,
+   "url": "https://www.gutenberg.org/cache/epub/12242/pg12242-images.html",
+   "targets": {
+    "species:64988": "A toad can die of light"
+   },
+   "text": "A toad can die of light!\nDeath is the common right\n  Of toads and men, --\nOf earl and midge\nThe privilege.\n  Why swagger then?\nThe gnat's supremacy\nIs large as thine.",
+   "source": "https://www.gutenberg.org/cache/epub/12242/pg12242.txt"
+  }
+ ]
+}

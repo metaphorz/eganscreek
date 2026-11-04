@@ -66,3 +66,9 @@ Paul Fishwick photographed the Greenway on October 23, 2026. Fifteen of his phot
 
 - **Plants & Trees** moved out of Animals into its own chapter, next to Animals in the main menu. Old `#page=animals&group=plants` links open it.
 - **Salt marsh plants:** the 15 species on Maia McGuire, *Salt Marsh Plants of NE Florida*, Florida Sea Grant Extension Program, St. Augustine (2-page PDF, 2004) were added by `scripts/add-saltmarsh-plants.mjs`. The sheet's photographs were extracted from the PDF, flipped upright (the embedded images are stored inverted), and saved in `public/assets/plants/`. Each is credited "Photo by Maia McGuire · *Salt Marsh Plants of NE Florida*, Florida Sea Grant Extension Program". Species carry `guide: "saltmarsh"`. The sheet's Prickly Pear Cactus (*Opuntia stricta*) photo was added to the existing Prickly Pear entry. iNaturalist now treats Smooth and Saltmeadow Cordgrass as *Sporobolus alterniflorus* and *S. pumilus*; the guide shows the sheet's name and the current one. The sheet labels Spanish Bayonet non-native, which the guide reports alongside the view that it is native to the Southeast coast. Wikipedia/Commons reference photos were reviewed on a contact sheet; a line drawing and two specimen images (wood, seeds) were removed. Sea Blite's references came from a Commons search.
+
+## Poetry links
+
+`src/data/poems.json` is built by `node scripts/fetch-poems.mjs`, which takes each poem's text from Wikisource or Project Gutenberg and stops if a highlighted phrase is missing or a linked URL does not load. It grew from a draft list, `poetry_atlas.json`. A poem qualifies by naming the item it is attached to, wherever the poet is from.
+
+Full text appears only for poems published before 1931, which are out of copyright in the US. Later poems are `linkOnly`: the window shows the title, poet, and link, because showing the whole poem would republish it. A poet's permission would allow a full-text entry.

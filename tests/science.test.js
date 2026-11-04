@@ -12,6 +12,14 @@ test('curated bird galleries have distinct local photographs and license attribu
   for(const p of gallery){if(p.field){assert.ok(p.author&&p.date&&p.src.startsWith('/assets/field/'));assert.ok((await readFile(new URL('../public'+p.src,import.meta.url))).length>1000);continue;}assert.ok(p.author&&p.license&&p.licenseUrl.startsWith('https://'));assert.ok(p.source.startsWith('https://commons.wikimedia.org/wiki/File:'));assert.ok((await readFile(new URL('../public'+p.src,import.meta.url))).length>1000);}
  }
 });
+test('poems name real site items, contain their highlighted phrase, and link to an online text',async()=>{
+ const {poems}=JSON.parse(await readFile(new URL('../src/data/poems.json',import.meta.url)));
+ const animals=JSON.parse(await readFile(new URL('../src/data/animals.json',import.meta.url)));
+ const places=['chapter:map','chapter:tides','chapter:formation','chapter:marsh','chapter:history','place:coast','place:river'];
+ const known=new Set([...places,...birds.map(b=>`species:${b.id}`),...animals.species.map(s=>`species:${s.id}`)]);
+ const used=new Set();
+ for(const p of poems){assert.ok(p.title&&p.poet&&p.published);assert.ok(p.url.startsWith('https://'));for(const [key,phrase] of Object.entries(p.targets)){assert.ok(known.has(key),key);assert.ok(!used.has(key),`${key} has two poems`);used.add(key);if(!p.linkOnly)assert.ok(p.text.toLowerCase().includes(phrase.toLowerCase()),phrase);}if(p.linkOnly)assert.equal(p.text,undefined);else assert.ok(p.published<=1930,`${p.title} may be under copyright`);}
+});
 test('creek geometry is sourced Egans Creek hydrography in geographic coordinates',async()=>{
  const data=JSON.parse(await readFile(new URL('../src/data/creek.json',import.meta.url)));
  assert.equal(data.features.length,35);assert.ok(data.metadata.source.startsWith('https://hydro.nationalmap.gov/'));
