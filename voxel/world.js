@@ -31,6 +31,8 @@ const tint=(c,f)=>[c[0]*f,c[1]*f,c[2]*f],mix=(a,b,f)=>[a[0]+(b[0]-a[0])*f,a[1]+(
 function pine(m,x,y,z,r){const h=5+Math.floor(r*3),g=[38+r*20,88+r*24,54];m.box(x-.14,y,z-.14,x+.14,y+h,z+.14,[92,66,46]);m.box(x-1.1,y+h-3,z-1.1,x+1.1,y+h-2,z+1.1,g);m.box(x-.8,y+h-2,z-.8,x+.8,y+h-1,z+.8,tint(g,1.08));m.box(x-.45,y+h-1,z-.45,x+.45,y+h+.2,z+.45,tint(g,1.16));}
 function oak(m,x,y,z,r){const h=4+Math.floor(r*2),g=[58+r*22,108+r*26,58];m.box(x-.15,y,z-.15,x+.15,y+h,z+.15,[84,66,50]);m.box(x-1.5,y+h,z-1.5,x+1.5,y+h+1.2,z+1.5,g);m.box(x-.9,y+h+1.2,z-.9,x+.9,y+h+2,z+.9,tint(g,1.12));m.box(x+.8,y+h-.5,z-.5,x+.88,y+h,z-.42,[166,172,150]);m.box(x-1,y+h-.6,z+.5,x-.92,y+h,z+.58,[166,172,150]);}
 function palm(m,x,y,z,r){const h=3+Math.floor(r*3),g=[84,150,76];m.box(x-.12,y,z-.12,x+.12,y+h,z+.12,[138,112,82]);m.box(x-1.2,y+h,z-.22,x+1.2,y+h+.2,z+.22,g);m.box(x-.22,y+h,z-1.2,x+.22,y+h+.2,z+1.2,g);m.box(x-.3,y+h+.2,z-.3,x+.3,y+h+.5,z+.3,tint(g,1.15));}
+// Cordgrass grows in thin upright blades, so each clump is three narrow stems with no hidden undersides.
+function cordgrass(m,x,y,z,r,c){for(const [dx,dz,tall] of [[-.14,-.08,1],[.12,-.14,.8],[.02,.14,.9]]){const x0=x+dx-.035,x1=x+dx+.035,z0=z+dz-.035,z1=z+dz+.035,y1=y+(.45+r*.5)*tall;m.top(x0,x1,y1,z0,z1,tint(c,1.08));m.east(x1,y,y1,z0,z1,c);m.west(x0,y,y1,z0,z1,c);m.south(x0,x1,y,y1,z1,c);m.north(x0,x1,y,y1,z0,c);}}
 function shrub(m,x,y,z,r,c=[96,130,70]){const w=.3+r*.3;m.box(x-w,y,z-w,x+w,y+.5+r*.5,z+w,c);}
 function bird(m,x,y,z,r,kind){const [body,bill]=BIRDS[kind],east=r>.5?1:-1;m.box(x-.05,y,z-.03,x+.03,y+.5,z+.04,[70,66,60]);m.box(x-.3,y+.5,z-.13,x+.3,y+.8,z+.13,body);m.box(x+east*.2,y+.75,z-.05,x+east*.3,y+1.15,z+.05,body);m.box(x+east*.2,y+1.15,z-.07,x+east*.42,y+1.28,z+.07,body);m.box(x+east*.42,y+1.18,z-.03,x+east*.62,y+1.23,z+.03,bill);}
 // Each chunk has opaque terrain, translucent water, and distance-culled detail (plants and birds).
@@ -52,11 +54,14 @@ export function buildChunk(world,cx,cz){const terrain=new Mesh(),water=new Mesh(
    // Plants are scattered by land cover. Birds are illustrative; their spots are not sighting records.
    const r=hash(wx,wz,1),q=hash(wx,wz,2),px=x+.25+hash(wx,wz,5)*.5,pz=z+.25+hash(wx,wz,6)*.5;
    if(m===MAT.forest&&r<.24){if(q<.45)pine(detail,px,h,pz,hash(wx,wz,7));else if(q<.85)oak(detail,px,h,pz,hash(wx,wz,7));else palm(detail,px,h,pz,hash(wx,wz,7));}
-   else if(m===MAT.freshwater&&r<.1)(q<.5?oak:palm)(detail,px,h,pz,hash(wx,wz,7));
-   else if(m===MAT.freshwater&&r<.3)shrub(detail,px,h,pz,q,[74,132,92]);
+   // The Greenway wetland is mostly cordgrass (Spartina), with only an occasional tree or shrub.
+   else if(m===MAT.freshwater&&r<.012)(q<.5?oak:palm)(detail,px,h,pz,hash(wx,wz,7));
+   else if(m===MAT.freshwater&&r<.03)shrub(detail,px,h,pz,q,[74,132,92]);
+   else if(m===MAT.freshwater&&r<.42)cordgrass(detail,px,h,pz,q,[150+q*44,172+q*14,84]);
+   else if(m===MAT.fort&&(wx+wz)%2===0)terrain.box(x+.2,h,z+.2,x+.8,h+.5,z+.8,tint(COLORS[m],.92));
    else if((m===MAT.neighborhood||m===MAT.lawn)&&r<.035)(q<.6?oak:palm)(detail,px,h,pz,hash(wx,wz,7));
    else if(m===MAT.scrub&&r<.3)shrub(detail,px,h,pz,q);
    else if(m===MAT.sand&&r<.05&&h>=2)shrub(detail,px,h,pz,q,[132,148,88]);
-   else if(m===MAT.saltmarsh&&r<.3)detail.box(px-.18,h,pz-.18,px+.18,h+.35+q*.5,pz+.18,[198-q*30,186-q*12,92]);
-   if(m===MAT.saltmarsh&&hash(wx,wz,8)<.05&&sides.some(([nx,nz])=>world.materialAt(nx,nz)===MAT.creek))bird(detail,x+.5,h,z+.5,q,Math.floor(hash(wx,wz,9)*BIRDS.length));}}
+   else if(m===MAT.saltmarsh&&r<.26)cordgrass(detail,px,h,pz,q,[198-q*30,186-q*12,92]);
+   if((m===MAT.saltmarsh||m===MAT.freshwater)&&hash(wx,wz,8)<.05&&sides.some(([nx,nz])=>world.materialAt(nx,nz)===MAT.creek))bird(detail,x+.5,h,z+.5,q,Math.floor(hash(wx,wz,9)*BIRDS.length));}}
  return {terrain:terrain.finish(),water:water.finish(),detail:detail.finish()};}

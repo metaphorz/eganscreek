@@ -89,7 +89,11 @@ The works were chosen by the site's owner in a review of candidates on 2026-11-0
 |---|---|---|
 | Ground height | [USGS 3DEP](https://www.usgs.gov/3d-elevation-program), public domain | Rounded to whole metres. Low marsh cells become water. |
 | Habitats | [NLCD 2021](https://www.mrlc.gov/), public domain | 30 m land cover classes. Emergent wetland is drawn as salt marsh and woody wetland as freshwater wetland, matching the Greenway's north and south. |
-| Creek path | [USGS National Hydrography Dataset](https://www.usgs.gov/national-hydrography), public domain | The same flowlines as the Map chapter, drawn three blocks wide so they read at this scale. The float route follows them. |
-| Roads, trails, buildings, beach | [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors, ODbL | The credit must stay with the model, and the baked grid remains under the ODbL. |
+| Creek path | [USGS National Hydrography Dataset](https://www.usgs.gov/national-hydrography), public domain | The same flowlines as the Map chapter, three blocks wide north of Atlantic Avenue and one block wide on the Greenway. The float route follows them, except as noted below. |
+| Roads, trails, buildings, beach, Fort Clinch outline and cannons | [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors, ODbL | The credit must stay with the model, and the baked grid remains under the ODbL. |
 
 Trees, shrubs, cordgrass, and birds are placed by habitat with a repeatable pseudo-random pattern. They are illustrations, not surveyed plants or sighting records. Building heights are mostly assumed, because few OpenStreetMap buildings here record a height.
+
+Two Greenway choices follow the site owner's observations on the ground (2026-11-05) over the mapped data. Low wetland that the elevation data alone would show as open water is drawn mostly as cordgrass. From Jasmine Street to Atlantic Avenue, the channel runs beside the path, where elevation also dips lowest, while the USGS flowline runs about 300 m farther west. The elevation data supports this location but does not survey the channel.
+
+Fort Clinch uses its mapped outline. Its pentagon plan, corner bastions, 1847 start, and later vulnerability to rifled cannon come from [Florida State Parks](https://www.floridastateparks.org/learn/history-fort-clinch) and [Wikipedia](https://en.wikipedia.org/wiki/Fort_Clinch). No source reviewed gave a wall height, so the 6 m walls are assumed. The gate is placed on the side facing the visitor center and is not surveyed.
