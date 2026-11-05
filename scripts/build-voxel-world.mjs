@@ -7,7 +7,7 @@ import {MAT} from '../voxel/materials.js';
 // The north edge falls in the open sound, past the tip of Amelia Island and short of Cumberland Island.
 const W=-81.47,E=-81.418,S=30.636,N=30.713,cols=520,rows=858,cache=`node_modules/.cache/voxel-world-${N}`;
 // OpenStreetMap ways the model is built around. The build stops if one disappears, rather than guessing.
-const PATH_TO_JASMINE=263899124,PATH_TO_CREEK=263899126,PATH_SOUTH_OF_JASMINE=653676990,FORT_CLINCH=202321937,VISITOR_CENTER=[-81.4537951,30.703424];
+const PATH_TO_JASMINE=263899124,PATH_SOUTH_OF_JASMINE=653676990,JASMINE_STREET=11129139,FORT_CLINCH=202321937,VISITOR_CENTER=[-81.4537951,30.703424],ATLANTIC_CROSSING=[-81.43955,30.6676],HUG=1.6;
 const bbox=[W,S,E,N].join(','),agent='EgansCreekAtlas/1.0 (https://metaphorz.github.io/eganscreek/)';
 await mkdir(cache,{recursive:true});
 async function cached(name,url,options){const path=`${cache}/${name}`;if(existsSync(path))return readFile(path);const r=await fetch(url,{signal:AbortSignal.timeout(240000),...options});if(!r.ok)throw Error(`${name}: ${r.status}`);const data=Buffer.from(await r.arrayBuffer());await writeFile(path,data);return data;}
@@ -70,10 +70,17 @@ if(!dist.has(end))throw Error('Creek flowlines do not connect its southern end t
 const chain=[end];while(chain.at(-1)!==start)chain.push(prev.get(chain.at(-1)));
 const mapped=chain.reverse().map(k=>cell(...graph.get(k).p));
 const wayById=id=>{const e=osm.elements.find(e=>e.type==='way'&&e.id===id);if(!e)throw Error(`OpenStreetMap way ${id} is missing`);return geom(e);},nearestIndex=(list,p,from=0)=>{let best=from,d=Infinity;for(let i=from;i<list.length;i++){const q=Math.hypot(list[i][0]-p[0],list[i][1]-p[1]);if(q<d){d=q;best=i;}}return best;};
-// From Jasmine Street to Atlantic Avenue the channel follows the low ground just west of the path, where the site's
-// owner has seen it. The mapped flowline runs about 300 m farther west here and rejoins north of the path's side branch.
-const toJasmine=wayById(PATH_TO_JASMINE),toCreek=wayById(PATH_TO_CREEK),southEnd=nearestIndex(mapped,toJasmine[0]),northEnd=nearestIndex(mapped,toCreek.at(-1),southEnd),turn=nearestIndex(toJasmine,toCreek[0]);
-const route=[...mapped.slice(0,southEnd+1),...toJasmine.slice(0,turn+1).map(p=>[p[0]-2,p[1]]),...toCreek.map(p=>[p[0],p[1]+2]),...mapped.slice(northEnd)].map(p=>p.map(v=>Math.round(v*10)/10));
+// On the Greenway the channel follows the site owner's account rather than the mapped flowline: walking south from
+// Atlantic Avenue, and again south of Jasmine Street, the creek is just to the walker's right.
+const pathNorth=wayById(PATH_TO_JASMINE).slice().reverse(),southWay=wayById(PATH_SOUTH_OF_JASMINE).slice().reverse(),pathSouth=southWay.slice(0,southWay.reduce((best,p,i)=>p[1]>southWay[best][1]?i:best,0)+1);
+// Shifts a path toward a south-bound walker's right, using the average direction at each bend.
+const onRight=(path,by)=>path.map((p,i)=>{const a=path[Math.max(0,i-1)],b=path[Math.min(path.length-1,i+1)],dx=b[0]-a[0],dz=b[1]-a[1],n=Math.hypot(dx,dz)||1;return [p[0]-dz/n*by,p[1]+dx/n*by];});
+const jasmine=wayById(JASMINE_STREET).slice().sort((a,b)=>a[0]-b[0]),streetZ=x=>{const i=Math.max(1,jasmine.findIndex(p=>p[0]>=x)),a=jasmine[i-1],b=jasmine[i];return a[1]+(b[1]-a[1])*(x-a[0])/((b[0]-a[0])||1);};
+const southHug=onRight(pathSouth.slice(0,-1),HUG).reverse(),northHug=onRight(pathNorth,HUG).reverse().filter(([x,z])=>z<streetZ(x)-2.5);
+// It passes under Jasmine Street just west of the walker's left turn, then keeps to the north side of the street,
+// so the short walk along the road never crosses it. At the top it cuts across to the Atlantic Avenue bridge.
+const crossX=southHug.at(-1)[0],alongStreet=[];for(let x=crossX;x<northHug[0][0];x+=2)alongStreet.push([x,streetZ(x)-2]);
+const route=[...southHug,...alongStreet,...northHug,...mapped.slice(nearestIndex(mapped,cell(...ATLANTIC_CROSSING)))].map(p=>p.map(v=>Math.round(v*10)/10));
 line(route,0,i=>{if(mat[i]!==MAT.creek){mat[i]=MAT.creek;height[i]=-1;}});
 
 // Roads and trails sit on top. A road crossing a channel becomes a bridge the float route passes under.
@@ -99,11 +106,13 @@ const cannons=osm.elements.filter(e=>e.type==='node'&&e.tags?.historic==='cannon
 const place=id=>{const f=places.features.find(f=>f.id===id);return cell(...f.geometry.coordinates);},round=p=>p.map(v=>Math.round(v*10)/10);
 // Walking starts are on the path itself, facing the way it heads south. Both ways are drawn south to north.
 // Each start sits a few blocks along the path, clear of the place marker, and looks well ahead down it.
-const walk=(id,label,name,text,wayId)=>{const all=wayById(wayId).slice().reverse().map(round),marker=place(id),first=all.findIndex(p=>mat[at(Math.floor(p[0]),Math.floor(p[1]))]===MAT.trail&&Math.hypot(p[0]-marker[0],p[1]-marker[1])>=5);if(first<0)throw Error(`${id} walk has no path cells`);const path=all.slice(first),ahead=path.find(p=>Math.hypot(p[0]-path[0][0],p[1]-path[0][1])>=14)||path.at(-1);return {id,label,name,text,at:path[0].map(v=>Math.floor(v)+.5),facing:ahead,path};};
+const walk=(id,label,name,text,way)=>{const all=way.flatMap((p,i)=>{if(!i)return [p];const a=way[i-1],n=Math.ceil(Math.hypot(p[0]-a[0],p[1]-a[1]));return Array.from({length:n},(_,s)=>[a[0]+(p[0]-a[0])*(s+1)/n,a[1]+(p[1]-a[1])*(s+1)/n]);}).map(round),marker=place(id),first=all.findIndex(p=>mat[at(Math.floor(p[0]),Math.floor(p[1]))]===MAT.trail&&Math.hypot(p[0]-marker[0],p[1]-marker[1])>=5);if(first<0)throw Error(`${id} walk has no path cells`);const path=all.slice(first),ahead=path.find(p=>Math.hypot(p[0]-path[0][0],p[1]-path[0][1])>=14)||path.at(-1);return {id,label,name,text,at:path[0].map(v=>Math.floor(v)+.5),facing:ahead,path};};
 const walks=[
- walk('atlantic','Walk south from Atlantic Avenue','South from Atlantic Avenue','Follow the tan path south. The narrow creek runs beside it through the cordgrass, on the way to Jasmine Street.',PATH_TO_JASMINE),
- walk('jasmine','Walk south from Jasmine Street','South from Jasmine Street','Follow the tan path south through the cordgrass, toward Sadler Road.',PATH_SOUTH_OF_JASMINE),
+ walk('atlantic','Walk south from Atlantic Avenue','South from Atlantic Avenue','Follow the tan path south with the creek on your right. At Jasmine Street, cross and turn right along the road. After a short walk, turn left onto the next path.',pathNorth),
+ walk('jasmine','Walk south from Jasmine Street','South from Jasmine Street','Follow the tan path south through the cordgrass, with the creek on your right.',pathSouth),
 ];
+// Small signs mark the two turns on the walk from one path to the next.
+const signs=[{id:'cross',name:'Cross, then turn right',at:round([pathNorth.at(-1)[0]+1.5,streetZ(pathNorth.at(-1)[0])-2]),sign:true},{id:'turn',name:'Turn left: path continues',at:round([pathSouth[0][0]+1.5,streetZ(pathSouth[0][0])+2]),sign:true}];
 const stops=[
  {id:'atlantic',name:'Atlantic Avenue',text:'Northern entrance to the Greenway, at the Atlantic Recreation Center. Salt marsh stretches away to the west.',at:round(place('atlantic'))},
  {id:'jasmine',name:'Jasmine Street',text:'Where the water systems change: tides reach the salt marsh to the north, while water controls protect freshwater habitat to the south.',at:round(place('jasmine'))},
@@ -112,7 +121,7 @@ const stops=[
  {id:'south',name:'The southern reach',text:'The southern end of the mapped creek, far from its tidal mouth.',at:route[0]},
  {id:'fort',name:'Fort Clinch',text:'A five-sided brick fort with corner bastions at the northern end of the island, begun in 1847. Rifled cannon soon left brick walls like these vulnerable.',at:round(visitor),facing:[fortX,fortZ]},
 ];
-const meta={cols,rows,bounds:{west:W,south:S,east:E,north:N},blockMetres:{across:Math.round((E-W)*95800/cols*10)/10,along:Math.round((N-S)*110850/rows*10)/10,up:1},route,stops,walks,fort:{center:round([fortX,fortZ]),ground:fortGround,wallTop:fortGround+fortWalls,cannons},retrieved:osm.osm3s?.timestamp_osm_base?.slice(0,10),sources:{elevation:'USGS 3DEP',landCover:'NLCD 2021 (MRLC)',creek:'USGS National Hydrography Dataset',features:'OpenStreetMap contributors (ODbL)'}};
+const meta={cols,rows,bounds:{west:W,south:S,east:E,north:N},blockMetres:{across:Math.round((E-W)*95800/cols*10)/10,along:Math.round((N-S)*110850/rows*10)/10,up:1},route,stops,walks,signs,fort:{center:round([fortX,fortZ]),ground:fortGround,wallTop:fortGround+fortWalls,cannons},retrieved:osm.osm3s?.timestamp_osm_base?.slice(0,10),sources:{elevation:'USGS 3DEP',landCover:'NLCD 2021 (MRLC)',creek:'USGS National Hydrography Dataset',features:'OpenStreetMap contributors (ODbL)'}};
 await writeFile('public/data/voxel-world.bin',Buffer.concat([Buffer.from(height.buffer),Buffer.from(mat.buffer)]));
 await writeFile('public/data/voxel-world.json',JSON.stringify(meta)+'\n');
 

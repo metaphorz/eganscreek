@@ -47,9 +47,23 @@ test('both walks start on a path that heads south and stays walkable',()=>{
 
 test('the Greenway is mostly cordgrass with a one-block creek beside the path',()=>{
  const {at}=meta.walks[0],jasmine=meta.stops.find(s=>s.id==='jasmine').at[1];let reed=0,open=0;for(let z=Math.ceil(at[1])+10;z<jasmine-5;z++)for(let x=270;x<335;x++){const m=world.materialAt(x,z);if(m===MAT.freshwater)reed++;if(m===MAT.creek||m===MAT.water)open++;}assert.ok(reed>open*6,`${reed} cordgrass, ${open} open water`);
- // The channel leaves for the Atlantic Avenue bridge at the path's side branch, just south of the start.
- const beside=meta.walks[0].path.filter(([,z])=>z>at[1]+16&&z<jasmine-5);assert.ok(beside.length>5);for(const [x,z] of beside){let near=false;for(let dz=-4;dz<=4;dz++)for(let dx=-4;dx<=4;dx++)if(world.isWater(world.materialAt(Math.floor(x)+dx,Math.floor(z)+dz)))near=true;assert.ok(near,`no creek near the path at ${x},${z}`);}
 });
+
+const alongPath=(path,visit)=>{for(let i=1;i<path.length;i++){const [ax,az]=path[i-1],[bx,bz]=path[i],len=Math.hypot(bx-ax,bz-az)||1,steps=Math.ceil(len*2);for(let s=0;s<=steps;s++)visit(ax+(bx-ax)*s/steps,az+(bz-az)*s/steps,(bx-ax)/len,(bz-az)/len);}};
+
+test('walking south on either path, the creek is just to the right',()=>{
+ const jasmineZ=meta.stops.find(s=>s.id==='jasmine').at[1];
+ for(const w of meta.walks){let hugged=0,all=0;alongPath(w.path,(x,z,dx,dz)=>{if(w.id==='atlantic'&&z>jasmineZ-3)return;all++;let found=false;for(const by of [.8,1.2,1.6,2,2.4,2.8])if(world.materialAt(Math.floor(x-dz*by),Math.floor(z+dx*by))===MAT.creek||world.materialAt(Math.floor(x-dz*by),Math.floor(z+dx*by))===MAT.bridge)found=true;if(found)hugged++;});assert.ok(all>100);assert.ok(hugged/all>.92,`${w.id}: creek on the right for ${hugged}/${all}`);
+  let left=0;alongPath(w.path,(x,z,dx,dz)=>{if(world.materialAt(Math.floor(x+dz*1.6),Math.floor(z-dx*1.6))===MAT.creek)left++;});assert.ok(left<all*.1,`${w.id}: creek on the left for ${left}`);}
+});
+
+test('one walk connects Atlantic Avenue to the path south of Jasmine Street without leaving path or road',()=>{
+ const [north,south]=meta.walks,walkable=m=>m===MAT.trail||m===MAT.road,start=[Math.floor(north.at[0]),Math.floor(north.at[1])],goal=`${Math.floor(south.at[0])},${Math.floor(south.at[1])}`,seen=new Set([start.join()]),queue=[start];
+ while(queue.length&&!seen.has(goal)){const [x,z]=queue.shift();for(const [nx,nz] of [[x+1,z],[x-1,z],[x,z+1],[x,z-1],[x+1,z+1],[x-1,z-1],[x+1,z-1],[x-1,z+1]]){const k=`${nx},${nz}`;if(!seen.has(k)&&walkable(world.materialAt(nx,nz))){seen.add(k);queue.push([nx,nz]);}}}
+ assert.ok(seen.has(goal),'the two paths should join along Jasmine Street, with no creek to wade or bridge to climb');
+});
+
+test('the main path has no bridge humps of its own',()=>{for(const w of meta.walks){let humps=0;alongPath(w.path,(x,z)=>{if(world.materialAt(Math.floor(x),Math.floor(z))===MAT.bridge)humps++;});assert.ok(humps===0,`${w.id} has ${humps} samples on a bridge`);}});
 
 test('flying birds are herons and egrets that circle over the wetland',()=>{
  assert.ok(FLOCK.some(b=>b.kind==='heron'));assert.ok(FLOCK.some(b=>b.kind==='egret'));const south=meta.stops.find(s=>s.id==='south').at[1],atlantic=meta.stops.find(s=>s.id==='atlantic').at[1];
