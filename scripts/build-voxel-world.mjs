@@ -4,10 +4,11 @@ import {mkdir,readFile,writeFile} from 'node:fs/promises';
 import {existsSync} from 'node:fs';
 import {inflateSync} from 'node:zlib';
 import {MAT} from '../voxel/materials.js';
+import {RAMPART_TOE,fortPlan,insidePolygon} from '../voxel/fort.js';
 // The north edge falls in the open sound, past the tip of Amelia Island and short of Cumberland Island.
 const W=-81.47,E=-81.418,S=30.636,N=30.713,cols=520,rows=858,cache=`node_modules/.cache/voxel-world-${N}`;
 // OpenStreetMap ways the model is built around. The build stops if one disappears, rather than guessing.
-const PATH_TO_JASMINE=263899124,PATH_SOUTH_OF_JASMINE=653676990,JASMINE_STREET=11129139,FORT_CLINCH=202321937,VISITOR_CENTER=[-81.4537951,30.703424],ATLANTIC_CROSSING=[-81.43955,30.6676],HUG=1.6;
+const PATH_TO_JASMINE=263899124,PATH_SOUTH_OF_JASMINE=653676990,JASMINE_STREET=11129139,FORT_CLINCH=202321937,DRAW_BRIDGE=1333664322,FORT_WALK=1290472064,NORTH_BASTION=[-81.4541168,30.7055333],FLAGPOLE=[-81.454323,30.7047838],ATLANTIC_CROSSING=[-81.43955,30.6676],HUG=1.6;
 const bbox=[W,S,E,N].join(','),agent='EgansCreekAtlas/1.0 (https://metaphorz.github.io/eganscreek/)';
 await mkdir(cache,{recursive:true});
 async function cached(name,url,options){const path=`${cache}/${name}`;if(existsSync(path))return readFile(path);const r=await fetch(url,{signal:AbortSignal.timeout(240000),...options});if(!r.ok)throw Error(`${name}: ${r.status}`);const data=Buffer.from(await r.arrayBuffer());await writeFile(path,data);return data;}
@@ -91,18 +92,28 @@ for(const e of ways){const wild=g=>{const [x,z]=g.map(Math.round);return inside(
  if(greenway(e)||(['path','track'].includes(e.tags.highway)&&geom(e).some(wild)))line(geom(e),0,i=>{if(mat[i]===MAT.creek)mat[i]=MAT.bridge;else if(land(i)&&mat[i]!==MAT.road)mat[i]=MAT.trail;});}
 for(const e of ways)if(e.tags.building&&closed(e)){const g=geom(e),levels=Number(e.tags['building:levels'])||1,tall=Math.min(6,1+levels);const mark=i=>{if(land(i)&&mat[i]!==MAT.road&&mat[i]!==MAT.building){mat[i]=MAT.building;height[i]=Math.min(30,height[i]+tall);}};polygon(g,mark);const [x,z]=[g.reduce((s,p)=>s+p[0],0)/g.length,g.reduce((s,p)=>s+p[1],0)/g.length];if(inside(Math.floor(x),Math.floor(z)))mark(at(Math.floor(x),Math.floor(z)));}
 
-// Fort Clinch comes from its mapped outline. Sources give no wall height, so the walls use an assumed 6 m.
-const fortWalls=6,fortCells=new Set();polygon(wayById(FORT_CLINCH),i=>fortCells.add(i));if(fortCells.size<150)throw Error('Fort Clinch outline is unexpectedly small');
-const fortList=[...fortCells],fortX=fortList.reduce((s,i)=>s+i%cols,0)/fortList.length,fortZ=fortList.reduce((s,i)=>s+Math.floor(i/cols),0)/fortList.length,fortGround=Math.max(2,height[at(Math.round(fortX),Math.round(fortZ))]);
-const visitor=cell(...VISITOR_CENTER),isWall=i=>{const x=i%cols,z=Math.floor(i/cols);for(let dz=-1;dz<=1;dz++)for(let dx=-1;dx<=1;dx++)if(!fortCells.has(at(x+dx,z+dz)))return true;return false;};
-const walls=fortList.filter(isWall),gate=walls.reduce((a,b)=>{const d=i=>Math.hypot(i%cols-visitor[0],Math.floor(i/cols)-visitor[1]);return d(b)<d(a)?b:a;});
-// Trees are cleared around the walls so the outline reads, and the gate faces the visitor approach.
-for(const i of fortList){stamp(i%cols,Math.floor(i/cols),8,c=>{if(mat[c]===MAT.forest||mat[c]===MAT.scrub)mat[c]=MAT.grass;});}
-for(const i of fortList){mat[i]=MAT.fortyard;height[i]=fortGround;}
-for(const i of walls){mat[i]=MAT.fort;height[i]=fortGround+fortWalls;}
-line([[gate%cols,Math.floor(gate/cols)],[fortX,fortZ]],1,i=>{if(mat[i]===MAT.fort){mat[i]=MAT.fortyard;height[i]=fortGround;}});
-for(const e of ways)if(e.tags.historic==='ruins'&&closed(e)&&fortCells.has(at(...geom(e)[0].map(Math.floor))))polygon(geom(e),i=>{if(fortCells.has(i)&&mat[i]===MAT.fortyard){mat[i]=MAT.fort;height[i]=fortGround+3;}});
-const cannons=osm.elements.filter(e=>e.type==='node'&&e.tags?.historic==='cannon').map(e=>cell(e.lon,e.lat).map(v=>Math.round(v*10)/10)).filter(([x,z])=>fortCells.has(at(Math.floor(x),Math.floor(z))));
+// Fort Clinch is drawn from its mapped plan by voxel/fort.js. This grid only records where a walker can go.
+const fortRound=p=>p.map(v=>Math.round(v*100)/100),gap=(p,q)=>Math.hypot(p[0]-q[0],p[1]-q[1]),fortOutline=wayById(FORT_CLINCH).slice(0,-1),drawBridge=wayById(DRAW_BRIDGE),fortGate=fortOutline[nearestIndex(fortOutline,drawBridge[1])];
+// Long sides are curtain walls and runs of short sides are bastions. The gate's map point splits one curtain in two.
+const fortStart=fortOutline.findIndex((p,i)=>gap(p,fortOutline[(i+1)%fortOutline.length])>5),fortLoop=[...fortOutline.slice(fortStart),...fortOutline.slice(0,fortStart)],curtains=[],bastions=[];let fortRun=[];
+fortLoop.forEach((p,i)=>{const q=fortLoop[(i+1)%fortLoop.length];if(gap(p,q)>5){if(fortRun.length){bastions.push(fortRun);fortRun=[];}if(curtains.length&&curtains.at(-1)[1]===p)curtains.at(-1)[1]=q;else curtains.push([p,q]);}else{if(!fortRun.length)fortRun.push(p);fortRun.push(q);}});if(fortRun.length)bastions.push(fortRun);
+if(curtains.length!==5||bastions.length!==5)throw Error(`Fort Clinch should have 5 curtains and 5 bastions, not ${curtains.length} and ${bastions.length}`);
+const middle=poly=>poly.reduce((s,p)=>[s[0]+p[0]/poly.length,s[1]+p[1]/poly.length],[0,0]),fortCenter=middle(bastions.map(middle)),fortCells=new Set();polygon(fortOutline,i=>fortCells.add(i));
+// The fort sits level with the shore around it, so its ground takes the lowest land height nearby.
+const fortGround=Math.max(1,Math.min(...[...fortCells].map(i=>height[i]).filter(h=>h>0))),inFort=e=>{const c=middle(geom(e));return insidePolygon(fortOutline,c[0],c[1]);};
+const fortBuildings=ways.filter(e=>e.tags.building&&e.tags.name&&inFort(e)).map(e=>({name:e.tags.name,poly:geom(e).slice(0,-1).map(fortRound)})),fortRuins=ways.filter(e=>e.tags.historic==='ruins'&&inFort(e)).map(e=>geom(e).slice(0,-1).map(fortRound));
+const cannons=osm.elements.filter(e=>e.type==='node'&&e.tags?.historic==='cannon').map(e=>fortRound(cell(e.lon,e.lat))).filter(([x,z])=>insidePolygon(fortOutline,x,z));
+const fortData={center:fortRound(fortCenter),ground:fortGround,curtains:curtains.map(c=>c.map(fortRound)),bastions:bastions.map(b=>b.map(fortRound)),greenBastion:nearestIndex(bastions.map(middle),cell(...NORTH_BASTION)),gate:fortRound(fortGate),bridge:drawBridge.map(fortRound),buildings:fortBuildings,ruins:fortRuins,cannons,flag:fortRound(cell(...FLAGPOLE))};
+// Trees are cleared around the walls so the outline reads, as in aerial photographs of the fort.
+for(const i of fortCells)stamp(i%cols,Math.floor(i/cols),8,c=>{if(mat[c]===MAT.forest||mat[c]===MAT.scrub)mat[c]=MAT.grass;});
+const fortBlock=i=>{mat[i]=MAT.fort;height[i]=fortGround;},parade=fortPlan(fortData).ring(RAMPART_TOE);
+for(const i of fortCells){if(insidePolygon(parade,i%cols+.5,Math.floor(i/cols)+.5)){mat[i]=MAT.fortyard;height[i]=fortGround;}else fortBlock(i);}
+for(const b of bastions)polygon(b,i=>{if(fortCells.has(i))fortBlock(i);});for(const b of fortBuildings)if(/Barracks|Storehouse/.test(b.name))polygon(b.poly,fortBlock);
+// The way in stays open: over the Draw Bridge, through the wall, and between the Guard Rooms and the Prison.
+line([drawBridge[0],[fortGate[0]+(fortCenter[0]-fortGate[0])*.75,fortGate[1]+(fortCenter[1]-fortGate[1])*.75]],1,i=>{if(mat[i]===MAT.fort){mat[i]=MAT.fortyard;height[i]=fortGround;}});
+// A visitor arrives in line with the bridge and walkway, so walking straight ahead leads through to the parade ground.
+const fortOut=[fortGate[0]-fortCenter[0],fortGate[1]-fortCenter[1]],fortOutLength=Math.hypot(...fortOut),fortArrival=[drawBridge[0][0]+fortOut[0]/fortOutLength*6,drawBridge[0][1]+fortOut[1]/fortOutLength*6];
+const fortWalk=wayById(FORT_WALK).slice().reverse();for(const leg of [[drawBridge[0],...fortWalk],[drawBridge[0],fortArrival]])line(leg,0,i=>{if(land(i)&&mat[i]!==MAT.road&&mat[i]!==MAT.fort&&mat[i]!==MAT.fortyard)mat[i]=MAT.trail;});
 const place=id=>{const f=places.features.find(f=>f.id===id);return cell(...f.geometry.coordinates);},round=p=>p.map(v=>Math.round(v*10)/10);
 // Walking starts are on the path itself, facing the way it heads south. Both ways are drawn south to north.
 // Each start sits a few blocks along the path, clear of the place marker, and looks well ahead down it.
@@ -119,9 +130,9 @@ const stops=[
  {id:'sadler',name:'Sadler Road',text:'Southern entrance to the Greenway, reached behind 2301 Sadler Road.',at:round(place('sadler'))},
  {id:'mouth',name:'The creek mouth',text:'The creek’s mapped flowline ends here at the Amelia River, where the tides come in.',at:route.at(-1)},
  {id:'south',name:'The southern reach',text:'The southern end of the mapped creek, far from its tidal mouth.',at:route[0]},
- {id:'fort',name:'Fort Clinch',text:'A five-sided brick fort with corner bastions at the northern end of the island, begun in 1847. Rifled cannon soon left brick walls like these vulnerable.',at:round(visitor),facing:[fortX,fortZ]},
+ {id:'fort',name:'Fort Clinch',text:'A five-sided brick fort with corner bastions, begun in 1847. Walk in over the Draw Bridge: the walkway passes between the Guard Rooms and the Prison, then opens onto the parade ground.',at:round(fortArrival),facing:fortData.center,labelAt:fortData.center,altitude:30},
 ];
-const meta={cols,rows,bounds:{west:W,south:S,east:E,north:N},blockMetres:{across:Math.round((E-W)*95800/cols*10)/10,along:Math.round((N-S)*110850/rows*10)/10,up:1},route,stops,walks,signs,fort:{center:round([fortX,fortZ]),ground:fortGround,wallTop:fortGround+fortWalls,cannons},retrieved:osm.osm3s?.timestamp_osm_base?.slice(0,10),sources:{elevation:'USGS 3DEP',landCover:'NLCD 2021 (MRLC)',creek:'USGS National Hydrography Dataset',features:'OpenStreetMap contributors (ODbL)'}};
+const meta={cols,rows,bounds:{west:W,south:S,east:E,north:N},blockMetres:{across:Math.round((E-W)*95800/cols*10)/10,along:Math.round((N-S)*110850/rows*10)/10,up:1},route,stops,walks,signs,fort:fortData,retrieved:osm.osm3s?.timestamp_osm_base?.slice(0,10),sources:{elevation:'USGS 3DEP',landCover:'NLCD 2021 (MRLC)',creek:'USGS National Hydrography Dataset',features:'OpenStreetMap contributors (ODbL)'}};
 await writeFile('public/data/voxel-world.bin',Buffer.concat([Buffer.from(height.buffer),Buffer.from(mat.buffer)]));
 await writeFile('public/data/voxel-world.json',JSON.stringify(meta)+'\n');
 

@@ -4,6 +4,7 @@ import {readFileSync} from 'node:fs';
 import {MAT,COLORS,HABITATS} from '../voxel/materials.js';
 import {BRIDGE_TOP,CHUNK,UNITS,buildChunk,hash,makeWorld} from '../voxel/world.js';
 import {FLOCK,flightAt} from '../voxel/birds.js';
+import {buildFort,fortPlan} from '../voxel/fort.js';
 const meta=JSON.parse(readFileSync('public/data/voxel-world.json','utf8')),world=makeWorld(meta,new Uint8Array(readFileSync('public/data/voxel-world.bin')));
 const count=m=>{let n=0;for(let z=0;z<world.rows;z++)for(let x=0;x<world.cols;x++)if(world.materialAt(x,z)===m)n++;return n;};
 
@@ -32,11 +33,20 @@ test('the model takes in the northern tip of the island, so land never meets its
  for(let x=120;x<world.cols;x++)assert.equal(world.materialAt(x,0),MAT.water,`land at ${x},0`);
 });
 
-test('Fort Clinch has walls, a parade ground, and a way in at ground level',()=>{
- let walls=0,yard=0;const {center,ground,wallTop}=meta.fort;for(let z=0;z<world.rows;z++)for(let x=0;x<world.cols;x++){const m=world.materialAt(x,z);if(m===MAT.fort)walls++;if(m===MAT.fortyard)yard++;}
- assert.ok(walls>40);assert.ok(yard>100);assert.equal(world.materialAt(Math.floor(center[0]),Math.floor(center[1])),MAT.fortyard);assert.ok(wallTop>ground+2);
- const seen=new Set(),queue=[[Math.floor(center[0]),Math.floor(center[1])]];let escaped=false;while(queue.length&&!escaped){const [x,z]=queue.pop(),k=`${x},${z}`;if(seen.has(k))continue;seen.add(k);if(Math.hypot(x-center[0],z-center[1])>40){escaped=true;break;}for(const [nx,nz] of [[x+1,z],[x-1,z],[x,z+1],[x,z-1]])if(world.walkHeight(nx,nz)-world.walkHeight(x,z)<=2)queue.push([nx,nz]);}
- assert.ok(escaped,'a walker should be able to leave the fort through the gate');
+test('Fort Clinch follows its mapped plan, with five walls, five bastions, and its named buildings',()=>{
+ const {fort}=meta;assert.equal(fort.curtains.length,5);assert.equal(fort.bastions.length,5);const names=fort.buildings.map(b=>b.name);for(const n of ['Guard Rooms','Prison',"Enlisted Men's Barracks",'Storehouse/Dispensary'])assert.ok(names.includes(n),n);assert.ok(fort.cannons.length>=8);assert.ok(fort.ruins.length>=2);
+ const mesh=buildFort(fort);assert.ok(mesh.quads>400);assert.ok(mesh.positions.every(Number.isFinite));assert.ok(Math.max(...mesh.positions)<=20*UNITS+8*UNITS);assert.equal(world.materialAt(Math.floor(fort.flag[0]),Math.floor(fort.flag[1])),MAT.fortyard);
+});
+
+test('the fort is entered over the Draw Bridge, between the Guard Rooms and the Prison',()=>{
+ const {fort}=meta,{gate,center}=fort,dx=center[0]-gate[0],dz=center[1]-gate[1],side=name=>{const b=fort.buildings.find(b=>b.name===name).poly,m=b.reduce((s,p)=>[s[0]+p[0]/b.length,s[1]+p[1]/b.length],[0,0]);return dx*(m[1]-gate[1])-dz*(m[0]-gate[0]);};
+ assert.ok(side('Guard Rooms')*side('Prison')<0,'the two buildings should stand on either side of the walkway');
+ // The fort's start lines up with the gate, so walking straight ahead goes in through it.
+ const stop=meta.stops.find(s=>s.id==='fort');for(let t=0;t<=1;t+=.02){const x=stop.at[0]+(stop.facing[0]-stop.at[0])*t*.8,z=stop.at[1]+(stop.facing[1]-stop.at[1])*t*.8;assert.ok(world.walkHeight(Math.floor(x),Math.floor(z))<=fort.ground+1,`blocked at ${x},${z}`);}
+ // Walk in from outside the bridge to the flagpole without climbing a wall.
+ const [ox,oz]=fort.bridge[0].map(Math.floor),goal=fort.flag.map(Math.floor).join(),seen=new Set([`${ox},${oz}`]),queue=[[ox,oz]];while(queue.length&&!seen.has(goal)){const [x,z]=queue.shift();for(const [nx,nz] of [[x+1,z],[x-1,z],[x,z+1],[x,z-1]]){const k=`${nx},${nz}`;if(!seen.has(k)&&Math.hypot(nx-center[0],nz-center[1])<16&&world.walkHeight(nx,nz)-world.walkHeight(x,z)<=2){seen.add(k);queue.push([nx,nz]);}}}assert.ok(seen.has(goal),'a walker should reach the parade ground through the gate');
+ // The other four walls stop a walker at the rampart.
+ const wallCells=fort.curtains.flatMap(([a,b],i)=>i===fortPlan(fort).gateEdge?[]:[[a[0]*.5+b[0]*.5+(center[0]-a[0]*.5-b[0]*.5)*.1,a[1]*.5+b[1]*.5+(center[1]-a[1]*.5-b[1]*.5)*.1]]);assert.equal(wallCells.length,4);for(const [x,z] of wallCells)assert.ok(world.walkHeight(Math.floor(x),Math.floor(z))-fort.ground>=3,`${x},${z} should block`);
 });
 
 test('both walks start on a path that heads south and stays walkable',()=>{
