@@ -43,6 +43,7 @@ VITE_BASE_PATH=/eganscreek/ npm run preview
 - **Animal sightings map:** a dated snapshot of 26 openly licensed observation records, with group, species, and date filters, observer attribution, reported accuracy, and source links. Locations must be public and unobscured with reported accuracy at most 100 m. Some groups have no records passing those filters; this does not imply absence. Links open the broader current iNaturalist map and eBird hotspot explorer.
 - **Poetry links:** a quill beside some species, chapter text, formation stages, plant parts, and timeline steps opens a poem on click, with the matching phrase highlighted and the online source at the bottom. Poems out of copyright show in full; later ones show a link only. See [provenance](docs/PROVENANCE.md).
 - **Art links:** a palette beside some species and chapter text opens a related artwork on click, with its artist, license, and source. See [provenance](docs/PROVENANCE.md).
+- **Egans Creek in Blocks:** the block icon in the header opens `voxel/`, a three.js model of the creek to walk, fly over, or float down, on a keyboard or by touch. Its ground, habitats, and creek path come from public data; its plants and birds are illustrations. Rebuild its grid with `node scripts/build-voxel-world.mjs`. See [provenance](docs/PROVENANCE.md).
 - **Formation and marsh ecology:** source-backed explanatory models. The precise local stratigraphic contacts, wave attenuation, sediment accumulation, and future habitat distributions are not measured by the app.
 
 ## Data and assets

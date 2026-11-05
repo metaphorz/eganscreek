@@ -80,3 +80,16 @@ Wikisource's scan of Frost's "West-Running Brook" has errors such as lost spaces
 `src/data/art.json` and `public/assets/art/` are built by `node scripts/fetch-art.mjs`, which reads each work's license and source from its Wikimedia Commons record and stops on any license other than public domain, CC0, CC BY, or CC BY-SA. The art window shows the license and source for every work.
 
 The works were chosen by the site's owner in a review of candidates on 2026-11-04. Most are public domain. The butterfly is a photograph by MathewTownsend under CC BY-SA 3.0, resized here, so its credit and license link must stay with it. The prickly pear engraving comes from Old Book Illustrations, which judges it public domain in the US as an 1885–91 publication and notes that such assessments are its best guess. Museum color bars were cropped from the four Audubon mammal plates.
+
+## Egans Creek in Blocks
+
+`public/data/voxel-world.bin`, `public/data/voxel-world.json`, and `public/assets/voxel-creek.svg` are built by `node scripts/build-voxel-world.mjs`, retrieved 2026-11-05. Each block is about 10 m across and 1 m tall, a vertical stretch of about ten times.
+
+| Layer | Source | Use |
+|---|---|---|
+| Ground height | [USGS 3DEP](https://www.usgs.gov/3d-elevation-program), public domain | Rounded to whole metres. Low marsh cells become water. |
+| Habitats | [NLCD 2021](https://www.mrlc.gov/), public domain | 30 m land cover classes. Emergent wetland is drawn as salt marsh and woody wetland as freshwater wetland, matching the Greenway's north and south. |
+| Creek path | [USGS National Hydrography Dataset](https://www.usgs.gov/national-hydrography), public domain | The same flowlines as the Map chapter, drawn three blocks wide so they read at this scale. The float route follows them. |
+| Roads, trails, buildings, beach | [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors, ODbL | The credit must stay with the model, and the baked grid remains under the ODbL. |
+
+Trees, shrubs, cordgrass, and birds are placed by habitat with a repeatable pseudo-random pattern. They are illustrations, not surveyed plants or sighting records. Building heights are mostly assumed, because few OpenStreetMap buildings here record a height.

@@ -7,7 +7,7 @@ await writeFile('dist/sw.js',`const CACHE=${JSON.stringify(version)},ASSETS=${JS
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS))));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('egans-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',event=>{const url=new URL(event.request.url);if(event.request.method!=='GET'||url.origin!==self.location.origin)return;
- if(event.request.mode==='navigate'){event.respondWith(fetch(event.request).catch(()=>caches.match(new URL('index.html',self.registration.scope).href)));return;}
+ if(event.request.mode==='navigate'){event.respondWith(fetch(event.request).catch(async()=>(await caches.match(new URL('index.html',event.request.url).href))||caches.match(new URL('index.html',self.registration.scope).href)));return;}
  if(ASSETS.includes(url.pathname))event.respondWith(caches.open(CACHE).then(async cache=>(await cache.match(event.request,{ignoreVary:true}))||fetch(event.request)));
 });`);
 console.log(`Offline cache: ${assets.length} local assets, ${version}`);

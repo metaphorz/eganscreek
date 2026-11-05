@@ -136,3 +136,14 @@ test('art opens on click with its credit, beside any poem',async({page})=>{
  await page.goto('./#page=animals&group=invertebrates');await page.locator('[data-art="place:butterflies"]').click();await expect(win).toContainText('MathewTownsend');await expect(win.getByRole('link',{name:'CC BY-SA 3.0'})).toHaveAttribute('href',/creativecommons\.org/);await page.goto('./#page=map');await expect(win).toBeHidden();
  await page.goto('./#page=formation');await expect(page.locator('[data-art="place:coast"]')).toBeVisible();await expect(page.locator('[data-art="stage:4"]')).toHaveCount(0);await page.locator('[data-stage="4"]').click();await page.locator('[data-art="stage:4"]').click();await expect(win.locator('h2')).toHaveText('The Great Florida Marsh');
 });
+
+test('the block icon opens a creek model that can be walked, flown, and floated',async({page})=>{
+ const problems=[];page.on('pageerror',e=>problems.push(e.message));page.on('requestfailed',r=>{if(r.url().includes('voxel'))problems.push(r.url());});
+ await page.goto('./#page=map');const icon=page.getByRole('link',{name:'Explore Egans Creek in 3D blocks'});await expect(icon).toBeVisible();expect(await icon.locator('img').evaluate(i=>i.complete&&i.naturalWidth)).toBeGreaterThan(0);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1)).toBe(true);await icon.click();
+ await expect(page).toHaveTitle('Egans Creek in Blocks');const readout=page.locator('#readout');await page.locator('[data-start="float"]').click({timeout:25000});
+ await expect(page.locator('[data-mode="float"]')).toHaveAttribute('aria-pressed','true');await expect(readout).toContainText('° N');await expect(page.locator('#float-progress')).toContainText('to the mouth');
+ await page.locator('[data-mode="walk"]').click();await page.locator('#stops summary').click();await page.locator('[data-stop="jasmine"]').click();await expect(page.locator('#stop-name')).toHaveText('Jasmine Street');await expect(readout).toContainText('30.656');
+ const before=await readout.textContent();await page.locator('#scene').focus();await page.keyboard.down('w');await page.keyboard.down('Shift');await expect.poll(()=>readout.textContent(),{timeout:15000}).not.toBe(before);await page.keyboard.up('w');await page.keyboard.up('Shift');
+ await page.locator('[data-mode="fly"]').click();await expect(readout).toContainText('Over:');await page.locator('#about-open').click();await expect(page.locator('#about')).toContainText('OpenStreetMap');expect(await new AxeBuilder({page}).include('#about').analyze().then(r=>r.violations)).toEqual([]);await page.locator('#about-close').click();
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1)).toBe(true);expect(problems).toEqual([]);
+});
