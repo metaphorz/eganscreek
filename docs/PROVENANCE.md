@@ -83,7 +83,7 @@ The works were chosen by the site's owner in a review of candidates on 2026-11-0
 
 ## Egans Creek in Blocks
 
-`public/data/voxel-world.bin`, `public/data/voxel-world.json`, and `public/assets/voxel-creek.svg` are built by `node scripts/build-voxel-world.mjs`, retrieved 2026-11-05. Each block is about 10 m across and 1 m tall, a vertical stretch of about ten times.
+`voxel/voxel-world.bin`, `voxel/voxel-world.json`, and `public/assets/voxel-creek.svg` are built by `node scripts/build-voxel-world.mjs`, retrieved 2026-11-05. Each block is about 10 m across and 1 m tall, a vertical stretch of about ten times.
 
 | Layer | Source | Use |
 |---|---|---|

@@ -1,5 +1,4 @@
 import * as THREE from 'three';
-import {publicURL} from '../src/paths.js';
 import {COLORS,MAT} from './materials.js';
 import {addBirds,moveBirds} from './birds.js';
 import {buildFort} from './fort.js';
@@ -16,7 +15,8 @@ catch{fail('This model needs WebGL, which is not available in this browser.');}
 function fail(message){$('#load-status').textContent=message;$('#load-status').insertAdjacentHTML('beforeend',' <a href="../">Return to the atlas</a>.');}
 if(renderer)start().catch(e=>{console.error(e);fail('The landscape could not be loaded.');});
 async function start(){
- const [meta,bytes]=await Promise.all([fetch(publicURL('data/voxel-world.json')).then(r=>{if(!r.ok)throw Error('world description');return r.json();}),fetch(publicURL('data/voxel-world.bin')).then(r=>{if(!r.ok)throw Error('world grid');return r.arrayBuffer();})]);
+ // Vite adds a content hash to these names, so new code can never pair with old data from the offline cache.
+ const [meta,bytes]=await Promise.all([fetch(new URL('./voxel-world.json',import.meta.url)).then(r=>{if(!r.ok)throw Error('world description');return r.json();}),fetch(new URL('./voxel-world.bin',import.meta.url)).then(r=>{if(!r.ok)throw Error('world grid');return r.arrayBuffer();})]);
  const world=makeWorld(meta,new Uint8Array(bytes));
  renderer.outputColorSpace=THREE.LinearSRGBColorSpace;let pixelRatio=Math.min(devicePixelRatio,1.5);renderer.setPixelRatio(pixelRatio);
  const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(68,1,.1,1500);camera.rotation.order='YXZ';scene.background=new THREE.Color(SKY);scene.fog=new THREE.Fog(SKY,120,VIEW.walk);

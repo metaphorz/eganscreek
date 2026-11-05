@@ -5,7 +5,7 @@ import {MAT,COLORS,HABITATS} from '../voxel/materials.js';
 import {BRIDGE_TOP,CHUNK,UNITS,buildChunk,hash,makeWorld} from '../voxel/world.js';
 import {FLOCK,flightAt} from '../voxel/birds.js';
 import {buildFort,fortPlan} from '../voxel/fort.js';
-const meta=JSON.parse(readFileSync('public/data/voxel-world.json','utf8')),world=makeWorld(meta,new Uint8Array(readFileSync('public/data/voxel-world.bin')));
+const meta=JSON.parse(readFileSync('voxel/voxel-world.json','utf8')),world=makeWorld(meta,new Uint8Array(readFileSync('voxel/voxel-world.bin')));
 const count=m=>{let n=0;for(let z=0;z<world.rows;z++)for(let x=0;x<world.cols;x++)if(world.materialAt(x,z)===m)n++;return n;};
 
 test('every material has a color and a habitat name',()=>{const size=Object.keys(MAT).length;assert.equal(COLORS.length,size);assert.equal(HABITATS.length,size);});

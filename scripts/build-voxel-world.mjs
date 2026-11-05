@@ -133,8 +133,8 @@ const stops=[
  {id:'fort',name:'Fort Clinch',text:'A five-sided brick fort with corner bastions, begun in 1847. Walk in over the Draw Bridge: the walkway passes between the Guard Rooms and the Prison, then opens onto the parade ground.',at:round(fortArrival),facing:fortData.center,labelAt:fortData.center,altitude:30},
 ];
 const meta={cols,rows,bounds:{west:W,south:S,east:E,north:N},blockMetres:{across:Math.round((E-W)*95800/cols*10)/10,along:Math.round((N-S)*110850/rows*10)/10,up:1},route,stops,walks,signs,fort:fortData,retrieved:osm.osm3s?.timestamp_osm_base?.slice(0,10),sources:{elevation:'USGS 3DEP',landCover:'NLCD 2021 (MRLC)',creek:'USGS National Hydrography Dataset',features:'OpenStreetMap contributors (ODbL)'}};
-await writeFile('public/data/voxel-world.bin',Buffer.concat([Buffer.from(height.buffer),Buffer.from(mat.buffer)]));
-await writeFile('public/data/voxel-world.json',JSON.stringify(meta)+'\n');
+await writeFile('voxel/voxel-world.bin',Buffer.concat([Buffer.from(height.buffer),Buffer.from(mat.buffer)]));
+await writeFile('voxel/voxel-world.json',JSON.stringify(meta)+'\n');
 
 // The header icon is the same grid, sampled coarsely and drawn as an isometric block model.
 const COLORS=(await import('../voxel/materials.js')).COLORS,iconW=11,iconH=24,x0=145,x1=365,z0=208,z1=833,shade=(c,f)=>'#'+c.map(v=>Math.round(v*f).toString(16).padStart(2,'0')).join('');
