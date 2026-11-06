@@ -10,6 +10,11 @@ const count=m=>{let n=0;for(let z=0;z<world.rows;z++)for(let x=0;x<world.cols;x+
 
 test('every material has a color and a habitat name',()=>{const size=Object.keys(MAT).length;assert.equal(COLORS.length,size);assert.equal(HABITATS.length,size);});
 
+test('floating follows the way the camera faces, and a sideways look keeps the current direction',()=>{
+ const d=world.routeLength/2,a=world.routePoint(d-3),b=world.routePoint(d+3),toMouth=Math.atan2(-(b[0]-a[0]),-(b[1]-a[1]));
+ assert.equal(world.floatDirection(d,toMouth,1),1);assert.equal(world.floatDirection(d,toMouth+Math.PI,1),-1);assert.equal(world.floatDirection(d,toMouth,-1),1);
+ for(const side of [Math.PI/2,-Math.PI/2])for(const current of [1,-1])assert.equal(world.floatDirection(d,toMouth+side,current),current);
+});
 test('the float route stays on the creek from its southern end to its northern mouth',()=>{
  assert.ok(world.routeLength>500);const south=world.routePoint(0),north=world.routePoint(world.routeLength);assert.ok(south[1]>north[1]+400);
  for(let d=0;d<=world.routeLength;d+=1){const [x,z]=world.routePoint(d),m=world.materialAt(Math.floor(x),Math.floor(z));assert.ok(world.isWater(m),`dry at ${d}: ${HABITATS[m]}`);}

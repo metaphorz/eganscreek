@@ -15,9 +15,11 @@ export function makeWorld(meta,bytes){const {cols,rows}=meta,height=new Int8Arra
  const routeLength=lengths.at(-1);
  function routePoint(d){const t=Math.max(0,Math.min(routeLength,d));let lo=0,hi=lengths.length-1;while(hi-lo>1){const mid=(lo+hi)>>1;if(lengths[mid]<=t)lo=mid;else hi=mid;}const span=lengths[hi]-lengths[lo]||1,f=(t-lengths[lo])/span,a=meta.route[lo],b=meta.route[hi];return [a[0]+(b[0]-a[0])*f,a[1]+(b[1]-a[1])*f];}
  function nearestRouteDistance(x,z){let best=0,bestD=Infinity;for(let d=0;d<=routeLength;d+=2){const p=routePoint(d),q=(p[0]-x)**2+(p[1]-z)**2;if(q<bestD){bestD=q;best=d;}}return best;}
+ // The way a floater drifts: it changes only when they face clearly back along the route, not just off to one side.
+ function floatDirection(d,yaw,current){const a=routePoint(d-3),b=routePoint(d+3),tx=b[0]-a[0],tz=b[1]-a[1],along=-(tx*Math.sin(yaw)+tz*Math.cos(yaw))/(Math.hypot(tx,tz)||1);return along*current<-.17?-current:current;}
  // Places and map clicks can land on a roof, so step outward to the nearest open ground.
  function openGround(x,z){const cx=Math.floor(x),cz=Math.floor(z);for(let r=0;r<12;r++)for(let dz=-r;dz<=r;dz++)for(let dx=-r;dx<=r;dx++){if(Math.max(Math.abs(dx),Math.abs(dz))!==r||!inside(cx+dx,cz+dz))continue;if(materialAt(cx+dx,cz+dz)!==MAT.building)return [cx+dx+.5,cz+dz+.5];}return [cx+.5,cz+.5];}
- return {meta,cols,rows,inside,materialAt,heightAt,walkHeight,habitatAt,isWater,routeLength,routePoint,nearestRouteDistance,openGround};}
+ return {meta,cols,rows,inside,materialAt,heightAt,walkHeight,habitatAt,isWater,routeLength,routePoint,nearestRouteDistance,floatDirection,openGround};}
 export class Mesh{constructor(){this.pos=[];this.col=[];this.idx=[];this.quads=0;}
  quad(a,b,c,d,color,shade=1){const start=this.pos.length/3;for(const p of [a,b,c,d])this.pos.push(p[0],p[1],p[2]);for(let i=0;i<4;i++)this.col.push(Math.min(255,color[0]*shade),Math.min(255,color[1]*shade),Math.min(255,color[2]*shade));this.idx.push(start,start+1,start+2,start,start+2,start+3);this.quads++;}
  top(x0,x1,y,z0,z1,c,s=1){this.quad([x0,y,z0],[x0,y,z1],[x1,y,z1],[x1,y,z0],c,s);}
